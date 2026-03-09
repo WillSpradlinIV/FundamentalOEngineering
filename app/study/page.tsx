@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, Suspense } from "react";
+import { useEffect, useState, Suspense, useMemo } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { BankQuestion, loadQuestionsForSections } from "@/lib/question-bank";
@@ -18,7 +18,8 @@ function StudyPageContent() {
   const [questionStartTime, setQuestionStartTime] = useState<number>(Date.now());
   const [showHandbook, setShowHandbook] = useState(false);
 
-  const sections = searchParams.get("sections")?.split(",") || [];
+  const sectionsParam = searchParams.get("sections") || "";
+  const sections = useMemo(() => sectionsParam ? sectionsParam.split(",") : [], [sectionsParam]);
 
   useEffect(() => {
     if (sections.length === 0) {
