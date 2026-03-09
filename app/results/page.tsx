@@ -32,6 +32,63 @@ export default function ResultsPage() {
 
   const correctCount = answers.filter((a) => a.isCorrect).length;
 
+  const groupAccuracy = (keyFn: (a: (UserAnswer & { section: string }) ) => string) => {
+    const stats: Record<string, { correct: number; total: number }> = {};
+    answers.forEach((a) => {
+      const key = keyFn(a);
+      if (!stats[key]) stats[key] = { correct: 0, total: 0 };
+      stats[key].total += 1;
+      if (a.isCorrect) stats[key].correct += 1;
+    });
+    return Object.entries(stats).map(([key, { correct, total }]) => ({
+      key,
+      accuracy: total > 0 ? Math.round((correct / total) * 100) : 0,
+      total,
+    }));
+  };
+
+  const topicAccuracy = groupAccuracy((a) => a.topic || a.section);
+  const subtopicAccuracy = groupAccuracy((a) => a.subtopic || "general");
+  const difficultyAccuracy = groupAccuracy((a) =>
+    a.difficultyRating ? `Difficulty ${a.difficultyRating}` : "Difficulty"
+  );
+
+  const weakestTopics = [...topicAccuracy]
+    .sort((a, b) => a.accuracy - b.accuracy)
+    .slice(0, 3);
+
+  const missedConcepts: Record<string, number> = {};
+  answers.forEach((a) => {
+    if (a.isCorrect) return;
+    (a.conceptTags || []).forEach((tag) => {
+      missedConcepts[tag] = (missedConcepts[tag] || 0) + 1;
+    });
+  });
+  const mostMissedConcepts = Object.entries(missedConcepts)
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 3);
+
+  const timeStats = answers
+    .filter((a) => typeof a.timeSpent === "number" && a.timeSpent > 0)
+    .map((a) => a.timeSpent as number);
+  const avgTime =
+    timeStats.length > 0
+      ? Math.round(timeStats.reduce((sum, t) => sum + t, 0) / timeStats.length)
+      : null;
+
+  const timeByTopic: Record<string, { total: number; count: number }> = {};
+  answers.forEach((a) => {
+    if (!a.timeSpent) return;
+    const key = a.topic || a.section;
+    if (!timeByTopic[key]) timeByTopic[key] = { total: 0, count: 0 };
+    timeByTopic[key].total += a.timeSpent;
+    timeByTopic[key].count += 1;
+  });
+  const timeByTopicRows = Object.entries(timeByTopic).map(([key, stats]) => ({
+    key,
+    avg: Math.round(stats.total / stats.count),
+  }));
+
   const getSectionColor = (score: number) => {
     if (score >= 80) return "text-green-600";
     if (score >= 60) return "text-yellow-600";
@@ -79,6 +136,108 @@ export default function ResultsPage() {
           <strong>
             {new Date(attempt.submittedAt).toLocaleString()}
           </strong>
+        </div>
+      </div>
+
+      {/* Analytics */}
+      <div className="bg-white rounded-lg shadow-lg p-8 space-y-6">
+        <h3 className="text-2xl font-bold text-gray-900">Performance Analytics</h3>
+
+        <div className="grid md:grid-cols-2 gap-6">
+          <div className="bg-gray-50 rounded-lg p-4">
+            <h4 className="font-semibold text-gray-900 mb-3">Accuracy by Topic</h4>
+            <div className="space-y-2">
+              {topicAccuracy.map((row) => (
+                <div key={row.key} className="flex justify-between text-sm">
+                  <span className="text-gray-700">{row.key}</span>
+                  <span className="font-semibold">{row.accuracy}%</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="bg-gray-50 rounded-lg p-4">
+            <h4 className="font-semibold text-gray-900 mb-3">Accuracy by Difficulty</h4>
+            <div className="space-y-2">
+              {difficultyAccuracy.map((row) => (
+                <div key={row.key} className="flex justify-between text-sm">
+                  <span className="text-gray-700">{row.key}</span>
+                  <span className="font-semibold">{row.accuracy}%</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="bg-gray-50 rounded-lg p-4">
+            <h4 className="font-semibold text-gray-900 mb-3">Accuracy by Subtopic</h4>
+            <div className="space-y-2">
+              {subtopicAccuracy.map((row) => (
+                <div key={row.key} className="flex justify-between text-sm">
+                  <span className="text-gray-700">{row.key}</span>
+                  <span className="font-semibold">{row.accuracy}%</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="bg-gray-50 rounded-lg p-4">
+            <h4 className="font-semibold text-gray-900 mb-3">Weakest 3 Topics</h4>
+            {weakestTopics.length === 0 ? (
+              <p className="text-sm text-gray-600">No topic data yet.</p>
+            ) : (
+              <div className="space-y-2">
+                {weakestTopics.map((row) => (
+                  <div key={row.key} className="flex justify-between text-sm">
+                    <span className="text-gray-700">{row.key}</span>
+                    <span className="font-semibold text-red-600">
+                      {row.accuracy}%
+                    </span>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+
+          <div className="bg-gray-50 rounded-lg p-4">
+            <h4 className="font-semibold text-gray-900 mb-3">Most Missed Concepts</h4>
+            {mostMissedConcepts.length === 0 ? (
+              <p className="text-sm text-gray-600">No missed concept data yet.</p>
+            ) : (
+              <div className="space-y-2">
+                {mostMissedConcepts.map(([tag, count]) => (
+                  <div key={tag} className="flex justify-between text-sm">
+                    <span className="text-gray-700">{tag}</span>
+                    <span className="font-semibold">{count}</span>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-6">
+          <div className="bg-gray-50 rounded-lg p-4">
+            <h4 className="font-semibold text-gray-900 mb-3">Average Time per Question</h4>
+            <p className="text-sm text-gray-700">
+              {avgTime !== null ? `${avgTime} sec` : "No timing data yet."}
+            </p>
+          </div>
+
+          <div className="bg-gray-50 rounded-lg p-4">
+            <h4 className="font-semibold text-gray-900 mb-3">Time by Topic (avg)</h4>
+            {timeByTopicRows.length === 0 ? (
+              <p className="text-sm text-gray-600">No timing data yet.</p>
+            ) : (
+              <div className="space-y-2">
+                {timeByTopicRows.map((row) => (
+                  <div key={row.key} className="flex justify-between text-sm">
+                    <span className="text-gray-700">{row.key}</span>
+                    <span className="font-semibold">{row.avg} sec</span>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
         </div>
       </div>
 

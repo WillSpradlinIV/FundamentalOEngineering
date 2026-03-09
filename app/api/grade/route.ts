@@ -21,7 +21,11 @@ export async function POST(request: NextRequest) {
     // Grade each answer
     const gradedAnswers: (UserAnswer & { section: string })[] = userAnswers.map(
       (
-        userAnswer: { questionId: string; userAnswer: string | number },
+        userAnswer: {
+          questionId: string;
+          userAnswer: string | number;
+          timeSpent?: number;
+        },
         index: number
       ) => {
         const question = questions[index] as Question;
@@ -43,12 +47,28 @@ export async function POST(request: NextRequest) {
           isCorrect
         );
 
+        const topic = question.topic || question.section;
+        const subtopic = question.subtopic || question.tags?.[0] || "general";
+        const difficultyRating = question.difficultyRating ||
+          (question.difficulty === "easy" ? 2 : question.difficulty === "medium" ? 3 : 4);
+        const estimatedTimeSec = question.estimatedTimeSec ||
+          (question.difficulty === "easy" ? 120 : question.difficulty === "medium" ? 150 : 180);
+        const conceptTags = question.conceptTags || question.tags || [];
+        const handbookAnchor = question.handbookAnchor || "";
+
         return {
           questionId: userAnswer.questionId,
           userAnswer: userAnswer.userAnswer,
           isCorrect,
           explanation,
           section: question.section,
+          timeSpent: userAnswer.timeSpent,
+          topic,
+          subtopic,
+          difficultyRating,
+          estimatedTimeSec,
+          conceptTags,
+          handbookAnchor,
         };
       }
     );
@@ -66,6 +86,11 @@ export async function POST(request: NextRequest) {
     const sectionScores = calculateSectionScores(answersWithSection, sections);
 
     // Create attempt record
+    const totalTimeSec = gradedAnswers.reduce(
+      (sum, a) => sum + (a.timeSpent || 0),
+      0
+    );
+
     const attempt: Attempt = {
       id: `attempt-${Date.now()}`,
       quizId,
@@ -75,6 +100,7 @@ export async function POST(request: NextRequest) {
       overallScore,
       sectionScores,
       submittedAt: new Date().toISOString(),
+      timeSpent: totalTimeSec > 0 ? Math.round(totalTimeSec / 60) : undefined,
     };
 
     return NextResponse.json({
@@ -121,10 +147,14 @@ function generateExplanation(
   isCorrect: boolean
 ): string {
   let explanation = "";
+  const handbookAnchor = question.handbookAnchor || "";
 
   if (isCorrect) {
     explanation = `✓ CORRECT\n\n`;
     explanation += question.explanationCorrect;
+    if (handbookAnchor) {
+      explanation += `\n\n${handbookAnchor}`;
+    }
     explanation += `\n\nSolution:\n${question.solutionOutline}`;
   } else {
     explanation = `✗ INCORRECT\n\n`;
@@ -152,6 +182,21 @@ function generateExplanation(
 
       explanation += `Why the correct answer (${question.correctAnswer}) is right:\n`;
       explanation += `${question.explanationCorrect}\n\n`;
+
+      if (handbookAnchor) {
+        explanation += `${handbookAnchor}\n\n`;
+      }
+
+      if (question.explanationCommonWrong && question.explanationCommonWrong.length >= 4) {
+        explanation += "Distractor notes:\n";
+        const labels = ["A", "B", "C", "D"];
+        question.explanationCommonWrong.forEach((note, idx) => {
+          if (note) {
+            explanation += `${labels[idx]}: ${note}\n`;
+          }
+        });
+        explanation += "\n";
+      }
     } else if (question.type === "numeric") {
       explanation += `Why this is incorrect:\n`;
       if (question.explanationCommonWrong && question.explanationCommonWrong[0]) {
@@ -160,6 +205,10 @@ function generateExplanation(
 
       explanation += `Correct approach:\n`;
       explanation += `${question.explanationCorrect}\n\n`;
+
+      if (handbookAnchor) {
+        explanation += `${handbookAnchor}\n\n`;
+      }
     }
 
     explanation += `Solution Steps:\n${question.solutionOutline}`;

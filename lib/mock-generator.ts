@@ -305,6 +305,18 @@ const questionPools: Record<string, Question[]> = {
 type Difficulty = "easy" | "medium" | "hard";
 type TemplateFn = (seed: number, difficulty: Difficulty) => Question;
 
+const DIFFICULTY_RATING: Record<Difficulty, number> = {
+  easy: 2,
+  medium: 3,
+  hard: 4,
+};
+
+const ESTIMATED_TIME_SEC: Record<Difficulty, number> = {
+  easy: 120,
+  medium: 150,
+  hard: 180,
+};
+
 function mulberry32(seed: number) {
   let t = seed + 0x6d2b79f5;
   return function () {
@@ -1442,6 +1454,66 @@ function normalizeChoiceText(choice: string): string {
   return choice.trim().replace(/^[A-D]\s*[\.)]\s*/, "").trim();
 }
 
+function extractHandbookAnchor(question: Question): string {
+  if (question.handbookAnchor) return question.handbookAnchor;
+
+  const explanation = question.explanationCorrect || "";
+  const handbookMatch = explanation.match(/Handbook:\s*([^\.]+)\.\s*Ctrl\+F:\s*([^\.]+)\./i);
+
+  if (handbookMatch) {
+    const section = handbookMatch[1].trim();
+    const keyword = handbookMatch[2].trim();
+    return `Handbook: ${section}. Ctrl+F: ${keyword}.`;
+  }
+
+  const subtopic = question.tags?.[0] || "general";
+  const keyword = question.tags?.[0] || question.section;
+  return `Handbook: ${question.section} → ${subtopic}. Ctrl+F: ${keyword}.`;
+}
+
+function withMetadata(question: Question): Question {
+  const topic = question.topic || question.section;
+  const subtopic = question.subtopic || question.tags?.[0] || "general";
+  const difficultyRating =
+    question.difficultyRating || DIFFICULTY_RATING[question.difficulty];
+  const estimatedTimeSec =
+    question.estimatedTimeSec || ESTIMATED_TIME_SEC[question.difficulty];
+  const conceptTags = question.conceptTags || question.tags || [];
+  const handbookAnchor = extractHandbookAnchor(question);
+
+  return {
+    ...question,
+    topic,
+    subtopic,
+    difficultyRating,
+    estimatedTimeSec,
+    conceptTags,
+    handbookAnchor,
+  };
+}
+
+function isValidMcq(question: Question): boolean {
+  if (question.type !== "mcq" || !question.choices) return true;
+
+  if (question.choices.length !== 4) return false;
+
+  const normalized = question.choices.map(normalizeChoiceText);
+  const unique = new Set(normalized.map((c) => c.toLowerCase()));
+  if (unique.size !== 4) return false;
+
+  const answer = String(question.correctAnswer).toUpperCase();
+  if (!/[A-D]/.test(answer)) return false;
+
+  return true;
+}
+
+function makeQuestionKey(question: Question): string {
+  const choices = question.choices
+    ? question.choices.map(normalizeChoiceText).join("|")
+    : "";
+  return `${question.section}|${question.type}|${question.prompt.trim()}|${choices}`;
+}
+
 function buildSectionPool(
   section: string,
   poolSize = DEFAULT_POOL_SIZE,
@@ -1478,7 +1550,12 @@ function buildSectionPool(
 
   const activeTemplates = templates.length > 0 ? templates : fallbackTemplates;
 
-  for (let i = 0; i < poolSize; i++) {
+  let attempts = 0;
+  const maxAttempts = poolSize * 3;
+
+  while (pool.length < poolSize && attempts < maxAttempts) {
+    const i = attempts;
+    attempts += 1;
     const diff: Difficulty =
       difficulty === "mixed"
         ? i % 3 === 0
@@ -1510,6 +1587,8 @@ function buildSectionPool(
       );
       const correctText = originalChoices[correctIndex];
 
+      if (!correctText) continue;
+
       const shuffledTexts = shuffleArray(originalChoices);
       const newCorrectIndex = shuffledTexts.indexOf(correctText);
       question.choices = shuffledTexts.map(
@@ -1518,15 +1597,11 @@ function buildSectionPool(
       question.correctAnswer = ["A", "B", "C", "D"][newCorrectIndex];
     }
 
-    if (question.type === "numeric") {
-      const variation = 0.95 + Math.random() * 0.1; // ±5% variation
-      question.correctAnswer =
-        typeof question.correctAnswer === "number"
-          ? question.correctAnswer * variation
-          : question.correctAnswer;
-    }
+    const enriched = withMetadata(question);
 
-    pool.push(question);
+    if (!isValidMcq(enriched)) continue;
+
+    pool.push(enriched);
   }
 
   return pool;
@@ -1554,6 +1629,8 @@ export function generateMockQuestions(
     idx < remainder ? perSectionCount + 1 : perSectionCount
   );
 
+  const seen = new Set<string>();
+
   sections.forEach((section, sIdx) => {
     const targetCount = sectionCounts[sIdx];
     const pool = buildSectionPool(
@@ -1565,7 +1642,16 @@ export function generateMockQuestions(
     if (pool.length === 0) return;
 
     const shuffledPool = shuffleArray(pool);
-    const selected = shuffledPool.slice(0, targetCount);
+    const selected: Question[] = [];
+
+    for (const q of shuffledPool) {
+      if (selected.length >= targetCount) break;
+      const key = makeQuestionKey(q);
+      if (seen.has(key)) continue;
+      seen.add(key);
+      selected.push(q);
+    }
+
     questions.push(...selected);
   });
 

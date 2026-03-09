@@ -12,6 +12,10 @@ export default function QuizPage() {
   const [answers, setAnswers] = useState<Map<string, string | number>>(
     new Map()
   );
+  const [timeByQuestion, setTimeByQuestion] = useState<Map<string, number>>(
+    new Map()
+  );
+  const [questionStartTime, setQuestionStartTime] = useState<number | null>(null);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState("");
   const [timeLeft, setTimeLeft] = useState<number | null>(null);
@@ -29,6 +33,8 @@ export default function QuizPage() {
     setQuiz(parsedQuiz);
     setCurrentQuestion(0); // Reset to first question
     setAnswers(new Map()); // Clear previous answers
+    setTimeByQuestion(new Map());
+    setQuestionStartTime(Date.now());
 
     // Set timer for exam mode
     if (parsedQuiz.mode === "exam" && parsedQuiz.timeLimit) {
@@ -54,6 +60,16 @@ export default function QuizPage() {
   const currentQ = quiz.questions[currentQuestion];
   const progress = ((currentQuestion + 1) / quiz.questions.length) * 100;
 
+  const recordTimeForCurrent = () => {
+    if (!questionStartTime) return;
+    if (!currentQ) return;
+    const elapsed = (Date.now() - questionStartTime) / 1000;
+    const newTimes = new Map(timeByQuestion);
+    newTimes.set(currentQ.id, (newTimes.get(currentQ.id) || 0) + elapsed);
+    setTimeByQuestion(newTimes);
+    setQuestionStartTime(Date.now());
+  };
+
   const handleAnswerChange = (answer: string | number) => {
     const newAnswers = new Map(answers);
     newAnswers.set(currentQ.id, answer);
@@ -63,6 +79,7 @@ export default function QuizPage() {
   const handleNext = () => {
     console.log("Next clicked, current:", currentQuestion, "total:", quiz.questions.length);
     if (currentQuestion < quiz.questions.length - 1) {
+      recordTimeForCurrent();
       setCurrentQuestion(currentQuestion + 1);
       console.log("Moving to question:", currentQuestion + 1);
     }
@@ -71,12 +88,14 @@ export default function QuizPage() {
   const handlePrevious = () => {
     console.log("Previous clicked, current:", currentQuestion);
     if (currentQuestion > 0) {
+      recordTimeForCurrent();
       setCurrentQuestion(currentQuestion - 1);
       console.log("Moving to question:", currentQuestion - 1);
     }
   };
 
   const handleSubmit = async () => {
+    recordTimeForCurrent();
     // Check if all questions answered
     const unanswered = quiz.questions.filter(
       (q) => !answers.has(q.id)
@@ -96,6 +115,7 @@ export default function QuizPage() {
       const answerArray = quiz.questions.map((q) => ({
         questionId: q.id,
         userAnswer: answers.get(q.id),
+        timeSpent: timeByQuestion.get(q.id) || 0,
       }));
 
       // Call grade API

@@ -40,6 +40,12 @@ export const QuestionSchema = z.object({
   explanationCorrect: z.string(),
   explanationCommonWrong: z.array(z.string()),
   tags: z.array(z.string()),
+  topic: z.string().optional(),
+  subtopic: z.string().optional(),
+  difficultyRating: z.number().min(1).max(5).optional(),
+  estimatedTimeSec: z.number().optional(),
+  conceptTags: z.array(z.string()).optional(),
+  handbookAnchor: z.string().optional(),
   generatedAt: z.string().datetime(),
 });
 
@@ -51,6 +57,12 @@ export const UserAnswerSchema = z.object({
   isCorrect: z.boolean(),
   explanation: z.string(),
   timeSpent: z.number().optional(), // Seconds
+  topic: z.string().optional(),
+  subtopic: z.string().optional(),
+  difficultyRating: z.number().min(1).max(5).optional(),
+  estimatedTimeSec: z.number().optional(),
+  conceptTags: z.array(z.string()).optional(),
+  handbookAnchor: z.string().optional(),
 });
 
 export type UserAnswer = z.infer<typeof UserAnswerSchema>;
