@@ -1,13 +1,13 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { BankQuestion, loadQuestionsForSections } from "@/lib/question-bank";
 import { markQuestion } from "@/lib/progress-tracker";
 import { buildQuestionQueue } from "@/lib/question-queue";
 
-export default function StudyPage() {
+function StudyPageContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const [questions, setQuestions] = useState<BankQuestion[]>([]);
@@ -287,5 +287,17 @@ export default function StudyPage() {
         </button>
       </div>
     </div>
+  );
+}
+
+export default function StudyPage() {
+  return (
+    <Suspense fallback={
+      <div className="max-w-4xl mx-auto p-6">
+        <p className="text-gray-600">Loading study session...</p>
+      </div>
+    }>
+      <StudyPageContent />
+    </Suspense>
   );
 }

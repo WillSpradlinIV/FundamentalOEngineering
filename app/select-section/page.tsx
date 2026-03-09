@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { FE_SECTIONS } from "@/lib/types";
 import { ALL_SECTIONS } from "@/lib/question-bank";
@@ -42,7 +42,7 @@ const APP_MODE_OPTIONS = [
   },
 ];
 
-export default function SectionSelector() {
+function SectionSelectorContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const [selectedSections, setSelectedSections] = useState<string[]>([]);
@@ -113,19 +113,26 @@ export default function SectionSelector() {
         err instanceof Error ? err.message : "Failed to start session"
       );
     } finally {
-      {/* Study Complete Banner */}
-      {studyComplete && (
-        <div className="bg-green-50 border border-green-300 rounded-lg p-6">
-          <h3 className="text-xl font-bold text-green-900 mb-2">
-            🎉 Study Session Complete!
-          </h3>
-          <p className="text-green-800">
-            Great work! Start a new session to continue studying.
-          </p>
-        </div>
-      )}
+      setLoading(false);
+    }
+  };
 
-      <div className="bg-white rounded-lg shadow-lg p-8">
+  return (
+    <div className="min-h-screen bg-gray-50 p-6">
+      <div className="max-w-4xl mx-auto">
+        {/* Study Complete Banner */}
+        {studyComplete && (
+          <div className="mb-6 bg-green-50 border border-green-300 rounded-lg p-6">
+            <h3 className="text-xl font-bold text-green-900 mb-2">
+              🎉 Study Session Complete!
+            </h3>
+            <p className="text-green-800">
+              Great work! Start a new session to continue studying.
+            </p>
+          </div>
+        )}
+
+        <div className="bg-white rounded-lg shadow-lg p-8">
         <h2 className="text-3xl font-bold text-gray-900 mb-6">
           Select Study Sections
         </h2>
@@ -275,15 +282,22 @@ export default function SectionSelector() {
               : "Generating Quiz..."
             : appMode === "study"
             ? "Start Study Session"
-           
-        <button
-          onClick={handleStartQuiz}
-          disabled={loading}
-          className="w-full bg-indigo-600 text-white font-semibold py-3 rounded-lg hover:bg-indigo-700 transition disabled:opacity-50"
-        >
-          {loading ? "Generating Quiz..." : "Start Quiz"}
+            : "Start Quiz"}
         </button>
       </div>
+      </div>
     </div>
+  );
+}
+
+export default function SectionSelector() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-gray-50 p-6 flex items-center justify-center">
+        <p className="text-gray-600">Loading...</p>
+      </div>
+    }>
+      <SectionSelectorContent />
+    </Suspense>
   );
 }
