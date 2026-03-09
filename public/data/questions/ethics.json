@@ -1,0 +1,72 @@
+[
+    {
+        "id":  "ethics-A-b2-001",
+        "section":  "5. Engineering Ethics and Societal Impacts",
+        "subtopic":  "A. Codes of Ethics",
+        "question":  "An engineer is offered a consulting contract by a company that competes with their primary employer. The ethical action is to:",
+        "options":  [
+                        "A. Accept the contract since it is outside work hours",
+                        "B. Disclose the potential conflict to the primary employer and obtain approval before proceeding",
+                        "C. Accept only if the pay is not more than 10% of their salary",
+                        "D. Decline all outside work as a matter of policy"
+                    ],
+        "answer":  "B",
+        "explanation":  "Engineers must disclose potential conflicts of interest to all affected parties. Taking competing work without disclosure violates professional ethics, regardless of compensation level."
+    },
+    {
+        "id":  "ethics-A-b2-002",
+        "section":  "5. Engineering Ethics and Societal Impacts",
+        "subtopic":  "A. Codes of Ethics",
+        "question":  "Which of the following is consistent with engineering professional ethics?",
+        "options":  [
+                        "A. Exaggerating credentials on a resume to secure a contract",
+                        "B. Accurately representing qualifications and experience",
+                        "C. Allowing a client to believe you have expertise you lack",
+                        "D. Recommending your own products without disclosing your financial interest"
+                    ],
+        "answer":  "B",
+        "explanation":  "Professional integrity requires honest representation of qualifications. Misrepresenting credentials is fraudulent, violates codes of ethics, and can endanger public safety."
+    },
+    {
+        "id":  "ethics-B-b2-001",
+        "section":  "5. Engineering Ethics and Societal Impacts",
+        "subtopic":  "B. Public Protection Issues",
+        "question":  "The FE (Fundamentals of Engineering) exam is a prerequisite for PE licensure primarily because it:",
+        "options":  [
+                        "A. Generates revenue for NCEES",
+                        "B. Verifies minimum technical competency before candidates begin gaining supervised experience",
+                        "C. Replaces the need for an engineering degree",
+                        "D. Allows engineers to practice independently immediately after passing"
+                    ],
+        "answer":  "B",
+        "explanation":  "The FE exam verifies foundational technical knowledge. After passing, candidates work under a PE for required experience (typically 4 years) before taking the PE exam and becoming independently licensed."
+    },
+    {
+        "id":  "ethics-C-b2-001",
+        "section":  "5. Engineering Ethics and Societal Impacts",
+        "subtopic":  "C. Societal Impacts",
+        "question":  "The triple bottom line in sustainable engineering refers to balancing which three factors?",
+        "options":  [
+                        "A. Cost, schedule, and quality",
+                        "B. People (social), planet (environmental), and profit (economic)",
+                        "C. Design, construction, and operation",
+                        "D. Federal, state, and local requirements"
+                    ],
+        "answer":  "B",
+        "explanation":  "The triple bottom line framework evaluates sustainability across three dimensions: social equity (people), environmental responsibility (planet), and economic viability (profit/prosperity)."
+    },
+    {
+        "id":  "ethics-C-b2-002",
+        "section":  "5. Engineering Ethics and Societal Impacts",
+        "subtopic":  "C. Societal Impacts",
+        "question":  "An engineer designing a bridge uses a factor of safety of 3.0. This means the bridge is designed to carry loads up to:",
+        "options":  [
+                        "A. 3 times the expected maximum load before yielding",
+                        "B. 1/3 of the expected maximum load",
+                        "C. 3 times the weight of the bridge itself",
+                        "D. The expected load plus 3 tons"
+                    ],
+        "answer":  "A",
+        "explanation":  "FOS = 3.0 means the structure can withstand 3 times the expected maximum load before failure. This margin accounts for load uncertainties, material variability, and consequences of failure."
+    }
+]

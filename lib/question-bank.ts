@@ -1,6 +1,6 @@
 /**
  * Question Bank Manager
- * Loads and manages questions from JSON files
+ * Loads and manages questions from JSON files in public/data/questions/
  */
 
 export interface BankQuestion {
@@ -37,8 +37,12 @@ export const SECTION_FILES: Record<string, string> = {
 
 export const ALL_SECTIONS = Object.keys(SECTION_FILES);
 
+// In-memory cache to avoid re-fetching
+const questionCache = new Map<string, BankQuestion[]>();
+
 /**
- * Load questions for specific sections from JSON files
+ * Load questions for specific sections from JSON files (client-side)
+ * Files served from public/data/questions/
  */
 export async function loadQuestionsForSections(
   sections: string[]
@@ -52,6 +56,12 @@ export async function loadQuestionsForSections(
       continue;
     }
 
+    // Check cache first
+    if (questionCache.has(fileName)) {
+      allQuestions.push(...questionCache.get(fileName)!);
+      continue;
+    }
+
     try {
       const response = await fetch(`/data/questions/${fileName}.json`);
       if (!response.ok) {
@@ -60,6 +70,7 @@ export async function loadQuestionsForSections(
       }
 
       const questions: BankQuestion[] = await response.json();
+      questionCache.set(fileName, questions);
       allQuestions.push(...questions);
     } catch (error) {
       console.error(`Error loading questions for ${section}:`, error);
@@ -77,9 +88,15 @@ export async function getQuestionCounts(): Promise<Record<string, number>> {
 
   for (const [section, fileName] of Object.entries(SECTION_FILES)) {
     try {
+      if (questionCache.has(fileName)) {
+        counts[section] = questionCache.get(fileName)!.length;
+        continue;
+      }
+
       const response = await fetch(`/data/questions/${fileName}.json`);
       if (response.ok) {
         const questions: BankQuestion[] = await response.json();
+        questionCache.set(fileName, questions);
         counts[section] = questions.length;
       } else {
         counts[section] = 0;
@@ -98,13 +115,18 @@ export async function getQuestionCounts(): Promise<Record<string, number>> {
 export async function loadQuestionById(
   questionId: string
 ): Promise<BankQuestion | null> {
-  // Extract section from question ID (e.g., "math-A-001" -> "mathematics")
   for (const [, fileName] of Object.entries(SECTION_FILES)) {
     try {
-      const response = await fetch(`/data/questions/${fileName}.json`);
-      if (!response.ok) continue;
+      let questions: BankQuestion[];
+      if (questionCache.has(fileName)) {
+        questions = questionCache.get(fileName)!;
+      } else {
+        const response = await fetch(`/data/questions/${fileName}.json`);
+        if (!response.ok) continue;
+        questions = await response.json();
+        questionCache.set(fileName, questions);
+      }
 
-      const questions: BankQuestion[] = await response.json();
       const question = questions.find((q) => q.id === questionId);
       if (question) return question;
     } catch {

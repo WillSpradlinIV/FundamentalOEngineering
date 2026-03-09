@@ -1,0 +1,72 @@
+[
+    {
+        "id":  "inst-A-b2-001",
+        "section":  "4. Instrumentation and Controls",
+        "subtopic":  "A. Sensors",
+        "question":  "A thermistor differs from an RTD in that a thermistor:",
+        "options":  [
+                        "A. Uses the Seebeck effect to generate voltage",
+                        "B. Is made of semiconductor material with a large, nonlinear resistance change with temperature",
+                        "C. Uses a platinum element for high accuracy",
+                        "D. Measures pressure rather than temperature"
+                    ],
+        "answer":  "B",
+        "explanation":  "Thermistors are semiconductor devices with a large resistance change per degree (high sensitivity) but nonlinear response and limited range. RTDs use metal (platinum) and are more linear and accurate."
+    },
+    {
+        "id":  "inst-A-b2-002",
+        "section":  "4. Instrumentation and Controls",
+        "subtopic":  "A. Sensors",
+        "question":  "A differential pressure (DP) transmitter measures flow by sensing the pressure difference across a(n):",
+        "options":  [
+                        "A. Thermocouple junction",
+                        "B. Orifice plate or flow element",
+                        "C. pH electrode",
+                        "D. Strain gauge bridge"
+                    ],
+        "answer":  "B",
+        "explanation":  "DP flow meters (orifice plates, venturis, flow nozzles) create a pressure drop proportional to the square of flow velocity. The DP transmitter measures this differential and flow is calculated using Bernoulli\u0027s equation."
+    },
+    {
+        "id":  "inst-B-b2-001",
+        "section":  "4. Instrumentation and Controls",
+        "subtopic":  "B. Data Acquisition",
+        "question":  "The resolution of an ADC is defined as the smallest change in input voltage that produces a change in the digital output. For a 10-bit ADC with a 5 V range, the resolution is approximately:",
+        "options":  [
+                        "A. 0.5 mV",
+                        "B. 4.9 mV",
+                        "C. 50 mV",
+                        "D. 10 mV"
+                    ],
+        "answer":  "B",
+        "explanation":  "Resolution = Full-scale range / 2^n = 5 V / 2^10 = 5 / 1024 ≈ 0.00488 V ≈ 4.9 mV."
+    },
+    {
+        "id":  "inst-C-b2-001",
+        "section":  "4. Instrumentation and Controls",
+        "subtopic":  "C. Logic Diagrams",
+        "question":  "In a PID controller, the \u0027D\u0027 (derivative) term is used to:",
+        "options":  [
+                        "A. Eliminate steady-state offset",
+                        "B. Provide a control action proportional to the current error",
+                        "C. Anticipate future error by responding to the rate of change of error",
+                        "D. Filter high-frequency disturbances"
+                    ],
+        "answer":  "C",
+        "explanation":  "The derivative term responds to the rate of change of error (de/dt), providing a predictive control action that reduces overshoot and improves transient response."
+    },
+    {
+        "id":  "inst-C-b2-002",
+        "section":  "4. Instrumentation and Controls",
+        "subtopic":  "C. Logic Diagrams",
+        "question":  "A NOT gate (inverter) outputs:",
+        "options":  [
+                        "A. HIGH when both inputs are HIGH",
+                        "B. HIGH when at least one input is HIGH",
+                        "C. The complement (opposite) of its single input",
+                        "D. HIGH only when exactly one input is HIGH"
+                    ],
+        "answer":  "C",
+        "explanation":  "A NOT gate inverts its input: output = 1 when input = 0, and output = 0 when input = 1. An XOR gate outputs HIGH when exactly one input is HIGH."
+    }
+]

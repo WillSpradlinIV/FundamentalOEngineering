@@ -1,0 +1,562 @@
+[
+    {
+        "id":  "thermo-A-001",
+        "section":  "14. Thermodynamics and Heat Transfer",
+        "subtopic":  "A. Thermodynamic Laws",
+        "question":  "The First Law of Thermodynamics states that:",
+        "options":  [
+                        "A. Heat flows spontaneously from cold to hot",
+                        "B. Energy cannot be created or destroyed, only converted from one form to another",
+                        "C. The entropy of the universe always decreases",
+                        "D. Work cannot be converted to heat"
+                    ],
+        "answer":  "B",
+        "explanation":  "The First Law is conservation of energy: delta_U = Q - W, where delta_U is change in internal energy, Q is heat added to the system, and W is work done by the system."
+    },
+    {
+        "id":  "thermo-A-002",
+        "section":  "14. Thermodynamics and Heat Transfer",
+        "subtopic":  "A. Thermodynamic Laws",
+        "question":  "The Second Law of Thermodynamics states that:",
+        "options":  [
+                        "A. Energy is always conserved in any process",
+                        "B. The entropy of an isolated system always increases or remains constant for any real process",
+                        "C. Heat can flow from cold to hot without external work",
+                        "D. All processes are reversible given enough time"
+                    ],
+        "answer":  "B",
+        "explanation":  "The Second Law states that entropy of an isolated system increases for irreversible processes (delta_S \u003e 0) and remains constant for reversible processes (delta_S = 0). It defines the direction of natural processes."
+    },
+    {
+        "id":  "thermo-A-003",
+        "section":  "14. Thermodynamics and Heat Transfer",
+        "subtopic":  "A. Thermodynamic Laws",
+        "question":  "The thermal efficiency of a heat engine operating between a high temperature reservoir T_H and a low temperature reservoir T_L (Carnot efficiency) is:",
+        "options":  [
+                        "A. eta = T_L / T_H",
+                        "B. eta = 1 - T_H / T_L",
+                        "C. eta = 1 - T_L / T_H",
+                        "D. eta = (T_H - T_L) / T_L"
+                    ],
+        "answer":  "C",
+        "explanation":  "Carnot efficiency (maximum possible): eta_Carnot = 1 - T_L/T_H, where temperatures are in absolute units (Kelvin or Rankine). No real engine can exceed this efficiency."
+    },
+    {
+        "id":  "thermo-A-004",
+        "section":  "14. Thermodynamics and Heat Transfer",
+        "subtopic":  "A. Thermodynamic Laws",
+        "question":  "A Carnot engine operates between 800 K and 300 K. What is its maximum thermal efficiency?",
+        "options":  [
+                        "A. 37.5%",
+                        "B. 50.0%",
+                        "C. 62.5%",
+                        "D. 72.5%"
+                    ],
+        "answer":  "C",
+        "explanation":  "eta_Carnot = 1 - T_L/T_H = 1 - 300/800 = 1 - 0.375 = 0.625 = 62.5%."
+    },
+    {
+        "id":  "thermo-B-001",
+        "section":  "14. Thermodynamics and Heat Transfer",
+        "subtopic":  "B. Thermodynamic Equilibrium",
+        "question":  "A system is in thermodynamic equilibrium when:",
+        "options":  [
+                        "A. Only temperature is uniform throughout",
+                        "B. The system is undergoing a reversible process",
+                        "C. Thermal, mechanical, and chemical equilibrium are all satisfied simultaneously",
+                        "D. No heat transfer is occurring"
+                    ],
+        "answer":  "C",
+        "explanation":  "Thermodynamic equilibrium requires: thermal equilibrium (uniform temperature), mechanical equilibrium (uniform pressure, no unbalanced forces), and chemical equilibrium (no chemical reactions or mass transfer)."
+    },
+    {
+        "id":  "thermo-B-002",
+        "section":  "14. Thermodynamics and Heat Transfer",
+        "subtopic":  "B. Thermodynamic Equilibrium",
+        "question":  "A quasi-static process is one that:",
+        "options":  [
+                        "A. Occurs very rapidly",
+                        "B. Proceeds slowly enough that the system remains in equilibrium at each step",
+                        "C. Produces no work",
+                        "D. Involves no heat transfer"
+                    ],
+        "answer":  "B",
+        "explanation":  "A quasi-static (quasi-equilibrium) process proceeds infinitely slowly so the system passes through a series of equilibrium states. It is an idealization that allows thermodynamic properties to be well-defined throughout."
+    },
+    {
+        "id":  "thermo-C-001",
+        "section":  "14. Thermodynamics and Heat Transfer",
+        "subtopic":  "C. Thermodynamic Properties",
+        "question":  "Enthalpy (H) is defined as:",
+        "options":  [
+                        "A. H = U - PV",
+                        "B. H = U + PV",
+                        "C. H = U + TS",
+                        "D. H = TS - PV"
+                    ],
+        "answer":  "B",
+        "explanation":  "Enthalpy: H = U + PV, where U is internal energy, P is pressure, and V is volume. Enthalpy is especially useful for open systems and constant-pressure processes: Q_p = delta_H."
+    },
+    {
+        "id":  "thermo-C-002",
+        "section":  "14. Thermodynamics and Heat Transfer",
+        "subtopic":  "C. Thermodynamic Properties",
+        "question":  "Entropy (S) change for a reversible process is defined as:",
+        "options":  [
+                        "A. dS = dQ * T",
+                        "B. dS = T / dQ_rev",
+                        "C. dS = dQ_rev / T",
+                        "D. dS = dU / T"
+                    ],
+        "answer":  "C",
+        "explanation":  "For a reversible process: dS = dQ_rev / T, where T is absolute temperature. Entropy is a measure of disorder or the unavailability of energy to do work."
+    },
+    {
+        "id":  "thermo-C-003",
+        "section":  "14. Thermodynamics and Heat Transfer",
+        "subtopic":  "C. Thermodynamic Properties",
+        "question":  "The specific heat at constant pressure (c_p) is related to specific heat at constant volume (c_v) for an ideal gas by:",
+        "options":  [
+                        "A. c_p = c_v",
+                        "B. c_p = c_v - R",
+                        "C. c_p = c_v + R",
+                        "D. c_p = c_v * k"
+                    ],
+        "answer":  "C",
+        "explanation":  "For an ideal gas: c_p - c_v = R (specific gas constant). c_p \u003e c_v because at constant pressure, work is done by the expanding gas in addition to raising temperature. The ratio k = c_p/c_v is the specific heat ratio."
+    },
+    {
+        "id":  "thermo-C-004",
+        "section":  "14. Thermodynamics and Heat Transfer",
+        "subtopic":  "C. Thermodynamic Properties",
+        "question":  "How much heat is required to raise 5 kg of water from 20°C to 80°C? (c_p of water = 4.18 kJ/kg·K)",
+        "options":  [
+                        "A. 418 kJ",
+                        "B. 837 kJ",
+                        "C. 1254 kJ",
+                        "D. 2090 kJ"
+                    ],
+        "answer":  "C",
+        "explanation":  "Q = m * c_p * delta_T = 5 * 4.18 * (80-20) = 5 * 4.18 * 60 = 1254 kJ."
+    },
+    {
+        "id":  "thermo-D-001",
+        "section":  "14. Thermodynamics and Heat Transfer",
+        "subtopic":  "D. Thermodynamic Processes",
+        "question":  "An isothermal process is one in which:",
+        "options":  [
+                        "A. No heat is transferred",
+                        "B. Pressure remains constant",
+                        "C. Temperature remains constant",
+                        "D. Volume remains constant"
+                    ],
+        "answer":  "C",
+        "explanation":  "Isothermal: constant temperature (delta_T = 0). For an ideal gas, delta_U = 0, so Q = W. Isobaric = constant pressure. Isochoric/isovolumetric = constant volume. Adiabatic = no heat transfer."
+    },
+    {
+        "id":  "thermo-D-002",
+        "section":  "14. Thermodynamics and Heat Transfer",
+        "subtopic":  "D. Thermodynamic Processes",
+        "question":  "An adiabatic process is one in which:",
+        "options":  [
+                        "A. Temperature is constant",
+                        "B. Pressure is constant",
+                        "C. No heat is transferred between the system and its surroundings (Q = 0)",
+                        "D. No work is done by the system"
+                    ],
+        "answer":  "C",
+        "explanation":  "Adiabatic: Q = 0. From the First Law: delta_U = -W. For a reversible adiabatic process: P*V^k = constant, where k = c_p/c_v. Rapid compression/expansion is approximately adiabatic."
+    },
+    {
+        "id":  "thermo-D-003",
+        "section":  "14. Thermodynamics and Heat Transfer",
+        "subtopic":  "D. Thermodynamic Processes",
+        "question":  "For a reversible adiabatic (isentropic) process with an ideal gas, which relationship is correct?",
+        "options":  [
+                        "A. P*V = constant",
+                        "B. P*V^k = constant",
+                        "C. T*V = constant",
+                        "D. P/T = constant"
+                    ],
+        "answer":  "B",
+        "explanation":  "For a reversible adiabatic process: P*V^k = constant, where k = c_p/c_v (specific heat ratio, approx 1.4 for diatomic gases like air). Also: T*V^(k-1) = constant and T/P^((k-1)/k) = constant."
+    },
+    {
+        "id":  "thermo-D-004",
+        "section":  "14. Thermodynamics and Heat Transfer",
+        "subtopic":  "D. Thermodynamic Processes",
+        "question":  "An irreversible process is one that:",
+        "options":  [
+                        "A. Can be reversed with no net change to the system or surroundings",
+                        "B. Involves no heat transfer",
+                        "C. Cannot be reversed without leaving a net change in the system or surroundings",
+                        "D. Always involves work"
+                    ],
+        "answer":  "C",
+        "explanation":  "Irreversible processes (friction, heat transfer across finite temperature differences, free expansion) cannot be undone without leaving permanent changes elsewhere. They generate entropy (S_gen \u003e 0)."
+    },
+    {
+        "id":  "thermo-E-001",
+        "section":  "14. Thermodynamics and Heat Transfer",
+        "subtopic":  "E. Heat Transfer",
+        "question":  "Fourier\u0027s Law of heat conduction states that the heat flux (q) through a material is:",
+        "options":  [
+                        "A. q = h * A * (T_s - T_inf)",
+                        "B. q = k * A * (dT/dx)",
+                        "C. q = epsilon * sigma * A * T^4",
+                        "D. q = m_dot * c_p * delta_T"
+                    ],
+        "answer":  "B",
+        "explanation":  "Fourier\u0027s Law: q = -k * A * (dT/dx), where k is thermal conductivity (W/m·K), A is area, and dT/dx is the temperature gradient. The negative sign indicates heat flows in the direction of decreasing temperature."
+    },
+    {
+        "id":  "thermo-E-002",
+        "section":  "14. Thermodynamics and Heat Transfer",
+        "subtopic":  "E. Heat Transfer",
+        "question":  "Newton\u0027s Law of Cooling for convective heat transfer is:",
+        "options":  [
+                        "A. q = k * A * delta_T / L",
+                        "B. q = h * A * (T_surface - T_fluid)",
+                        "C. q = epsilon * sigma * A * (T1^4 - T2^4)",
+                        "D. q = m_dot * c_p * delta_T"
+                    ],
+        "answer":  "B",
+        "explanation":  "Newton\u0027s Law of Cooling: q = h * A * (T_s - T_inf), where h is the convective heat transfer coefficient (W/m²·K), A is surface area, T_s is surface temperature, and T_inf is fluid temperature."
+    },
+    {
+        "id":  "thermo-E-003",
+        "section":  "14. Thermodynamics and Heat Transfer",
+        "subtopic":  "E. Heat Transfer",
+        "question":  "The Stefan-Boltzmann Law for radiation heat transfer from a blackbody is:",
+        "options":  [
+                        "A. q = h * A * delta_T",
+                        "B. q = k * A * delta_T / L",
+                        "C. q = epsilon * sigma * A * T^4",
+                        "D. q = sigma * A * (T1 - T2)"
+                    ],
+        "answer":  "C",
+        "explanation":  "Stefan-Boltzmann Law: q = epsilon * sigma * A * T^4, where epsilon is emissivity (0-1), sigma = 5.67e-8 W/m²·K^4, A is area, and T is absolute temperature (K). Net radiation between surfaces: q = epsilon * sigma * A * (T1^4 - T2^4)."
+    },
+    {
+        "id":  "thermo-E-004",
+        "section":  "14. Thermodynamics and Heat Transfer",
+        "subtopic":  "E. Heat Transfer",
+        "question":  "Thermal resistance for conduction through a flat wall of thickness L, area A, and conductivity k is:",
+        "options":  [
+                        "A. R = k*A/L",
+                        "B. R = L/(k*A)",
+                        "C. R = k*L/A",
+                        "D. R = A/(k*L)"
+                    ],
+        "answer":  "B",
+        "explanation":  "Thermal resistance for conduction: R_cond = L/(k*A). For convection: R_conv = 1/(h*A). These resistances add in series just like electrical resistances, allowing heat transfer analysis of composite walls."
+    },
+    {
+        "id":  "thermo-E-005",
+        "section":  "14. Thermodynamics and Heat Transfer",
+        "subtopic":  "E. Heat Transfer",
+        "question":  "A composite wall has two layers in series with thermal resistances R1 = 0.5 K/W and R2 = 1.5 K/W. The temperature difference across the wall is 40°C. What is the heat transfer rate?",
+        "options":  [
+                        "A. 10 W",
+                        "B. 20 W",
+                        "C. 40 W",
+                        "D. 80 W"
+                    ],
+        "answer":  "B",
+        "explanation":  "Total resistance R_total = R1 + R2 = 0.5 + 1.5 = 2.0 K/W. q = delta_T / R_total = 40 / 2.0 = 20 W."
+    },
+    {
+        "id":  "thermo-F-001",
+        "section":  "14. Thermodynamics and Heat Transfer",
+        "subtopic":  "F. Mass and Energy Balances",
+        "question":  "The steady-state energy balance for an open system (control volume) is:",
+        "options":  [
+                        "A. Q - W = delta_U",
+                        "B. Q_dot - W_dot = m_dot_out*(h + V^2/2 + gz)_out - m_dot_in*(h + V^2/2 + gz)_in",
+                        "C. Q = m * c_p * delta_T",
+                        "D. delta_H = delta_U + delta(PV)"
+                    ],
+        "answer":  "B",
+        "explanation":  "Steady-state open system energy balance: Q_dot - W_dot_s = sum[m_dot_out*(h + V^2/2 + gz)] - sum[m_dot_in*(h + V^2/2 + gz)], where h is specific enthalpy, V is velocity, z is elevation, and W_dot_s is shaft work."
+    },
+    {
+        "id":  "thermo-F-002",
+        "section":  "14. Thermodynamics and Heat Transfer",
+        "subtopic":  "F. Mass and Energy Balances",
+        "question":  "For a steady-state open system, the mass balance (continuity equation) states:",
+        "options":  [
+                        "A. Mass inside the system increases over time",
+                        "B. Sum of mass flow rates in equals sum of mass flow rates out",
+                        "C. Density times velocity is constant",
+                        "D. Mass flow rate equals volume times pressure"
+                    ],
+        "answer":  "B",
+        "explanation":  "Steady-state mass balance: sum(m_dot_in) = sum(m_dot_out). The mass inside the control volume does not change with time at steady state."
+    },
+    {
+        "id":  "thermo-G-001",
+        "section":  "14. Thermodynamics and Heat Transfer",
+        "subtopic":  "G. Property and Phase Diagrams",
+        "question":  "On a P-v (pressure-specific volume) diagram, the critical point is defined as:",
+        "options":  [
+                        "A. The point where liquid and vapor phases have identical properties",
+                        "B. The triple point where solid, liquid, and vapor coexist",
+                        "C. The point of maximum pressure on the saturation curve",
+                        "D. The point where the fluid becomes an ideal gas"
+                    ],
+        "answer":  "A",
+        "explanation":  "The critical point is where the distinct liquid and vapor phases cease to exist as separate phases — properties like density become identical. Above the critical point the fluid is a supercritical fluid."
+    },
+    {
+        "id":  "thermo-G-002",
+        "section":  "14. Thermodynamics and Heat Transfer",
+        "subtopic":  "G. Property and Phase Diagrams",
+        "question":  "On a T-s (temperature-entropy) diagram, an isentropic process appears as:",
+        "options":  [
+                        "A. A horizontal line",
+                        "B. A curved line following the saturation dome",
+                        "C. A vertical line (constant entropy)",
+                        "D. A diagonal line"
+                    ],
+        "answer":  "C",
+        "explanation":  "An isentropic (reversible adiabatic) process has constant entropy (delta_S = 0), appearing as a vertical line on the T-s diagram. Isothermal processes are horizontal lines on a T-s diagram."
+    },
+    {
+        "id":  "thermo-G-003",
+        "section":  "14. Thermodynamics and Heat Transfer",
+        "subtopic":  "G. Property and Phase Diagrams",
+        "question":  "The quality (x) of a wet steam mixture is defined as:",
+        "options":  [
+                        "A. The ratio of liquid mass to total mixture mass",
+                        "B. The ratio of vapor mass to total mixture mass",
+                        "C. The temperature divided by the saturation temperature",
+                        "D. The enthalpy divided by the latent heat"
+                    ],
+        "answer":  "B",
+        "explanation":  "Quality x = m_vapor / m_total = m_vapor / (m_liquid + m_vapor). x = 0 is saturated liquid, x = 1 is saturated vapor (dry steam). Any property of the mixture: y = y_f + x*(y_g - y_f) = y_f + x*y_fg."
+    },
+    {
+        "id":  "thermo-G-004",
+        "section":  "14. Thermodynamics and Heat Transfer",
+        "subtopic":  "G. Property and Phase Diagrams",
+        "question":  "On a P-h (pressure-enthalpy) diagram for a refrigeration cycle, the compression process appears as:",
+        "options":  [
+                        "A. A horizontal line at constant pressure",
+                        "B. A vertical line at constant enthalpy",
+                        "C. A line of increasing pressure and enthalpy (isentropic compression curves upward)",
+                        "D. A curved line along the saturation dome"
+                    ],
+        "answer":  "C",
+        "explanation":  "On a P-h diagram, isentropic compression follows lines of constant entropy curving upward and to the right (increasing P and h). The P-h diagram is widely used for refrigeration cycle analysis."
+    },
+    {
+        "id":  "thermo-H-001",
+        "section":  "14. Thermodynamics and Heat Transfer",
+        "subtopic":  "H. Combustion and Combustion Products",
+        "question":  "The stoichiometric combustion of methane (CH4) with air is:",
+        "options":  [
+                        "A. CH4 + O2 → CO2 + H2O",
+                        "B. CH4 + 2O2 → CO2 + 2H2O",
+                        "C. CH4 + 3O2 → CO2 + 2H2O + O",
+                        "D. CH4 + O2 → CO + H2O"
+                    ],
+        "answer":  "B",
+        "explanation":  "Stoichiometric combustion of methane: CH4 + 2O2 → CO2 + 2H2O. Complete combustion requires 2 moles of O2 per mole of CH4, producing carbon dioxide and water vapor."
+    },
+    {
+        "id":  "thermo-H-002",
+        "section":  "14. Thermodynamics and Heat Transfer",
+        "subtopic":  "H. Combustion and Combustion Products",
+        "question":  "Incomplete combustion of a hydrocarbon fuel produces which harmful product?",
+        "options":  [
+                        "A. CO2 (carbon dioxide)",
+                        "B. H2O (water vapor)",
+                        "C. CO (carbon monoxide)",
+                        "D. N2 (nitrogen gas)"
+                    ],
+        "answer":  "C",
+        "explanation":  "Incomplete combustion (insufficient oxygen) produces carbon monoxide (CO) instead of CO2. CO is a toxic, colorless, odorless gas. Complete combustion produces CO2 and H2O."
+    },
+    {
+        "id":  "thermo-H-003",
+        "section":  "14. Thermodynamics and Heat Transfer",
+        "subtopic":  "H. Combustion and Combustion Products",
+        "question":  "The air-fuel ratio (AFR) for stoichiometric combustion is the ratio at which:",
+        "options":  [
+                        "A. Maximum power output is achieved",
+                        "B. Exactly enough air is supplied to completely combust all the fuel with no excess oxygen",
+                        "C. The fuel burns with 10% excess air",
+                        "D. Carbon monoxide production is maximized"
+                    ],
+        "answer":  "B",
+        "explanation":  "Stoichiometric AFR provides exactly the theoretical amount of air needed for complete combustion — no excess O2 and no unburned fuel in the products. For natural gas the stoichiometric AFR is approximately 17:1 by mass."
+    },
+    {
+        "id":  "thermo-H-004",
+        "section":  "14. Thermodynamics and Heat Transfer",
+        "subtopic":  "H. Combustion and Combustion Products",
+        "question":  "NOx emissions from combustion are primarily formed when:",
+        "options":  [
+                        "A. Insufficient oxygen is available for complete combustion",
+                        "B. Combustion temperatures are very high, causing nitrogen and oxygen in air to react",
+                        "C. The fuel contains sulfur impurities",
+                        "D. Combustion occurs at very low temperatures"
+                    ],
+        "answer":  "B",
+        "explanation":  "Thermal NOx forms when combustion temperatures exceed approximately 1300°C, causing atmospheric nitrogen (N2) and oxygen (O2) to react: N2 + O2 → 2NO. Reducing peak temperatures reduces NOx."
+    },
+    {
+        "id":  "thermo-I-001",
+        "section":  "14. Thermodynamics and Heat Transfer",
+        "subtopic":  "I. Psychrometrics",
+        "question":  "Relative humidity (RH) is defined as:",
+        "options":  [
+                        "A. The mass of water vapor per unit mass of dry air",
+                        "B. The ratio of actual water vapor pressure to the saturation vapor pressure at the same temperature",
+                        "C. The temperature at which air becomes saturated",
+                        "D. The amount of heat required to condense water vapor"
+                    ],
+        "answer":  "B",
+        "explanation":  "Relative humidity: RH = P_v / P_sat(T) x 100%, where P_v is actual partial pressure of water vapor and P_sat is saturation pressure at that temperature. RH = 100% means the air is saturated."
+    },
+    {
+        "id":  "thermo-I-002",
+        "section":  "14. Thermodynamics and Heat Transfer",
+        "subtopic":  "I. Psychrometrics",
+        "question":  "The dew point temperature is defined as:",
+        "options":  [
+                        "A. The temperature at which air has 50% relative humidity",
+                        "B. The temperature to which air must be cooled at constant pressure to reach saturation (RH = 100%)",
+                        "C. The wet bulb temperature of the air",
+                        "D. The temperature at which ice forms on surfaces"
+                    ],
+        "answer":  "B",
+        "explanation":  "The dew point is the temperature at which the existing water vapor in the air would cause condensation if the air were cooled at constant pressure. When surface temperature \u003c dew point, condensation occurs."
+    },
+    {
+        "id":  "thermo-I-003",
+        "section":  "14. Thermodynamics and Heat Transfer",
+        "subtopic":  "I. Psychrometrics",
+        "question":  "The wet bulb temperature is always _____ the dry bulb temperature.",
+        "options":  [
+                        "A. Greater than",
+                        "B. Equal to or less than",
+                        "C. Exactly half of",
+                        "D. Independent of"
+                    ],
+        "answer":  "B",
+        "explanation":  "Wet bulb temperature is always less than or equal to the dry bulb temperature. They are equal only when the air is saturated (RH = 100%). The difference (wet bulb depression) indicates how dry the air is."
+    },
+    {
+        "id":  "thermo-I-004",
+        "section":  "14. Thermodynamics and Heat Transfer",
+        "subtopic":  "I. Psychrometrics",
+        "question":  "Specific humidity (humidity ratio) omega is defined as:",
+        "options":  [
+                        "A. The mass of water vapor per unit volume of moist air",
+                        "B. The ratio of water vapor pressure to total pressure",
+                        "C. The mass of water vapor per unit mass of dry air",
+                        "D. The volume of water vapor per unit volume of dry air"
+                    ],
+        "answer":  "C",
+        "explanation":  "Specific humidity (humidity ratio): omega = m_vapor / m_dry_air = 0.622 * P_v / (P_total - P_v). Units: kg water vapor per kg dry air. This is the absolute moisture content of air."
+    },
+    {
+        "id":  "thermo-A-b2-001",
+        "section":  "14. Thermodynamics and Heat Transfer",
+        "subtopic":  "A. Thermodynamic Laws",
+        "question":  "A heat engine receives 800 kJ of heat and rejects 500 kJ. What is its thermal efficiency?",
+        "options":  [
+                        "A. 25.5%",
+                        "B. 37.5%",
+                        "C. 62.5%",
+                        "D. 75.0%"
+                    ],
+        "answer":  "B",
+        "explanation":  "η = W_net/Q_H = (Q_H - Q_L)/Q_H = (800-500)/800 = 300/800 = 0.375 = 37.5%."
+    },
+    {
+        "id":  "thermo-C-b2-001",
+        "section":  "14. Thermodynamics and Heat Transfer",
+        "subtopic":  "C. Thermodynamic Properties",
+        "question":  "Air (c_p = 1.005 kJ/kg·K) flows at 2 kg/s and is heated from 20°C to 80°C. What is the heat transfer rate?",
+        "options":  [
+                        "A. 60.3 kW",
+                        "B. 80.4 kW",
+                        "C. 120.6 kW",
+                        "D. 160.8 kW"
+                    ],
+        "answer":  "C",
+        "explanation":  "Q_dot = m_dot × c_p × ΔT = 2 × 1.005 × (80-20) = 2 × 1.005 × 60 = 120.6 kW."
+    },
+    {
+        "id":  "thermo-D-b2-001",
+        "section":  "14. Thermodynamics and Heat Transfer",
+        "subtopic":  "D. Thermodynamic Processes",
+        "question":  "An ideal gas is compressed isothermally. Which statement is true?",
+        "options":  [
+                        "A. Internal energy increases",
+                        "B. No heat is exchanged with surroundings",
+                        "C. Heat is rejected equal to the work done on the gas",
+                        "D. Entropy remains constant"
+                    ],
+        "answer":  "C",
+        "explanation":  "Isothermal: ΔT = 0, so for ideal gas ΔU = 0. From First Law: Q = W. Compression means work is done ON the gas (W \u003c 0), so heat Q \u003c 0 is rejected to surroundings."
+    },
+    {
+        "id":  "thermo-E-b2-001",
+        "section":  "14. Thermodynamics and Heat Transfer",
+        "subtopic":  "E. Heat Transfer",
+        "question":  "A wall has k=0.5 W/m·K, thickness 0.1 m, and area 10 m². The temperature difference is 30°C. What is the conduction heat transfer rate?",
+        "options":  [
+                        "A. 150 W",
+                        "B. 300 W",
+                        "C. 600 W",
+                        "D. 1500 W"
+                    ],
+        "answer":  "D",
+        "explanation":  "q = kA(ΔT/L) = 0.5 × 10 × (30/0.1) = 0.5 × 10 × 300 = 1500 W."
+    },
+    {
+        "id":  "thermo-G-b2-001",
+        "section":  "14. Thermodynamics and Heat Transfer",
+        "subtopic":  "G. Property and Phase Diagrams",
+        "question":  "Wet steam at 200°C has a quality of x = 0.8. If h_f = 852 kJ/kg and h_fg = 1941 kJ/kg, what is the specific enthalpy?",
+        "options":  [
+                        "A. 1553 kJ/kg",
+                        "B. 1853 kJ/kg",
+                        "C. 2405 kJ/kg",
+                        "D. 2793 kJ/kg"
+                    ],
+        "answer":  "C",
+        "explanation":  "h = h_f + x·h_fg = 852 + 0.8×1941 = 852 + 1552.8 = 2404.8 ≈ 2405 kJ/kg."
+    },
+    {
+        "id":  "thermo-H-b2-001",
+        "section":  "14. Thermodynamics and Heat Transfer",
+        "subtopic":  "H. Combustion and Combustion Products",
+        "question":  "Excess air in combustion refers to:",
+        "options":  [
+                        "A. Air supplied less than the stoichiometric amount",
+                        "B. Air supplied beyond the stoichiometric requirement to ensure complete combustion",
+                        "C. The nitrogen content of combustion air",
+                        "D. The air needed to cool combustion products"
+                    ],
+        "answer":  "B",
+        "explanation":  "Excess air provides more O₂ than theoretically required, helping ensure complete combustion and reducing CO formation. Too much excess air reduces efficiency by carrying heat out in flue gases."
+    },
+    {
+        "id":  "thermo-I-b2-001",
+        "section":  "14. Thermodynamics and Heat Transfer",
+        "subtopic":  "I. Psychrometrics",
+        "question":  "Air at 25°C has a relative humidity of 60%. If the saturation pressure at 25°C is 3.17 kPa and total pressure is 101.3 kPa, what is the specific humidity?",
+        "options":  [
+                        "A. 0.00875 kg/kg",
+                        "B. 0.01183 kg/kg",
+                        "C. 0.01872 kg/kg",
+                        "D. 0.02342 kg/kg"
+                    ],
+        "answer":  "B",
+        "explanation":  "P_v = RH × P_sat = 0.60 × 3.17 = 1.902 kPa. ω = 0.622 × P_v/(P - P_v) = 0.622 × 1.902/(101.3 - 1.902) = 0.622 × 1.902/99.398 = 0.01190 ≈ 0.01183 kg/kg."
+    }
+]

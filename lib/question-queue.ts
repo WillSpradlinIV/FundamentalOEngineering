@@ -1,6 +1,11 @@
 /**
  * Question Queue Algorithm
- * Prioritizes unseen questions, then review, then all others
+ * Prioritizes unseen questions with guaranteed subtopic coverage rotation.
+ *
+ * Algorithm:
+ * 1. Assign priority based on progress (unseen > review > incorrect > seen)
+ * 2. Within each priority group, round-robin through subtopics
+ * 3. This ensures ALL subtopics are covered before any subtopic repeats
  */
 
 import { BankQuestion } from "./question-bank";
@@ -12,55 +17,124 @@ export interface QueuedQuestion {
 }
 
 /**
- * Build a smart queue prioritizing:
- * 1. Unseen questions (priority 1)
+ * Build a smart queue with subtopic-coverage rotation:
+ * 1. Unseen questions (priority 1) — round-robin across subtopics
  * 2. Questions marked for review (priority 2)
  * 3. Questions with low accuracy (priority 3)
  * 4. Recently incorrect (priority 4)
  * 5. All others (priority 5)
+ *
+ * Within each priority, questions are interleaved by subtopic so
+ * the user cycles through ALL subtopics before seeing the same one twice.
  */
 export function buildQuestionQueue(
   questions: BankQuestion[]
 ): BankQuestion[] {
   const progress = loadProgress();
 
+  // Assign priorities
   const prioritized = questions.map((q): QueuedQuestion => {
     const p = progress[q.id];
 
-    // Priority 1: Never seen
     if (!p || p.status === "unseen") {
       return { question: q, priority: 1 };
     }
-
-    // Priority 2: Marked for review
     if (p.markedForReview || p.status === "review") {
       return { question: q, priority: 2 };
     }
-
-    // Priority 3: Incorrect recently (within last 3 attempts)
     if (p.status === "skipped" || (!p.correctOnFirstTry && p.attempts <= 3)) {
       return { question: q, priority: 3 };
     }
-
-    // Priority 4: Has some mistakes
     if (!p.correctOnFirstTry) {
       return { question: q, priority: 4 };
     }
-
-    // Priority 5: Correct on first try
     return { question: q, priority: 5 };
   });
 
-  // Sort by priority, then shuffle within priority groups
-  prioritized.sort((a, b) => {
-    if (a.priority !== b.priority) {
-      return a.priority - b.priority;
-    }
-    // Shuffle within same priority
-    return Math.random() - 0.5;
-  });
+  // Group by priority
+  const byPriority = new Map<number, QueuedQuestion[]>();
+  for (const pq of prioritized) {
+    if (!byPriority.has(pq.priority)) byPriority.set(pq.priority, []);
+    byPriority.get(pq.priority)!.push(pq);
+  }
 
-  return prioritized.map((pq) => pq.question);
+  // For each priority group, interleave by subtopic (round-robin)
+  const result: BankQuestion[] = [];
+  const sortedPriorities = [...byPriority.keys()].sort((a, b) => a - b);
+
+  for (const priority of sortedPriorities) {
+    const group = byPriority.get(priority)!;
+    const interleaved = interleaveBySubtopic(group.map((pq) => pq.question));
+    result.push(...interleaved);
+  }
+
+  return result;
+}
+
+/**
+ * Interleave questions by subtopic: round-robin through all subtopics
+ * so no subtopic appears twice until all subtopics have appeared once.
+ */
+function interleaveBySubtopic(questions: BankQuestion[]): BankQuestion[] {
+  // Group by subtopic
+  const bySubtopic = new Map<string, BankQuestion[]>();
+  for (const q of questions) {
+    const key = q.subtopic || "general";
+    if (!bySubtopic.has(key)) bySubtopic.set(key, []);
+    bySubtopic.get(key)!.push(q);
+  }
+
+  // Shuffle within each subtopic
+  for (const [key, qs] of bySubtopic) {
+    bySubtopic.set(key, shuffleArray(qs));
+  }
+
+  // Shuffle the order of subtopics
+  const subtopicKeys = shuffleArray([...bySubtopic.keys()]);
+
+  // Round-robin
+  const result: BankQuestion[] = [];
+  const indices = new Map<string, number>();
+  for (const key of subtopicKeys) {
+    indices.set(key, 0);
+  }
+
+  let hasMore = true;
+  while (hasMore) {
+    hasMore = false;
+    for (const subtopic of subtopicKeys) {
+      const pool = bySubtopic.get(subtopic)!;
+      const idx = indices.get(subtopic) || 0;
+      if (idx < pool.length) {
+        result.push(pool[idx]);
+        indices.set(subtopic, idx + 1);
+        if (idx + 1 < pool.length) hasMore = true;
+      }
+    }
+    // If nothing was added this round but hasMore is still false, break
+    if (!hasMore) {
+      // Check if any subtopic still has items
+      for (const subtopic of subtopicKeys) {
+        const pool = bySubtopic.get(subtopic)!;
+        const idx = indices.get(subtopic) || 0;
+        if (idx < pool.length) {
+          hasMore = true;
+          break;
+        }
+      }
+    }
+  }
+
+  return result;
+}
+
+function shuffleArray<T>(arr: T[]): T[] {
+  const shuffled = [...arr];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
 }
 
 /**
