@@ -9,7 +9,7 @@ export default function ResultsPage() {
   const router = useRouter();
   const [attempt, setAttempt] = useState<Attempt | null>(null);
   const [answers, setAnswers] = useState<
-    Array<UserAnswer & { section: string }>
+    Array<UserAnswer & { section: string; prompt?: string; choices?: string[]; correctAnswerFull?: string; userAnswerFull?: string }>
   >([]);
   const [expandedQuestion, setExpandedQuestion] = useState<string | null>(null);
 
@@ -32,7 +32,7 @@ export default function ResultsPage() {
 
   const correctCount = answers.filter((a) => a.isCorrect).length;
 
-  const groupAccuracy = (keyFn: (a: (UserAnswer & { section: string }) ) => string) => {
+  const groupAccuracy = (keyFn: (a: (typeof answers)[number]) => string) => {
     const stats: Record<string, { correct: number; total: number }> = {};
     answers.forEach((a) => {
       const key = keyFn(a);
@@ -268,12 +268,12 @@ export default function ResultsPage() {
                   <p className="font-semibold text-gray-900">
                     Question {idx + 1} ({answer.section})
                   </p>
-                  <p className="text-sm text-gray-600">
-                    Your answer: <strong>{answer.userAnswer}</strong>
+                  <p className="text-sm text-gray-600 mt-1">
+                    {answer.isCorrect ? "✓" : "✗"} Your answer: <strong>{answer.userAnswerFull || String(answer.userAnswer)}</strong>
                   </p>
                 </div>
                 <span
-                  className={`px-3 py-1 rounded-full text-sm font-semibold ${
+                  className={`px-3 py-1 rounded-full text-sm font-semibold flex-shrink-0 ${
                     answer.isCorrect
                       ? "bg-green-200 text-green-800"
                       : "bg-red-200 text-red-800"
@@ -283,17 +283,47 @@ export default function ResultsPage() {
                 </span>
               </div>
 
-              {/* Expanded Explanation */}
+              {/* Expanded Detail */}
               {expandedQuestion === answer.questionId && (
-                <div className="mt-4 pt-4 border-t border-gray-300">
-                  <div className="bg-white p-4 rounded text-sm text-gray-800 space-y-3">
-                    {answer.explanation.split("\n").map((line, idx) => (
-                      line.trim() && (
-                        <p key={idx} className="leading-relaxed">
-                          {line}
-                        </p>
-                      )
-                    ))}
+                <div className="mt-4 pt-4 border-t border-gray-300 space-y-4">
+                  {/* Question Text */}
+                  {answer.prompt && (
+                    <div className="bg-white p-4 rounded border">
+                      <p className="text-xs font-semibold text-gray-500 uppercase mb-2">Question</p>
+                      <p className="text-gray-900 font-medium whitespace-pre-wrap">{answer.prompt}</p>
+                    </div>
+                  )}
+
+                  {/* Answer Comparison */}
+                  <div className="grid md:grid-cols-2 gap-3">
+                    <div className={`p-4 rounded border-2 ${
+                      answer.isCorrect ? "border-green-400 bg-green-50" : "border-red-400 bg-red-50"
+                    }`}>
+                      <p className="text-xs font-semibold text-gray-500 uppercase mb-1">Your Answer</p>
+                      <p className="text-gray-900 font-medium">
+                        {answer.userAnswerFull || String(answer.userAnswer)}
+                      </p>
+                    </div>
+                    <div className="p-4 rounded border-2 border-green-400 bg-green-50">
+                      <p className="text-xs font-semibold text-gray-500 uppercase mb-1">Correct Answer</p>
+                      <p className="text-gray-900 font-medium">
+                        {answer.correctAnswerFull || String(answer.userAnswer)}
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Explanation */}
+                  <div className="bg-white p-4 rounded border">
+                    <p className="text-xs font-semibold text-gray-500 uppercase mb-2">Explanation</p>
+                    <div className="text-sm text-gray-800 space-y-2">
+                      {answer.explanation.split("\n").map((line, lineIdx) => (
+                        line.trim() ? (
+                          <p key={lineIdx} className="leading-relaxed">
+                            {line}
+                          </p>
+                        ) : null
+                      ))}
+                    </div>
                   </div>
                 </div>
               )}

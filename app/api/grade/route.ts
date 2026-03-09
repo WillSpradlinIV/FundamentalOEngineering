@@ -19,7 +19,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Grade each answer
-    const gradedAnswers: (UserAnswer & { section: string })[] = userAnswers.map(
+    const gradedAnswers: (UserAnswer & { section: string; prompt: string; choices?: string[]; correctAnswerFull: string; userAnswerFull: string })[] = userAnswers.map(
       (
         userAnswer: {
           questionId: string;
@@ -37,6 +37,9 @@ export async function POST(request: NextRequest) {
             isCorrect: false,
             explanation: "Question not found",
             section: "Unknown",
+            prompt: "Question not found",
+            correctAnswerFull: "",
+            userAnswerFull: String(userAnswer.userAnswer),
           };
         }
 
@@ -46,6 +49,20 @@ export async function POST(request: NextRequest) {
           question,
           isCorrect
         );
+
+        // Resolve full answer text for MCQ
+        let correctAnswerFull = String(question.correctAnswer);
+        let userAnswerFull = String(userAnswer.userAnswer);
+        if (question.type === "mcq" && Array.isArray(question.choices)) {
+          const correctIdx = String(question.correctAnswer).toUpperCase().charCodeAt(0) - 65;
+          const userIdx = String(userAnswer.userAnswer).toUpperCase().charCodeAt(0) - 65;
+          if (correctIdx >= 0 && correctIdx < question.choices.length) {
+            correctAnswerFull = question.choices[correctIdx];
+          }
+          if (userIdx >= 0 && userIdx < question.choices.length) {
+            userAnswerFull = question.choices[userIdx];
+          }
+        }
 
         const topic = question.topic || question.section;
         const subtopic = question.subtopic || question.tags?.[0] || "general";
@@ -62,6 +79,10 @@ export async function POST(request: NextRequest) {
           isCorrect,
           explanation,
           section: question.section,
+          prompt: question.prompt,
+          choices: question.choices,
+          correctAnswerFull,
+          userAnswerFull,
           timeSpent: userAnswer.timeSpent,
           topic,
           subtopic,
@@ -150,68 +171,41 @@ function generateExplanation(
   const handbookAnchor = question.handbookAnchor || "";
 
   if (isCorrect) {
-    explanation = `✓ CORRECT\n\n`;
-    explanation += question.explanationCorrect;
+    explanation = question.explanationCorrect || question.solutionOutline;
     if (handbookAnchor) {
-      explanation += `\n\n${handbookAnchor}`;
+      explanation += `\n\n📖 ${handbookAnchor}`;
     }
-    explanation += `\n\nSolution:\n${question.solutionOutline}`;
   } else {
-    explanation = `✗ INCORRECT\n\n`;
-    explanation += `Your answer: ${userAnswer}\n`;
-    explanation += `Correct answer: ${question.correctAnswer}\n\n`;
+    // Build a clean explanation without duplicating info
+    const parts: string[] = [];
 
-    // Provide targeted feedback
+    // Why user's choice was wrong (only if we have specific distractor info)
     if (question.type === "mcq" && Array.isArray(question.choices)) {
       const userAnswerStr = String(userAnswer).toUpperCase();
+      const userChoiceIndex = userAnswerStr.length === 1 && /[A-D]/.test(userAnswerStr)
+        ? userAnswerStr.charCodeAt(0) - 65 : -1;
 
-      // Find which choice the user picked
-      let userChoiceIndex = -1;
-      if (userAnswerStr.length === 1 && /[A-D]/.test(userAnswerStr)) {
-        userChoiceIndex = userAnswerStr.charCodeAt(0) - 65;
-      }
-
-      explanation += `Why your choice was wrong:\n`;
       if (
         userChoiceIndex >= 0 &&
         question.explanationCommonWrong &&
         question.explanationCommonWrong[userChoiceIndex]
       ) {
-        explanation += `${question.explanationCommonWrong[userChoiceIndex]}\n\n`;
-      }
-
-      explanation += `Why the correct answer (${question.correctAnswer}) is right:\n`;
-      explanation += `${question.explanationCorrect}\n\n`;
-
-      if (handbookAnchor) {
-        explanation += `${handbookAnchor}\n\n`;
-      }
-
-      if (question.explanationCommonWrong && question.explanationCommonWrong.length >= 4) {
-        explanation += "Distractor notes:\n";
-        const labels = ["A", "B", "C", "D"];
-        question.explanationCommonWrong.forEach((note, idx) => {
-          if (note) {
-            explanation += `${labels[idx]}: ${note}\n`;
-          }
-        });
-        explanation += "\n";
+        parts.push(question.explanationCommonWrong[userChoiceIndex]);
       }
     } else if (question.type === "numeric") {
-      explanation += `Why this is incorrect:\n`;
       if (question.explanationCommonWrong && question.explanationCommonWrong[0]) {
-        explanation += `${question.explanationCommonWrong[0]}\n\n`;
-      }
-
-      explanation += `Correct approach:\n`;
-      explanation += `${question.explanationCorrect}\n\n`;
-
-      if (handbookAnchor) {
-        explanation += `${handbookAnchor}\n\n`;
+        parts.push(question.explanationCommonWrong[0]);
       }
     }
 
-    explanation += `Solution Steps:\n${question.solutionOutline}`;
+    // The actual explanation
+    parts.push(question.explanationCorrect || question.solutionOutline);
+
+    if (handbookAnchor) {
+      parts.push(`📖 ${handbookAnchor}`);
+    }
+
+    explanation = parts.filter(Boolean).join("\n\n");
   }
 
   return explanation;
