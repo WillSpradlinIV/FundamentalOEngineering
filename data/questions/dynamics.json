@@ -1,1 +1,114 @@
-[]
+[
+    {
+        "id":  "dyn-A-b2-001",
+        "section":  "9. Dynamics",
+        "subtopic":  "A. Particle and Rigid-Body Kinematics",
+        "question":  "A car traveling at 30 m/s decelerates uniformly to rest in 10 seconds. What is the deceleration?",
+        "options":  [
+                        "A. 1 m/s²",
+                        "B. 3 m/s²",
+                        "C. 5 m/s²",
+                        "D. 10 m/s²"
+                    ],
+        "answer":  "B",
+        "explanation":  "a = (v_f - v_0)/t = (0 - 30)/10 = -3 m/s². The deceleration magnitude is 3 m/s²."
+    },
+    {
+        "id":  "dyn-A-b2-002",
+        "section":  "9. Dynamics",
+        "subtopic":  "A. Particle and Rigid-Body Kinematics",
+        "question":  "A car traveling at 30 m/s decelerates at 3 m/s² to rest. How far does it travel while stopping?",
+        "options":  [
+                        "A. 100 m",
+                        "B. 150 m",
+                        "C. 200 m",
+                        "D. 300 m"
+                    ],
+        "answer":  "B",
+        "explanation":  "Using v² = v₀² + 2as: 0 = 900 + 2(-3)s → s = 900/6 = 150 m."
+    },
+    {
+        "id":  "dyn-A-b2-003",
+        "section":  "9. Dynamics",
+        "subtopic":  "A. Particle and Rigid-Body Kinematics",
+        "question":  "A wheel spins at 600 rpm. What is its angular velocity in rad/s?",
+        "options":  [
+                        "A. 10π rad/s",
+                        "B. 20π rad/s",
+                        "C. 30π rad/s",
+                        "D. 60π rad/s"
+                    ],
+        "answer":  "B",
+        "explanation":  "ω = 600 rpm × (2π rad/rev) × (1 min/60 s) = 600 × 2π/60 = 20π ≈ 62.8 rad/s."
+    },
+    {
+        "id":  "dyn-B-b2-001",
+        "section":  "9. Dynamics",
+        "subtopic":  "B. Linear Motion",
+        "question":  "A 5 kg block on a surface with μ_k = 0.2 is pushed by a horizontal force of 30 N. What is its acceleration? (g = 9.81 m/s²)",
+        "options":  [
+                        "A. 2.04 m/s²",
+                        "B. 4.04 m/s²",
+                        "C. 6.00 m/s²",
+                        "D. 8.04 m/s²"
+                    ],
+        "answer":  "B",
+        "explanation":  "Friction force = μ_k × mg = 0.2 × 5 × 9.81 = 9.81 N. Net force = 30 - 9.81 = 20.19 N. a = F/m = 20.19/5 = 4.04 m/s²."
+    },
+    {
+        "id":  "dyn-D-b2-001",
+        "section":  "9. Dynamics",
+        "subtopic":  "D. Mass Moment of Inertia",
+        "question":  "A solid sphere of mass 3 kg and radius 0.2 m has a mass moment of inertia about its center of:",
+        "options":  [
+                        "A. 0.024 kg·m²",
+                        "B. 0.048 kg·m²",
+                        "C. 0.060 kg·m²",
+                        "D. 0.120 kg·m²"
+                    ],
+        "answer":  "B",
+        "explanation":  "For a solid sphere: I = (2/5)mR² = (2/5)(3)(0.2)² = 0.4 × 3 × 0.04 = 0.048 kg·m²."
+    },
+    {
+        "id":  "dyn-E-b2-001",
+        "section":  "9. Dynamics",
+        "subtopic":  "E. Impulse and Momentum",
+        "question":  "A force of 500 N acts on a 10 kg object for 0.04 seconds. What is the change in velocity?",
+        "options":  [
+                        "A. 0.5 m/s",
+                        "B. 1.0 m/s",
+                        "C. 2.0 m/s",
+                        "D. 5.0 m/s"
+                    ],
+        "answer":  "C",
+        "explanation":  "Impulse = F × t = 500 × 0.04 = 20 N·s = m × Δv. Δv = 20/10 = 2.0 m/s."
+    },
+    {
+        "id":  "dyn-F-b2-001",
+        "section":  "9. Dynamics",
+        "subtopic":  "F. Work, Energy, and Power",
+        "question":  "A 2 kg ball is dropped from rest at a height of 10 m. What is its speed just before hitting the ground? (g = 9.81 m/s²)",
+        "options":  [
+                        "A. 9.81 m/s",
+                        "B. 12.53 m/s",
+                        "C. 14.01 m/s",
+                        "D. 19.62 m/s"
+                    ],
+        "answer":  "C",
+        "explanation":  "Conservation of energy: mgh = ½mv². v = √(2gh) = √(2 × 9.81 × 10) = √196.2 = 14.01 m/s."
+    },
+    {
+        "id":  "dyn-H-b2-001",
+        "section":  "9. Dynamics",
+        "subtopic":  "H. Vibrations",
+        "question":  "A spring-mass system has a mass of 2 kg and natural frequency of 5 rad/s. What is the spring constant?",
+        "options":  [
+                        "A. 10 N/m",
+                        "B. 25 N/m",
+                        "C. 50 N/m",
+                        "D. 100 N/m"
+                    ],
+        "answer":  "C",
+        "explanation":  "ωn = √(k/m) → k = ωn² × m = 5² × 2 = 25 × 2 = 50 N/m."
+    }
+]

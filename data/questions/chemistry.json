@@ -1,1 +1,100 @@
-[]
+[
+    {
+        "id":  "chem-A-b2-001",
+        "section":  "3. Chemistry",
+        "subtopic":  "A. Oxidation and Reduction",
+        "question":  "What is the oxidation state of chromium in K₂Cr₂O₇?",
+        "options":  [
+                        "A. +3",
+                        "B. +4",
+                        "C. +6",
+                        "D. +7"
+                    ],
+        "answer":  "C",
+        "explanation":  "K is +1 (×2=+2), O is -2 (×7=-14). So 2 + 2Cr - 14 = 0 → 2Cr = 12 → Cr = +6."
+    },
+    {
+        "id":  "chem-A-b2-002",
+        "section":  "3. Chemistry",
+        "subtopic":  "A. Oxidation and Reduction",
+        "question":  "In a galvanic cell, oxidation occurs at the:",
+        "options":  [
+                        "A. Cathode",
+                        "B. Salt bridge",
+                        "C. Anode",
+                        "D. External circuit"
+                    ],
+        "answer":  "C",
+        "explanation":  "Mnemonic: An Ox / Red Cat. ANode = OXidation (loss of electrons). CAThode = REDuction (gain of electrons). In a galvanic cell, the anode is the negative terminal."
+    },
+    {
+        "id":  "chem-B-b2-001",
+        "section":  "3. Chemistry",
+        "subtopic":  "B. Acids and Bases",
+        "question":  "What is the pH of a 0.01 M HCl solution (strong acid)?",
+        "options":  [
+                        "A. 1",
+                        "B. 2",
+                        "C. 7",
+                        "D. 12"
+                    ],
+        "answer":  "B",
+        "explanation":  "HCl is a strong acid that fully dissociates: [H⁺] = 0.01 M = 10⁻² M. pH = -log(10⁻²) = 2."
+    },
+    {
+        "id":  "chem-B-b2-002",
+        "section":  "3. Chemistry",
+        "subtopic":  "B. Acids and Bases",
+        "question":  "The Henderson-Hasselbalch equation pH = pKa + log([A⁻]/[HA]) is used to calculate the pH of:",
+        "options":  [
+                        "A. Strong acid solutions",
+                        "B. Buffer solutions",
+                        "C. Pure water",
+                        "D. Salt solutions"
+                    ],
+        "answer":  "B",
+        "explanation":  "The Henderson-Hasselbalch equation calculates the pH of a buffer solution containing a weak acid (HA) and its conjugate base (A⁻)."
+    },
+    {
+        "id":  "chem-C-b2-001",
+        "section":  "3. Chemistry",
+        "subtopic":  "C. Chemical Reactions",
+        "question":  "What mass of CO₂ is produced when 44 g of propane (C₃H₈, MW=44) combusts completely? (MW CO₂=44, reaction: C₃H₈ + 5O₂ → 3CO₂ + 4H₂O)",
+        "options":  [
+                        "A. 44 g",
+                        "B. 88 g",
+                        "C. 132 g",
+                        "D. 176 g"
+                    ],
+        "answer":  "C",
+        "explanation":  "44 g C₃H₈ = 1 mole. From stoichiometry, 1 mol C₃H₈ produces 3 mol CO₂. Mass CO₂ = 3 × 44 = 132 g."
+    },
+    {
+        "id":  "chem-C-b2-002",
+        "section":  "3. Chemistry",
+        "subtopic":  "C. Chemical Reactions",
+        "question":  "For the reaction A + B ⇌ C + D with Kc = 100, if [A]=[B]=0.1 M and [C]=[D]=1 M at some point, which direction will the reaction proceed?",
+        "options":  [
+                        "A. Forward (toward products)",
+                        "B. Backward (toward reactants)",
+                        "C. No shift, already at equilibrium",
+                        "D. Cannot be determined"
+                    ],
+        "answer":  "B",
+        "explanation":  "Reaction quotient Q = [C][D]/[A][B] = (1)(1)/(0.1)(0.1) = 100/0.01 = 10000. Since Q (10000) \u003e Kc (100), the reaction shifts backward toward reactants."
+    },
+    {
+        "id":  "chem-C-b2-003",
+        "section":  "3. Chemistry",
+        "subtopic":  "C. Chemical Reactions",
+        "question":  "What volume of 2 M NaOH solution is needed to neutralize 500 mL of 1 M HCl?",
+        "options":  [
+                        "A. 100 mL",
+                        "B. 250 mL",
+                        "C. 500 mL",
+                        "D. 1000 mL"
+                    ],
+        "answer":  "B",
+        "explanation":  "Moles HCl = 0.5 L × 1 M = 0.5 mol. For neutralization: moles NaOH = moles HCl = 0.5 mol. Volume NaOH = 0.5 mol / 2 M = 0.25 L = 250 mL."
+    }
+]

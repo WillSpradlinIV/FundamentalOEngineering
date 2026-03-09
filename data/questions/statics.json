@@ -1,1 +1,100 @@
-[]
+[
+    {
+        "id":  "stat-A-b2-001",
+        "section":  "8. Statics",
+        "subtopic":  "A. Vector Analysis",
+        "question":  "A force F = 3i + 4j N acts at a point. What is its magnitude?",
+        "options":  [
+                        "A. 3.5 N",
+                        "B. 5 N",
+                        "C. 7 N",
+                        "D. 12 N"
+                    ],
+        "answer":  "B",
+        "explanation":  "|F| = √(3² + 4²) = √(9+16) = √25 = 5 N."
+    },
+    {
+        "id":  "stat-A-b2-002",
+        "section":  "8. Statics",
+        "subtopic":  "A. Vector Analysis",
+        "question":  "The unit vector in the direction of F = 6i + 8j is:",
+        "options":  [
+                        "A. 0.6i + 0.8j",
+                        "B. 3i + 4j",
+                        "C. 0.5i + 0.5j",
+                        "D. 6i + 8j"
+                    ],
+        "answer":  "A",
+        "explanation":  "|F| = √(36+64) = 10. Unit vector = F/|F| = (6i+8j)/10 = 0.6i + 0.8j."
+    },
+    {
+        "id":  "stat-B-b2-001",
+        "section":  "8. Statics",
+        "subtopic":  "B. Force Systems",
+        "question":  "A 200 N force acts at 45° above the horizontal. What are its x and y components?",
+        "options":  [
+                        "A. Fx=141.4 N, Fy=141.4 N",
+                        "B. Fx=100 N, Fy=173.2 N",
+                        "C. Fx=173.2 N, Fy=100 N",
+                        "D. Fx=200 N, Fy=0 N"
+                    ],
+        "answer":  "A",
+        "explanation":  "Fx = 200·cos(45°) = 200 × 0.7071 = 141.4 N. Fy = 200·sin(45°) = 200 × 0.7071 = 141.4 N."
+    },
+    {
+        "id":  "stat-D-b2-001",
+        "section":  "8. Statics",
+        "subtopic":  "D. Equilibrium of Rigid Bodies",
+        "question":  "A beam of length 10 m is simply supported at both ends and carries a 400 N load at 4 m from the left support. What is the right support reaction?",
+        "options":  [
+                        "A. 160 N",
+                        "B. 200 N",
+                        "C. 240 N",
+                        "D. 400 N"
+                    ],
+        "answer":  "A",
+        "explanation":  "Taking moments about left support: R_R × 10 = 400 × 4 = 1600. R_R = 160 N. Check: R_L = 400 - 160 = 240 N."
+    },
+    {
+        "id":  "stat-F-b2-001",
+        "section":  "8. Statics",
+        "subtopic":  "F. Area Properties",
+        "question":  "A rectangle has b=4 cm and h=6 cm. What is the centroidal moment of inertia about the x-axis (parallel to b)?",
+        "options":  [
+                        "A. 48 cm⁴",
+                        "B. 72 cm⁴",
+                        "C. 96 cm⁴",
+                        "D. 144 cm⁴"
+                    ],
+        "answer":  "B",
+        "explanation":  "Ix = bh³/12 = 4 × 6³/12 = 4 × 216/12 = 864/12 = 72 cm⁴."
+    },
+    {
+        "id":  "stat-G-b2-001",
+        "section":  "8. Statics",
+        "subtopic":  "G. Static Friction",
+        "question":  "A 500 N crate sits on a surface with μ_s = 0.35. What is the maximum horizontal force that can be applied before the crate slides?",
+        "options":  [
+                        "A. 140 N",
+                        "B. 175 N",
+                        "C. 200 N",
+                        "D. 250 N"
+                    ],
+        "answer":  "B",
+        "explanation":  "F_s(max) = μ_s × N = 0.35 × 500 = 175 N."
+    },
+    {
+        "id":  "stat-I-b2-001",
+        "section":  "8. Statics",
+        "subtopic":  "I. Weight and Mass Computations",
+        "question":  "An object has a mass of 5 slugs. What is its weight in lbf on Earth? (g = 32.2 ft/s²)",
+        "options":  [
+                        "A. 5 lbf",
+                        "B. 32.2 lbf",
+                        "C. 161 lbf",
+                        "D. 322 lbf"
+                    ],
+        "answer":  "C",
+        "explanation":  "W = m × g = 5 slugs × 32.2 ft/s² = 161 lbf."
+    }
+]

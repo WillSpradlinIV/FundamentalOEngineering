@@ -1,1 +1,100 @@
-[]
+[
+    {
+        "id":  "safety-A-b2-001",
+        "section":  "6. Safety, Health, and Environment",
+        "subtopic":  "A. Industrial Hygiene",
+        "question":  "The IDLH (Immediately Dangerous to Life or Health) concentration of a substance is defined as:",
+        "options":  [
+                        "A. The maximum safe 8-hour exposure limit",
+                        "B. The concentration posing an immediate threat to life or causing irreversible health effects",
+                        "C. The concentration detectable by smell",
+                        "D. The concentration causing mild irritation"
+                    ],
+        "answer":  "B",
+        "explanation":  "IDLH is the maximum concentration from which a worker could escape within 30 minutes without escape-impairing symptoms or irreversible health effects. It requires supplied-air respiratory protection above this level."
+    },
+    {
+        "id":  "safety-A-b2-002",
+        "section":  "6. Safety, Health, and Environment",
+        "subtopic":  "A. Industrial Hygiene",
+        "question":  "Which type of radiation has the LEAST penetrating power but the HIGHEST ionizing power at close range?",
+        "options":  [
+                        "A. Gamma rays",
+                        "B. X-rays",
+                        "C. Beta particles",
+                        "D. Alpha particles"
+                    ],
+        "answer":  "D",
+        "explanation":  "Alpha particles have the least penetrating power (stopped by a sheet of paper or skin) but the highest ionizing power per unit path length. They are most dangerous when inhaled or ingested."
+    },
+    {
+        "id":  "safety-B-b2-001",
+        "section":  "6. Safety, Health, and Environment",
+        "subtopic":  "B. Basic Safety Equipment",
+        "question":  "A Class D fire extinguisher is specifically designed for:",
+        "options":  [
+                        "A. Electrical fires",
+                        "B. Flammable liquid fires",
+                        "C. Combustible metal fires (magnesium, titanium, sodium)",
+                        "D. Cooking oil fires"
+                    ],
+        "answer":  "C",
+        "explanation":  "Class D extinguishers use dry powder agents (e.g., copper powder) designed for combustible metal fires involving magnesium, titanium, sodium, potassium, and similar metals. Water and CO₂ can intensify these fires."
+    },
+    {
+        "id":  "safety-C-b2-001",
+        "section":  "6. Safety, Health, and Environment",
+        "subtopic":  "C. Gas Detection and Monitoring",
+        "question":  "What is the primary health hazard of oxygen-enriched atmospheres (O₂ \u003e 23.5%)?",
+        "options":  [
+                        "A. Direct toxicity to lung tissue",
+                        "B. Greatly increased fire and explosion risk as materials ignite more easily",
+                        "C. Displacement of nitrogen causing asphyxiation",
+                        "D. Formation of toxic ozone"
+                    ],
+        "answer":  "B",
+        "explanation":  "Oxygen-enriched atmospheres dramatically increase the flammability and burning rate of materials. Clothing and other normally non-flammable materials can ignite and burn vigorously in elevated oxygen."
+    },
+    {
+        "id":  "safety-D-b2-001",
+        "section":  "6. Safety, Health, and Environment",
+        "subtopic":  "D. Electrical Safety",
+        "question":  "The minimum approach distance (MAD) in electrical safety work is determined by:",
+        "options":  [
+                        "A. The physical size of the worker",
+                        "B. The voltage level of the energized equipment",
+                        "C. The age of the electrical equipment",
+                        "D. The type of insulation used"
+                    ],
+        "answer":  "B",
+        "explanation":  "Minimum approach distances are voltage-dependent, specified in OSHA 29 CFR 1910.269 and NFPA 70E. Higher voltages require greater distances to prevent flashover and electrical arc injuries."
+    },
+    {
+        "id":  "safety-E-b2-001",
+        "section":  "6. Safety, Health, and Environment",
+        "subtopic":  "E. Confined Space Entry and Ventilation Rates",
+        "question":  "Who is required to be present outside a permit-required confined space during entry operations?",
+        "options":  [
+                        "A. A safety officer",
+                        "B. An attendant (hole watch) who monitors entrants and conditions",
+                        "C. A supervisor",
+                        "D. A second entrant"
+                    ],
+        "answer":  "B",
+        "explanation":  "OSHA requires a designated attendant (hole watch) stationed outside the permit space who monitors entrant status and conditions, maintains communication, and initiates rescue procedures if needed."
+    },
+    {
+        "id":  "safety-F-b2-001",
+        "section":  "6. Safety, Health, and Environment",
+        "subtopic":  "F. Hazard Communications",
+        "question":  "In the NFPA 704 diamond, a rating of 4 in the RED (flammability) quadrant indicates:",
+        "options":  [
+                        "A. Will not burn",
+                        "B. Must be preheated before ignition",
+                        "C. Ignites at normal temperatures",
+                        "D. Will rapidly or completely vaporize at atmospheric pressure and normal temperature and will burn readily"
+                    ],
+        "answer":  "D",
+        "explanation":  "NFPA 704 flammability ratings: 0=will not burn, 1=must be preheated, 2=ignites when moderately heated, 3=ignites at normal temperatures, 4=burns readily at ambient conditions (gases, very volatile liquids)."
+    }
+]

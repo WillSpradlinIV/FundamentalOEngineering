@@ -1,464 +1,576 @@
 [
-  {
-    "id": "fluid-A-001",
-    "section": "12. Fluid Mechanics",
-    "subtopic": "A. Fluid Properties",
-    "question": "A Newtonian fluid is defined as one in which:",
-    "options": [
-      "A. Viscosity increases with shear rate",
-      "B. Shear stress is directly proportional to the rate of shear deformation (velocity gradient)",
-      "C. Viscosity decreases with shear rate",
-      "D. There is no relationship between shear stress and velocity gradient"
-    ],
-    "answer": "B",
-    "explanation": "A Newtonian fluid has a linear relationship between shear stress and velocity gradient: tau = mu*(du/dy). The viscosity mu is constant regardless of shear rate. Water and air are Newtonian fluids."
-  },
-  {
-    "id": "fluid-A-002",
-    "section": "12. Fluid Mechanics",
-    "subtopic": "A. Fluid Properties",
-    "question": "A non-Newtonian fluid in which viscosity decreases with increasing shear rate is called:",
-    "options": [
-      "A. Dilatant (shear thickening)",
-      "B. Bingham plastic",
-      "C. Pseudoplastic (shear thinning)",
-      "D. Newtonian"
-    ],
-    "answer": "C",
-    "explanation": "Pseudoplastic (shear-thinning) fluids decrease in viscosity as shear rate increases (e.g., ketchup, blood, paint). Dilatant fluids increase in viscosity with shear rate (e.g., cornstarch in water)."
-  },
-  {
-    "id": "fluid-A-003",
-    "section": "12. Fluid Mechanics",
-    "subtopic": "A. Fluid Properties",
-    "question": "The specific gravity of a fluid is defined as:",
-    "options": [
-      "A. The fluid density divided by the density of mercury",
-      "B. The fluid density divided by the density of water at 4°C (1000 kg/m³)",
-      "C. The fluid weight divided by its volume",
-      "D. The ratio of fluid pressure to atmospheric pressure"
-    ],
-    "answer": "B",
-    "explanation": "Specific gravity (SG) = rho_fluid / rho_water = rho_fluid / 1000 kg/m³. It is dimensionless. SG > 1 means denser than water, SG < 1 means less dense."
-  },
-  {
-    "id": "fluid-A-004",
-    "section": "12. Fluid Mechanics",
-    "subtopic": "A. Fluid Properties",
-    "question": "Dynamic (absolute) viscosity has SI units of:",
-    "options": [
-      "A. m²/s",
-      "B. Pa·s (N·s/m²)",
-      "C. kg/m³",
-      "D. N/m²"
-    ],
-    "answer": "B",
-    "explanation": "Dynamic viscosity mu has units of Pa·s = N·s/m² = kg/(m·s). Kinematic viscosity nu = mu/rho has units of m²/s."
-  },
-  {
-    "id": "fluid-B-001",
-    "section": "12. Fluid Mechanics",
-    "subtopic": "B. Dimensionless Numbers",
-    "question": "The Reynolds number (Re) is defined as:",
-    "options": [
-      "A. Re = rho*V*D / mu",
-      "B. Re = V / sqrt(g*D)",
-      "C. Re = V / c",
-      "D. Re = mu*V / (rho*D)"
-    ],
-    "answer": "A",
-    "explanation": "Reynolds number: Re = rho*V*D/mu = V*D/nu, where rho = density, V = velocity, D = diameter, mu = dynamic viscosity, nu = kinematic viscosity. It represents the ratio of inertial to viscous forces."
-  },
-  {
-    "id": "fluid-B-002",
-    "section": "12. Fluid Mechanics",
-    "subtopic": "B. Dimensionless Numbers",
-    "question": "The Froude number is used to characterize:",
-    "options": [
-      "A. The ratio of inertial to viscous forces in pipe flow",
-      "B. The ratio of flow velocity to the speed of sound",
-      "C. The ratio of inertial to gravitational forces in open channel flow",
-      "D. The ratio of pressure forces to inertial forces"
-    ],
-    "answer": "C",
-    "explanation": "Froude number: Fr = V / sqrt(g*L). It compares inertial to gravitational forces and is critical for open channel flow and ship hydrodynamics. Fr < 1 = subcritical, Fr > 1 = supercritical."
-  },
-  {
-    "id": "fluid-B-003",
-    "section": "12. Fluid Mechanics",
-    "subtopic": "B. Dimensionless Numbers",
-    "question": "The Mach number is defined as the ratio of:",
-    "options": [
-      "A. Fluid velocity to the speed of light",
-      "B. Fluid velocity to the local speed of sound",
-      "C. Inertial forces to viscous forces",
-      "D. Gravitational forces to inertial forces"
-    ],
-    "answer": "B",
-    "explanation": "Mach number: Ma = V/c, where V is flow velocity and c is the local speed of sound. Ma < 1 = subsonic, Ma = 1 = sonic, Ma > 1 = supersonic. Important in compressible flow."
-  },
-  {
-    "id": "fluid-C-001",
-    "section": "12. Fluid Mechanics",
-    "subtopic": "C. Laminar and Turbulent Flow",
-    "question": "For flow in a circular pipe, the flow is generally considered laminar when:",
-    "options": [
-      "A. Re > 4000",
-      "B. Re < 2300",
-      "C. Re is between 2300 and 4000",
-      "D. Re > 10000"
-    ],
-    "answer": "B",
-    "explanation": "For pipe flow: Re < 2300 = laminar, 2300 < Re < 4000 = transitional, Re > 4000 = turbulent. In laminar flow, fluid moves in smooth parallel layers with no mixing."
-  },
-  {
-    "id": "fluid-C-002",
-    "section": "12. Fluid Mechanics",
-    "subtopic": "C. Laminar and Turbulent Flow",
-    "question": "In laminar pipe flow, the velocity profile across the pipe cross-section is:",
-    "options": [
-      "A. Uniform (plug flow)",
-      "B. Linear from zero at the wall to maximum at center",
-      "C. Parabolic with maximum velocity at the centerline",
-      "D. Logarithmic"
-    ],
-    "answer": "C",
-    "explanation": "In fully developed laminar (Poiseuille) flow, the velocity profile is parabolic: v(r) = v_max*(1 - (r/R)^2). The maximum velocity at the centerline is twice the average velocity."
-  },
-  {
-    "id": "fluid-C-003",
-    "section": "12. Fluid Mechanics",
-    "subtopic": "C. Laminar and Turbulent Flow",
-    "question": "Compared to laminar flow, turbulent flow is characterized by:",
-    "options": [
-      "A. Lower friction losses and a parabolic velocity profile",
-      "B. Random fluid mixing, higher friction losses, and a flatter velocity profile",
-      "C. Zero velocity fluctuations",
-      "D. Fluid layers moving in perfectly parallel paths"
-    ],
-    "answer": "B",
-    "explanation": "Turbulent flow has chaotic fluid motion, random velocity fluctuations, enhanced mixing, significantly higher friction losses than laminar flow, and a flatter (more uniform) velocity profile."
-  },
-  {
-    "id": "fluid-D-001",
-    "section": "12. Fluid Mechanics",
-    "subtopic": "D. Fluid Statics",
-    "question": "The hydrostatic pressure at a depth h in a fluid of density rho is:",
-    "options": [
-      "A. P = rho * g * h^2",
-      "B. P = rho * g * h",
-      "C. P = rho / (g * h)",
-      "D. P = g / (rho * h)"
-    ],
-    "answer": "B",
-    "explanation": "Hydrostatic pressure: P = rho*g*h, where rho is fluid density, g is gravitational acceleration, and h is the depth below the free surface. Pressure increases linearly with depth."
-  },
-  {
-    "id": "fluid-D-002",
-    "section": "12. Fluid Mechanics",
-    "subtopic": "D. Fluid Statics",
-    "question": "What is the gauge pressure at a depth of 5 m in water? (rho_water = 1000 kg/m³, g = 9.81 m/s²)",
-    "options": [
-      "A. 9.81 kPa",
-      "B. 29.4 kPa",
-      "C. 49.05 kPa",
-      "D. 98.1 kPa"
-    ],
-    "answer": "C",
-    "explanation": "P = rho*g*h = 1000 * 9.81 * 5 = 49,050 Pa = 49.05 kPa (gauge)."
-  },
-  {
-    "id": "fluid-D-003",
-    "section": "12. Fluid Mechanics",
-    "subtopic": "D. Fluid Statics",
-    "question": "Archimedes' principle states that the buoyant force on a submerged object equals:",
-    "options": [
-      "A. The weight of the object",
-      "B. The weight of the fluid displaced by the object",
-      "C. The pressure times the surface area of the object",
-      "D. The density of the fluid times the object volume"
-    ],
-    "answer": "B",
-    "explanation": "Archimedes' principle: F_buoy = rho_fluid * g * V_displaced. The buoyant force equals the weight of displaced fluid. An object floats when its weight equals the buoyant force."
-  },
-  {
-    "id": "fluid-E-001",
-    "section": "12. Fluid Mechanics",
-    "subtopic": "E. Energy, Impulse, and Momentum Equations",
-    "question": "Bernoulli's equation (P/rho*g + V^2/2g + z = constant) assumes:",
-    "options": [
-      "A. Compressible, viscous, unsteady flow",
-      "B. Incompressible, inviscid (frictionless), steady flow along a streamline",
-      "C. Turbulent flow with energy losses",
-      "D. Open channel flow with a free surface"
-    ],
-    "answer": "B",
-    "explanation": "Bernoulli's equation assumes: steady flow, incompressible fluid, inviscid (no friction/viscosity), and applied along a single streamline. It represents conservation of energy per unit weight."
-  },
-  {
-    "id": "fluid-E-002",
-    "section": "12. Fluid Mechanics",
-    "subtopic": "E. Energy, Impulse, and Momentum Equations",
-    "question": "Water flows through a pipe that narrows from a diameter of 0.2 m to 0.1 m. If the velocity in the larger section is 2 m/s, what is the velocity in the smaller section?",
-    "options": [
-      "A. 1 m/s",
-      "B. 4 m/s",
-      "C. 8 m/s",
-      "D. 16 m/s"
-    ],
-    "answer": "C",
-    "explanation": "Continuity equation: A1*V1 = A2*V2. A1 = pi*(0.2)^2/4 = 0.0314 m², A2 = pi*(0.1)^2/4 = 0.00785 m². V2 = A1*V1/A2 = (0.0314*2)/0.00785 = 8 m/s."
-  },
-  {
-    "id": "fluid-E-003",
-    "section": "12. Fluid Mechanics",
-    "subtopic": "E. Energy, Impulse, and Momentum Equations",
-    "question": "The energy equation for a pipe system with a pump and head losses is:",
-    "options": [
-      "A. P1/gamma + V1^2/2g + z1 = P2/gamma + V2^2/2g + z2",
-      "B. P1/gamma + V1^2/2g + z1 + h_pump = P2/gamma + V2^2/2g + z2 + h_L",
-      "C. P1 + rho*V1^2/2 = P2 + rho*V2^2/2",
-      "D. Q1 = Q2"
-    ],
-    "answer": "B",
-    "explanation": "The extended Bernoulli (energy) equation adds pump head (h_pump) and subtracts head losses (h_L): P1/gamma + V1^2/2g + z1 + h_pump = P2/gamma + V2^2/2g + z2 + h_L."
-  },
-  {
-    "id": "fluid-F-001",
-    "section": "12. Fluid Mechanics",
-    "subtopic": "F. Pipe and Duct Flow and Friction Losses",
-    "question": "The Darcy-Weisbach equation for head loss due to friction in a pipe is:",
-    "options": [
-      "A. h_f = f * (L/D) * (V^2/2g)",
-      "B. h_f = f * (D/L) * (V^2/2g)",
-      "C. h_f = f * L * D * V^2",
-      "D. h_f = (V^2/2g) / (f*L/D)"
-    ],
-    "answer": "A",
-    "explanation": "Darcy-Weisbach: h_f = f*(L/D)*(V^2/2g), where f is the Darcy friction factor, L is pipe length, D is diameter, V is average velocity, and g is gravitational acceleration."
-  },
-  {
-    "id": "fluid-F-002",
-    "section": "12. Fluid Mechanics",
-    "subtopic": "F. Pipe and Duct Flow and Friction Losses",
-    "question": "For laminar flow in a circular pipe, the Darcy friction factor f is:",
-    "options": [
-      "A. f = 0.316 / Re^0.25",
-      "B. f = 64 / Re",
-      "C. f = 0.184 / Re^0.2",
-      "D. f = Re / 64"
-    ],
-    "answer": "B",
-    "explanation": "For laminar pipe flow (Re < 2300): f = 64/Re. For turbulent flow, the friction factor depends on both Re and relative roughness (epsilon/D), found using the Moody chart."
-  },
-  {
-    "id": "fluid-F-003",
-    "section": "12. Fluid Mechanics",
-    "subtopic": "F. Pipe and Duct Flow and Friction Losses",
-    "question": "Minor losses in a pipe system (valves, elbows, fittings) are expressed as:",
-    "options": [
-      "A. h_minor = f * L/D * V^2/2g",
-      "B. h_minor = K * V^2/2g",
-      "C. h_minor = K * f * V^2/2g",
-      "D. h_minor = K * rho * V^2"
-    ],
-    "answer": "B",
-    "explanation": "Minor losses: h_minor = K*(V^2/2g), where K is the loss coefficient specific to each fitting type (elbow, valve, entrance, exit, etc.)."
-  },
-  {
-    "id": "fluid-G-001",
-    "section": "12. Fluid Mechanics",
-    "subtopic": "G. Open-Channel Flow",
-    "question": "Manning's equation for open channel flow gives the average velocity as:",
-    "options": [
-      "A. V = (1/n) * R_h^(2/3) * S^(1/2)",
-      "B. V = n * R_h^(2/3) * S^(1/2)",
-      "C. V = (1/n) * R_h^(1/2) * S^(2/3)",
-      "D. V = (1/n) * R_h * S"
-    ],
-    "answer": "A",
-    "explanation": "Manning's equation: V = (1/n)*R_h^(2/3)*S^(1/2), where n is Manning's roughness coefficient, R_h is hydraulic radius (A/P), and S is channel slope. Flow rate Q = V*A."
-  },
-  {
-    "id": "fluid-G-002",
-    "section": "12. Fluid Mechanics",
-    "subtopic": "G. Open-Channel Flow",
-    "question": "The hydraulic radius R_h of a channel is defined as:",
-    "options": [
-      "A. The average depth of the channel",
-      "B. The cross-sectional flow area divided by the wetted perimeter",
-      "C. The width of the channel at the water surface",
-      "D. Half the channel width"
-    ],
-    "answer": "B",
-    "explanation": "Hydraulic radius: R_h = A/P, where A is the cross-sectional area of flow and P is the wetted perimeter (the length of the boundary in contact with the fluid). For a full circular pipe: R_h = D/4."
-  },
-  {
-    "id": "fluid-H-001",
-    "section": "12. Fluid Mechanics",
-    "subtopic": "H. Fluid Transport Systems",
-    "question": "For pipes connected in series, which statement is correct?",
-    "options": [
-      "A. The total head loss equals the maximum head loss among all pipes",
-      "B. The flow rate is the same through all pipes; total head loss is the sum of individual losses",
-      "C. The head loss is the same across each pipe; total flow is the sum of individual flows",
-      "D. Both flow rate and head loss are equal in each pipe"
-    ],
-    "answer": "B",
-    "explanation": "Series pipes: Q is the same through all pipes (continuity), and total head loss = sum of head losses in each pipe: h_total = h_f1 + h_f2 + h_f3 + ..."
-  },
-  {
-    "id": "fluid-H-002",
-    "section": "12. Fluid Mechanics",
-    "subtopic": "H. Fluid Transport Systems",
-    "question": "For pipes connected in parallel, which statement is correct?",
-    "options": [
-      "A. The flow rate is the same through each pipe",
-      "B. The head loss is the same across each parallel pipe; total flow is the sum of flows",
-      "C. The head loss adds across each pipe",
-      "D. Parallel pipes always have the same diameter"
-    ],
-    "answer": "B",
-    "explanation": "Parallel pipes: head loss is equal across all branches (h_f1 = h_f2 = h_f3), and total flow = sum of flows in each branch: Q_total = Q1 + Q2 + Q3."
-  },
-  {
-    "id": "fluid-I-001",
-    "section": "12. Fluid Mechanics",
-    "subtopic": "I. Flow Measurement",
-    "question": "A Venturi meter measures flow rate by:",
-    "options": [
-      "A. Measuring the pressure difference between a constricted throat and the upstream pipe",
-      "B. Counting rotations of an impeller",
-      "C. Measuring the height of fluid over a weir",
-      "D. Using a float that rises with flow rate"
-    ],
-    "answer": "A",
-    "explanation": "A Venturi meter uses Bernoulli's principle: the flow is constricted at the throat, increasing velocity and decreasing pressure. The pressure difference between the inlet and throat is measured and used to calculate flow rate."
-  },
-  {
-    "id": "fluid-I-002",
-    "section": "12. Fluid Mechanics",
-    "subtopic": "I. Flow Measurement",
-    "question": "A pitot tube measures fluid velocity by sensing:",
-    "options": [
-      "A. The static pressure of the flowing fluid",
-      "B. The difference between stagnation (total) pressure and static pressure",
-      "C. The flow rate through a constriction",
-      "D. The fluid temperature change due to velocity"
-    ],
-    "answer": "B",
-    "explanation": "A pitot tube measures stagnation pressure (total pressure). Combined with a static pressure tap, the velocity is found from Bernoulli: V = sqrt(2*(P_stag - P_static)/rho)."
-  },
-  {
-    "id": "fluid-I-003",
-    "section": "12. Fluid Mechanics",
-    "subtopic": "I. Flow Measurement",
-    "question": "A sharp-crested rectangular weir is used to measure flow in an open channel. Flow rate is proportional to:",
-    "options": [
-      "A. H (the head over the weir)",
-      "B. H^(1/2)",
-      "C. H^(3/2)",
-      "D. H^2"
-    ],
-    "answer": "C",
-    "explanation": "For a rectangular weir: Q = (2/3)*C_d*L*sqrt(2g)*H^(3/2), where H is the head over the weir crest. Flow rate is proportional to H^(3/2)."
-  },
-  {
-    "id": "fluid-J-001",
-    "section": "12. Fluid Mechanics",
-    "subtopic": "J. Turbomachinery",
-    "question": "The specific speed of a pump is used to:",
-    "options": [
-      "A. Measure the flow velocity through the pump",
-      "B. Classify pump type and predict performance at different operating conditions",
-      "C. Calculate the power consumed by the pump",
-      "D. Determine the pipe diameter required for the pump"
-    ],
-    "answer": "B",
-    "explanation": "Specific speed Ns = N*Q^(1/2)/H^(3/4) classifies pump geometry (centrifugal, mixed-flow, axial) and is used to select the best pump type for given head and flow requirements."
-  },
-  {
-    "id": "fluid-J-002",
-    "section": "12. Fluid Mechanics",
-    "subtopic": "J. Turbomachinery",
-    "question": "The pump affinity laws state that when pump speed changes from N1 to N2:",
-    "options": [
-      "A. Q varies with N, H varies with N^2, P varies with N^3",
-      "B. Q varies with N^2, H varies with N, P varies with N^3",
-      "C. Q varies with N^3, H varies with N^2, P varies with N",
-      "D. Q, H, and P all vary linearly with N"
-    ],
-    "answer": "A",
-    "explanation": "Pump affinity laws: Q2/Q1 = N2/N1 (flow proportional to speed), H2/H1 = (N2/N1)^2 (head proportional to speed squared), P2/P1 = (N2/N1)^3 (power proportional to speed cubed)."
-  },
-  {
-    "id": "fluid-J-003",
-    "section": "12. Fluid Mechanics",
-    "subtopic": "J. Turbomachinery",
-    "question": "Cavitation in a pump occurs when:",
-    "options": [
-      "A. The pump speed is too high",
-      "B. The local fluid pressure drops below the vapor pressure of the liquid",
-      "C. The discharge pressure exceeds the shutoff head",
-      "D. The flow rate exceeds the design point"
-    ],
-    "answer": "B",
-    "explanation": "Cavitation occurs when local pressure falls below the fluid's vapor pressure, causing vapor bubbles to form. When these bubbles collapse they cause noise, vibration, and severe erosion of pump components."
-  },
-  {
-    "id": "fluid-K-001",
-    "section": "12. Fluid Mechanics",
-    "subtopic": "K. Ideal Gas Law",
-    "question": "The ideal gas law is expressed as:",
-    "options": [
-      "A. PV = nRT",
-      "B. PV = mRT",
-      "C. P = rho*R*T",
-      "D. Both A and C are correct forms"
-    ],
-    "answer": "D",
-    "explanation": "The ideal gas law can be written as PV = nRT (molar form) or P = rho*R*T (density form), where R is the specific gas constant. Both are valid and equivalent expressions."
-  },
-  {
-    "id": "fluid-K-002",
-    "section": "12. Fluid Mechanics",
-    "subtopic": "K. Ideal Gas Law",
-    "question": "A mixture of ideal gases has a total pressure equal to:",
-    "options": [
-      "A. The average of the partial pressures",
-      "B. The product of all partial pressures",
-      "C. The sum of the partial pressures of each component (Dalton's Law)",
-      "D. The partial pressure of the most abundant gas"
-    ],
-    "answer": "C",
-    "explanation": "Dalton's Law of partial pressures: P_total = P1 + P2 + P3 + ... Each gas exerts pressure independently. The partial pressure of each component = y_i * P_total, where y_i is mole fraction."
-  },
-  {
-    "id": "fluid-L-001",
-    "section": "12. Fluid Mechanics",
-    "subtopic": "L. Real Gas Law",
-    "question": "The compressibility factor Z in the real gas equation PV = ZnRT accounts for:",
-    "options": [
-      "A. Chemical reactions between gas molecules",
-      "B. Deviations from ideal gas behavior due to intermolecular forces and molecular volume",
-      "C. Changes in gas composition with temperature",
-      "D. The effect of humidity on gas properties"
-    ],
-    "answer": "B",
-    "explanation": "The compressibility factor Z = PV/(nRT) corrects for real gas behavior. Z = 1 for ideal gas. Z < 1 indicates attractive forces dominate; Z > 1 indicates repulsive forces or molecular volume effects dominate."
-  },
-  {
-    "id": "fluid-L-002",
-    "section": "12. Fluid Mechanics",
-    "subtopic": "L. Real Gas Law",
-    "question": "At very high pressures and/or very low temperatures, gases deviate most from ideal behavior because:",
-    "options": [
-      "A. The gas becomes a plasma",
-      "B. Intermolecular forces and molecular volumes become significant relative to the gas conditions",
-      "C. The gas molecules move too slowly to maintain ideal behavior",
-      "D. Chemical reactions occur between gas molecules"
-    ],
-    "answer": "B",
-    "explanation": "Ideal gas assumes negligible molecular volume and no intermolecular forces. At high pressures molecules are closer together so molecular volume and attractive/repulsive forces matter. At low temperatures molecular speeds are lower and attractive forces dominate."
-  }
+    {
+        "id":  "fluid-A-001",
+        "section":  "12. Fluid Mechanics",
+        "subtopic":  "A. Fluid Properties",
+        "question":  "A Newtonian fluid is defined as one in which:",
+        "options":  [
+                        "A. Viscosity increases with shear rate",
+                        "B. Shear stress is directly proportional to the rate of shear deformation (velocity gradient)",
+                        "C. Viscosity decreases with shear rate",
+                        "D. There is no relationship between shear stress and velocity gradient"
+                    ],
+        "answer":  "B",
+        "explanation":  "A Newtonian fluid has a linear relationship between shear stress and velocity gradient: tau = mu*(du/dy). The viscosity mu is constant regardless of shear rate. Water and air are Newtonian fluids."
+    },
+    {
+        "id":  "fluid-A-002",
+        "section":  "12. Fluid Mechanics",
+        "subtopic":  "A. Fluid Properties",
+        "question":  "A non-Newtonian fluid in which viscosity decreases with increasing shear rate is called:",
+        "options":  [
+                        "A. Dilatant (shear thickening)",
+                        "B. Bingham plastic",
+                        "C. Pseudoplastic (shear thinning)",
+                        "D. Newtonian"
+                    ],
+        "answer":  "C",
+        "explanation":  "Pseudoplastic (shear-thinning) fluids decrease in viscosity as shear rate increases (e.g., ketchup, blood, paint). Dilatant fluids increase in viscosity with shear rate (e.g., cornstarch in water)."
+    },
+    {
+        "id":  "fluid-A-003",
+        "section":  "12. Fluid Mechanics",
+        "subtopic":  "A. Fluid Properties",
+        "question":  "The specific gravity of a fluid is defined as:",
+        "options":  [
+                        "A. The fluid density divided by the density of mercury",
+                        "B. The fluid density divided by the density of water at 4°C (1000 kg/m³)",
+                        "C. The fluid weight divided by its volume",
+                        "D. The ratio of fluid pressure to atmospheric pressure"
+                    ],
+        "answer":  "B",
+        "explanation":  "Specific gravity (SG) = rho_fluid / rho_water = rho_fluid / 1000 kg/m³. It is dimensionless. SG \u003e 1 means denser than water, SG \u003c 1 means less dense."
+    },
+    {
+        "id":  "fluid-A-004",
+        "section":  "12. Fluid Mechanics",
+        "subtopic":  "A. Fluid Properties",
+        "question":  "Dynamic (absolute) viscosity has SI units of:",
+        "options":  [
+                        "A. m²/s",
+                        "B. Pa·s (N·s/m²)",
+                        "C. kg/m³",
+                        "D. N/m²"
+                    ],
+        "answer":  "B",
+        "explanation":  "Dynamic viscosity mu has units of Pa·s = N·s/m² = kg/(m·s). Kinematic viscosity nu = mu/rho has units of m²/s."
+    },
+    {
+        "id":  "fluid-B-001",
+        "section":  "12. Fluid Mechanics",
+        "subtopic":  "B. Dimensionless Numbers",
+        "question":  "The Reynolds number (Re) is defined as:",
+        "options":  [
+                        "A. Re = rho*V*D / mu",
+                        "B. Re = V / sqrt(g*D)",
+                        "C. Re = V / c",
+                        "D. Re = mu*V / (rho*D)"
+                    ],
+        "answer":  "A",
+        "explanation":  "Reynolds number: Re = rho*V*D/mu = V*D/nu, where rho = density, V = velocity, D = diameter, mu = dynamic viscosity, nu = kinematic viscosity. It represents the ratio of inertial to viscous forces."
+    },
+    {
+        "id":  "fluid-B-002",
+        "section":  "12. Fluid Mechanics",
+        "subtopic":  "B. Dimensionless Numbers",
+        "question":  "The Froude number is used to characterize:",
+        "options":  [
+                        "A. The ratio of inertial to viscous forces in pipe flow",
+                        "B. The ratio of flow velocity to the speed of sound",
+                        "C. The ratio of inertial to gravitational forces in open channel flow",
+                        "D. The ratio of pressure forces to inertial forces"
+                    ],
+        "answer":  "C",
+        "explanation":  "Froude number: Fr = V / sqrt(g*L). It compares inertial to gravitational forces and is critical for open channel flow and ship hydrodynamics. Fr \u003c 1 = subcritical, Fr \u003e 1 = supercritical."
+    },
+    {
+        "id":  "fluid-B-003",
+        "section":  "12. Fluid Mechanics",
+        "subtopic":  "B. Dimensionless Numbers",
+        "question":  "The Mach number is defined as the ratio of:",
+        "options":  [
+                        "A. Fluid velocity to the speed of light",
+                        "B. Fluid velocity to the local speed of sound",
+                        "C. Inertial forces to viscous forces",
+                        "D. Gravitational forces to inertial forces"
+                    ],
+        "answer":  "B",
+        "explanation":  "Mach number: Ma = V/c, where V is flow velocity and c is the local speed of sound. Ma \u003c 1 = subsonic, Ma = 1 = sonic, Ma \u003e 1 = supersonic. Important in compressible flow."
+    },
+    {
+        "id":  "fluid-C-001",
+        "section":  "12. Fluid Mechanics",
+        "subtopic":  "C. Laminar and Turbulent Flow",
+        "question":  "For flow in a circular pipe, the flow is generally considered laminar when:",
+        "options":  [
+                        "A. Re \u003e 4000",
+                        "B. Re \u003c 2300",
+                        "C. Re is between 2300 and 4000",
+                        "D. Re \u003e 10000"
+                    ],
+        "answer":  "B",
+        "explanation":  "For pipe flow: Re \u003c 2300 = laminar, 2300 \u003c Re \u003c 4000 = transitional, Re \u003e 4000 = turbulent. In laminar flow, fluid moves in smooth parallel layers with no mixing."
+    },
+    {
+        "id":  "fluid-C-002",
+        "section":  "12. Fluid Mechanics",
+        "subtopic":  "C. Laminar and Turbulent Flow",
+        "question":  "In laminar pipe flow, the velocity profile across the pipe cross-section is:",
+        "options":  [
+                        "A. Uniform (plug flow)",
+                        "B. Linear from zero at the wall to maximum at center",
+                        "C. Parabolic with maximum velocity at the centerline",
+                        "D. Logarithmic"
+                    ],
+        "answer":  "C",
+        "explanation":  "In fully developed laminar (Poiseuille) flow, the velocity profile is parabolic: v(r) = v_max*(1 - (r/R)^2). The maximum velocity at the centerline is twice the average velocity."
+    },
+    {
+        "id":  "fluid-C-003",
+        "section":  "12. Fluid Mechanics",
+        "subtopic":  "C. Laminar and Turbulent Flow",
+        "question":  "Compared to laminar flow, turbulent flow is characterized by:",
+        "options":  [
+                        "A. Lower friction losses and a parabolic velocity profile",
+                        "B. Random fluid mixing, higher friction losses, and a flatter velocity profile",
+                        "C. Zero velocity fluctuations",
+                        "D. Fluid layers moving in perfectly parallel paths"
+                    ],
+        "answer":  "B",
+        "explanation":  "Turbulent flow has chaotic fluid motion, random velocity fluctuations, enhanced mixing, significantly higher friction losses than laminar flow, and a flatter (more uniform) velocity profile."
+    },
+    {
+        "id":  "fluid-D-001",
+        "section":  "12. Fluid Mechanics",
+        "subtopic":  "D. Fluid Statics",
+        "question":  "The hydrostatic pressure at a depth h in a fluid of density rho is:",
+        "options":  [
+                        "A. P = rho * g * h^2",
+                        "B. P = rho * g * h",
+                        "C. P = rho / (g * h)",
+                        "D. P = g / (rho * h)"
+                    ],
+        "answer":  "B",
+        "explanation":  "Hydrostatic pressure: P = rho*g*h, where rho is fluid density, g is gravitational acceleration, and h is the depth below the free surface. Pressure increases linearly with depth."
+    },
+    {
+        "id":  "fluid-D-002",
+        "section":  "12. Fluid Mechanics",
+        "subtopic":  "D. Fluid Statics",
+        "question":  "What is the gauge pressure at a depth of 5 m in water? (rho_water = 1000 kg/m³, g = 9.81 m/s²)",
+        "options":  [
+                        "A. 9.81 kPa",
+                        "B. 29.4 kPa",
+                        "C. 49.05 kPa",
+                        "D. 98.1 kPa"
+                    ],
+        "answer":  "C",
+        "explanation":  "P = rho*g*h = 1000 * 9.81 * 5 = 49,050 Pa = 49.05 kPa (gauge)."
+    },
+    {
+        "id":  "fluid-D-003",
+        "section":  "12. Fluid Mechanics",
+        "subtopic":  "D. Fluid Statics",
+        "question":  "Archimedes\u0027 principle states that the buoyant force on a submerged object equals:",
+        "options":  [
+                        "A. The weight of the object",
+                        "B. The weight of the fluid displaced by the object",
+                        "C. The pressure times the surface area of the object",
+                        "D. The density of the fluid times the object volume"
+                    ],
+        "answer":  "B",
+        "explanation":  "Archimedes\u0027 principle: F_buoy = rho_fluid * g * V_displaced. The buoyant force equals the weight of displaced fluid. An object floats when its weight equals the buoyant force."
+    },
+    {
+        "id":  "fluid-E-001",
+        "section":  "12. Fluid Mechanics",
+        "subtopic":  "E. Energy, Impulse, and Momentum Equations",
+        "question":  "Bernoulli\u0027s equation (P/rho*g + V^2/2g + z = constant) assumes:",
+        "options":  [
+                        "A. Compressible, viscous, unsteady flow",
+                        "B. Incompressible, inviscid (frictionless), steady flow along a streamline",
+                        "C. Turbulent flow with energy losses",
+                        "D. Open channel flow with a free surface"
+                    ],
+        "answer":  "B",
+        "explanation":  "Bernoulli\u0027s equation assumes: steady flow, incompressible fluid, inviscid (no friction/viscosity), and applied along a single streamline. It represents conservation of energy per unit weight."
+    },
+    {
+        "id":  "fluid-E-002",
+        "section":  "12. Fluid Mechanics",
+        "subtopic":  "E. Energy, Impulse, and Momentum Equations",
+        "question":  "Water flows through a pipe that narrows from a diameter of 0.2 m to 0.1 m. If the velocity in the larger section is 2 m/s, what is the velocity in the smaller section?",
+        "options":  [
+                        "A. 1 m/s",
+                        "B. 4 m/s",
+                        "C. 8 m/s",
+                        "D. 16 m/s"
+                    ],
+        "answer":  "C",
+        "explanation":  "Continuity equation: A1*V1 = A2*V2. A1 = pi*(0.2)^2/4 = 0.0314 m², A2 = pi*(0.1)^2/4 = 0.00785 m². V2 = A1*V1/A2 = (0.0314*2)/0.00785 = 8 m/s."
+    },
+    {
+        "id":  "fluid-E-003",
+        "section":  "12. Fluid Mechanics",
+        "subtopic":  "E. Energy, Impulse, and Momentum Equations",
+        "question":  "The energy equation for a pipe system with a pump and head losses is:",
+        "options":  [
+                        "A. P1/gamma + V1^2/2g + z1 = P2/gamma + V2^2/2g + z2",
+                        "B. P1/gamma + V1^2/2g + z1 + h_pump = P2/gamma + V2^2/2g + z2 + h_L",
+                        "C. P1 + rho*V1^2/2 = P2 + rho*V2^2/2",
+                        "D. Q1 = Q2"
+                    ],
+        "answer":  "B",
+        "explanation":  "The extended Bernoulli (energy) equation adds pump head (h_pump) and subtracts head losses (h_L): P1/gamma + V1^2/2g + z1 + h_pump = P2/gamma + V2^2/2g + z2 + h_L."
+    },
+    {
+        "id":  "fluid-F-001",
+        "section":  "12. Fluid Mechanics",
+        "subtopic":  "F. Pipe and Duct Flow and Friction Losses",
+        "question":  "The Darcy-Weisbach equation for head loss due to friction in a pipe is:",
+        "options":  [
+                        "A. h_f = f * (L/D) * (V^2/2g)",
+                        "B. h_f = f * (D/L) * (V^2/2g)",
+                        "C. h_f = f * L * D * V^2",
+                        "D. h_f = (V^2/2g) / (f*L/D)"
+                    ],
+        "answer":  "A",
+        "explanation":  "Darcy-Weisbach: h_f = f*(L/D)*(V^2/2g), where f is the Darcy friction factor, L is pipe length, D is diameter, V is average velocity, and g is gravitational acceleration."
+    },
+    {
+        "id":  "fluid-F-002",
+        "section":  "12. Fluid Mechanics",
+        "subtopic":  "F. Pipe and Duct Flow and Friction Losses",
+        "question":  "For laminar flow in a circular pipe, the Darcy friction factor f is:",
+        "options":  [
+                        "A. f = 0.316 / Re^0.25",
+                        "B. f = 64 / Re",
+                        "C. f = 0.184 / Re^0.2",
+                        "D. f = Re / 64"
+                    ],
+        "answer":  "B",
+        "explanation":  "For laminar pipe flow (Re \u003c 2300): f = 64/Re. For turbulent flow, the friction factor depends on both Re and relative roughness (epsilon/D), found using the Moody chart."
+    },
+    {
+        "id":  "fluid-F-003",
+        "section":  "12. Fluid Mechanics",
+        "subtopic":  "F. Pipe and Duct Flow and Friction Losses",
+        "question":  "Minor losses in a pipe system (valves, elbows, fittings) are expressed as:",
+        "options":  [
+                        "A. h_minor = f * L/D * V^2/2g",
+                        "B. h_minor = K * V^2/2g",
+                        "C. h_minor = K * f * V^2/2g",
+                        "D. h_minor = K * rho * V^2"
+                    ],
+        "answer":  "B",
+        "explanation":  "Minor losses: h_minor = K*(V^2/2g), where K is the loss coefficient specific to each fitting type (elbow, valve, entrance, exit, etc.)."
+    },
+    {
+        "id":  "fluid-G-001",
+        "section":  "12. Fluid Mechanics",
+        "subtopic":  "G. Open-Channel Flow",
+        "question":  "Manning\u0027s equation for open channel flow gives the average velocity as:",
+        "options":  [
+                        "A. V = (1/n) * R_h^(2/3) * S^(1/2)",
+                        "B. V = n * R_h^(2/3) * S^(1/2)",
+                        "C. V = (1/n) * R_h^(1/2) * S^(2/3)",
+                        "D. V = (1/n) * R_h * S"
+                    ],
+        "answer":  "A",
+        "explanation":  "Manning\u0027s equation: V = (1/n)*R_h^(2/3)*S^(1/2), where n is Manning\u0027s roughness coefficient, R_h is hydraulic radius (A/P), and S is channel slope. Flow rate Q = V*A."
+    },
+    {
+        "id":  "fluid-G-002",
+        "section":  "12. Fluid Mechanics",
+        "subtopic":  "G. Open-Channel Flow",
+        "question":  "The hydraulic radius R_h of a channel is defined as:",
+        "options":  [
+                        "A. The average depth of the channel",
+                        "B. The cross-sectional flow area divided by the wetted perimeter",
+                        "C. The width of the channel at the water surface",
+                        "D. Half the channel width"
+                    ],
+        "answer":  "B",
+        "explanation":  "Hydraulic radius: R_h = A/P, where A is the cross-sectional area of flow and P is the wetted perimeter (the length of the boundary in contact with the fluid). For a full circular pipe: R_h = D/4."
+    },
+    {
+        "id":  "fluid-H-001",
+        "section":  "12. Fluid Mechanics",
+        "subtopic":  "H. Fluid Transport Systems",
+        "question":  "For pipes connected in series, which statement is correct?",
+        "options":  [
+                        "A. The total head loss equals the maximum head loss among all pipes",
+                        "B. The flow rate is the same through all pipes; total head loss is the sum of individual losses",
+                        "C. The head loss is the same across each pipe; total flow is the sum of individual flows",
+                        "D. Both flow rate and head loss are equal in each pipe"
+                    ],
+        "answer":  "B",
+        "explanation":  "Series pipes: Q is the same through all pipes (continuity), and total head loss = sum of head losses in each pipe: h_total = h_f1 + h_f2 + h_f3 + ..."
+    },
+    {
+        "id":  "fluid-H-002",
+        "section":  "12. Fluid Mechanics",
+        "subtopic":  "H. Fluid Transport Systems",
+        "question":  "For pipes connected in parallel, which statement is correct?",
+        "options":  [
+                        "A. The flow rate is the same through each pipe",
+                        "B. The head loss is the same across each parallel pipe; total flow is the sum of flows",
+                        "C. The head loss adds across each pipe",
+                        "D. Parallel pipes always have the same diameter"
+                    ],
+        "answer":  "B",
+        "explanation":  "Parallel pipes: head loss is equal across all branches (h_f1 = h_f2 = h_f3), and total flow = sum of flows in each branch: Q_total = Q1 + Q2 + Q3."
+    },
+    {
+        "id":  "fluid-I-001",
+        "section":  "12. Fluid Mechanics",
+        "subtopic":  "I. Flow Measurement",
+        "question":  "A Venturi meter measures flow rate by:",
+        "options":  [
+                        "A. Measuring the pressure difference between a constricted throat and the upstream pipe",
+                        "B. Counting rotations of an impeller",
+                        "C. Measuring the height of fluid over a weir",
+                        "D. Using a float that rises with flow rate"
+                    ],
+        "answer":  "A",
+        "explanation":  "A Venturi meter uses Bernoulli\u0027s principle: the flow is constricted at the throat, increasing velocity and decreasing pressure. The pressure difference between the inlet and throat is measured and used to calculate flow rate."
+    },
+    {
+        "id":  "fluid-I-002",
+        "section":  "12. Fluid Mechanics",
+        "subtopic":  "I. Flow Measurement",
+        "question":  "A pitot tube measures fluid velocity by sensing:",
+        "options":  [
+                        "A. The static pressure of the flowing fluid",
+                        "B. The difference between stagnation (total) pressure and static pressure",
+                        "C. The flow rate through a constriction",
+                        "D. The fluid temperature change due to velocity"
+                    ],
+        "answer":  "B",
+        "explanation":  "A pitot tube measures stagnation pressure (total pressure). Combined with a static pressure tap, the velocity is found from Bernoulli: V = sqrt(2*(P_stag - P_static)/rho)."
+    },
+    {
+        "id":  "fluid-I-003",
+        "section":  "12. Fluid Mechanics",
+        "subtopic":  "I. Flow Measurement",
+        "question":  "A sharp-crested rectangular weir is used to measure flow in an open channel. Flow rate is proportional to:",
+        "options":  [
+                        "A. H (the head over the weir)",
+                        "B. H^(1/2)",
+                        "C. H^(3/2)",
+                        "D. H^2"
+                    ],
+        "answer":  "C",
+        "explanation":  "For a rectangular weir: Q = (2/3)*C_d*L*sqrt(2g)*H^(3/2), where H is the head over the weir crest. Flow rate is proportional to H^(3/2)."
+    },
+    {
+        "id":  "fluid-J-001",
+        "section":  "12. Fluid Mechanics",
+        "subtopic":  "J. Turbomachinery",
+        "question":  "The specific speed of a pump is used to:",
+        "options":  [
+                        "A. Measure the flow velocity through the pump",
+                        "B. Classify pump type and predict performance at different operating conditions",
+                        "C. Calculate the power consumed by the pump",
+                        "D. Determine the pipe diameter required for the pump"
+                    ],
+        "answer":  "B",
+        "explanation":  "Specific speed Ns = N*Q^(1/2)/H^(3/4) classifies pump geometry (centrifugal, mixed-flow, axial) and is used to select the best pump type for given head and flow requirements."
+    },
+    {
+        "id":  "fluid-J-002",
+        "section":  "12. Fluid Mechanics",
+        "subtopic":  "J. Turbomachinery",
+        "question":  "The pump affinity laws state that when pump speed changes from N1 to N2:",
+        "options":  [
+                        "A. Q varies with N, H varies with N^2, P varies with N^3",
+                        "B. Q varies with N^2, H varies with N, P varies with N^3",
+                        "C. Q varies with N^3, H varies with N^2, P varies with N",
+                        "D. Q, H, and P all vary linearly with N"
+                    ],
+        "answer":  "A",
+        "explanation":  "Pump affinity laws: Q2/Q1 = N2/N1 (flow proportional to speed), H2/H1 = (N2/N1)^2 (head proportional to speed squared), P2/P1 = (N2/N1)^3 (power proportional to speed cubed)."
+    },
+    {
+        "id":  "fluid-J-003",
+        "section":  "12. Fluid Mechanics",
+        "subtopic":  "J. Turbomachinery",
+        "question":  "Cavitation in a pump occurs when:",
+        "options":  [
+                        "A. The pump speed is too high",
+                        "B. The local fluid pressure drops below the vapor pressure of the liquid",
+                        "C. The discharge pressure exceeds the shutoff head",
+                        "D. The flow rate exceeds the design point"
+                    ],
+        "answer":  "B",
+        "explanation":  "Cavitation occurs when local pressure falls below the fluid\u0027s vapor pressure, causing vapor bubbles to form. When these bubbles collapse they cause noise, vibration, and severe erosion of pump components."
+    },
+    {
+        "id":  "fluid-K-001",
+        "section":  "12. Fluid Mechanics",
+        "subtopic":  "K. Ideal Gas Law",
+        "question":  "The ideal gas law is expressed as:",
+        "options":  [
+                        "A. PV = nRT",
+                        "B. PV = mRT",
+                        "C. P = rho*R*T",
+                        "D. Both A and C are correct forms"
+                    ],
+        "answer":  "D",
+        "explanation":  "The ideal gas law can be written as PV = nRT (molar form) or P = rho*R*T (density form), where R is the specific gas constant. Both are valid and equivalent expressions."
+    },
+    {
+        "id":  "fluid-K-002",
+        "section":  "12. Fluid Mechanics",
+        "subtopic":  "K. Ideal Gas Law",
+        "question":  "A mixture of ideal gases has a total pressure equal to:",
+        "options":  [
+                        "A. The average of the partial pressures",
+                        "B. The product of all partial pressures",
+                        "C. The sum of the partial pressures of each component (Dalton\u0027s Law)",
+                        "D. The partial pressure of the most abundant gas"
+                    ],
+        "answer":  "C",
+        "explanation":  "Dalton\u0027s Law of partial pressures: P_total = P1 + P2 + P3 + ... Each gas exerts pressure independently. The partial pressure of each component = y_i * P_total, where y_i is mole fraction."
+    },
+    {
+        "id":  "fluid-L-001",
+        "section":  "12. Fluid Mechanics",
+        "subtopic":  "L. Real Gas Law",
+        "question":  "The compressibility factor Z in the real gas equation PV = ZnRT accounts for:",
+        "options":  [
+                        "A. Chemical reactions between gas molecules",
+                        "B. Deviations from ideal gas behavior due to intermolecular forces and molecular volume",
+                        "C. Changes in gas composition with temperature",
+                        "D. The effect of humidity on gas properties"
+                    ],
+        "answer":  "B",
+        "explanation":  "The compressibility factor Z = PV/(nRT) corrects for real gas behavior. Z = 1 for ideal gas. Z \u003c 1 indicates attractive forces dominate; Z \u003e 1 indicates repulsive forces or molecular volume effects dominate."
+    },
+    {
+        "id":  "fluid-L-002",
+        "section":  "12. Fluid Mechanics",
+        "subtopic":  "L. Real Gas Law",
+        "question":  "At very high pressures and/or very low temperatures, gases deviate most from ideal behavior because:",
+        "options":  [
+                        "A. The gas becomes a plasma",
+                        "B. Intermolecular forces and molecular volumes become significant relative to the gas conditions",
+                        "C. The gas molecules move too slowly to maintain ideal behavior",
+                        "D. Chemical reactions occur between gas molecules"
+                    ],
+        "answer":  "B",
+        "explanation":  "Ideal gas assumes negligible molecular volume and no intermolecular forces. At high pressures molecules are closer together so molecular volume and attractive/repulsive forces matter. At low temperatures molecular speeds are lower and attractive forces dominate."
+    },
+    {
+        "id":  "fluid-A-b2-001",
+        "section":  "12. Fluid Mechanics",
+        "subtopic":  "A. Fluid Properties",
+        "question":  "Water has a density of 1000 kg/m³ and dynamic viscosity of 0.001 Pa·s. What is its kinematic viscosity?",
+        "options":  [
+                        "A. 1×10⁻³ m²/s",
+                        "B. 1×10⁻⁶ m²/s",
+                        "C. 1×10⁻⁴ m²/s",
+                        "D. 1 m²/s"
+                    ],
+        "answer":  "B",
+        "explanation":  "Kinematic viscosity ν = μ/ρ = 0.001/1000 = 1×10⁻⁶ m²/s = 1 cSt (centistoke)."
+    },
+    {
+        "id":  "fluid-B-b2-001",
+        "section":  "12. Fluid Mechanics",
+        "subtopic":  "B. Dimensionless Numbers",
+        "question":  "Water (ρ=1000 kg/m³, μ=0.001 Pa·s) flows at 2 m/s through a 50 mm diameter pipe. What is the Reynolds number?",
+        "options":  [
+                        "A. 1,000",
+                        "B. 10,000",
+                        "C. 100,000",
+                        "D. 1,000,000"
+                    ],
+        "answer":  "C",
+        "explanation":  "Re = ρVD/μ = (1000 × 2 × 0.05) / 0.001 = 100/0.001 = 100,000. This is turbulent flow (Re \u003e\u003e 4000)."
+    },
+    {
+        "id":  "fluid-D-b2-001",
+        "section":  "12. Fluid Mechanics",
+        "subtopic":  "D. Fluid Statics",
+        "question":  "A rectangular gate 2 m wide and 3 m tall is submerged vertically with its top edge at the water surface. What is the total hydrostatic force on the gate? (ρ=1000 kg/m³, g=9.81 m/s²)",
+        "options":  [
+                        "A. 29.4 kN",
+                        "B. 58.9 kN",
+                        "C. 88.3 kN",
+                        "D. 176.6 kN"
+                    ],
+        "answer":  "C",
+        "explanation":  "F = ρg·h̄·A, where h̄ = centroid depth = 1.5 m (midpoint). F = 1000×9.81×1.5×(2×3) = 9810×1.5×6 = 9810×9 = 88,290 N ≈ 88.3 kN."
+    },
+    {
+        "id":  "fluid-E-b2-001",
+        "section":  "12. Fluid Mechanics",
+        "subtopic":  "E. Energy, Impulse, and Momentum Equations",
+        "question":  "Water flows through a horizontal pipe. At section 1: P1=200 kPa, V1=2 m/s, z1=0. At section 2: V2=8 m/s, z2=0. Ignoring losses, what is P2? (ρ=1000 kg/m³)",
+        "options":  [
+                        "A. 150 kPa",
+                        "B. 170 kPa",
+                        "C. 170 kPa",
+                        "D. 30 kPa"
+                    ],
+        "answer":  "D",
+        "explanation":  "Bernoulli: P1 + ½ρV1² = P2 + ½ρV2². P2 = 200,000 + ½(1000)(4) - ½(1000)(64) = 200,000 + 2,000 - 32,000 = 170,000 Pa = 170 kPa. Re-check: P2 = P1 + ½ρ(V1²-V2²) = 200 + 0.5×1×(4-64) = 200 - 30 = 170 kPa."
+    },
+    {
+        "id":  "fluid-F-b2-001",
+        "section":  "12. Fluid Mechanics",
+        "subtopic":  "F. Pipe and Duct Flow and Friction Losses",
+        "question":  "A pipe has f=0.02, L=100 m, D=0.1 m, and V=3 m/s. What is the Darcy-Weisbach head loss? (g=9.81 m/s²)",
+        "options":  [
+                        "A. 6.1 m",
+                        "B. 9.2 m",
+                        "C. 12.2 m",
+                        "D. 18.3 m"
+                    ],
+        "answer":  "B",
+        "explanation":  "h_f = f(L/D)(V²/2g) = 0.02 × (100/0.1) × (9/19.62) = 0.02 × 1000 × 0.459 = 9.17 m ≈ 9.2 m."
+    },
+    {
+        "id":  "fluid-G-b2-001",
+        "section":  "12. Fluid Mechanics",
+        "subtopic":  "G. Open-Channel Flow",
+        "question":  "A rectangular channel 3 m wide carries water 1.5 m deep. What is the hydraulic radius?",
+        "options":  [
+                        "A. 0.75 m",
+                        "B. 0.75 m",
+                        "C. 0.75 m",
+                        "D. 0.75 m"
+                    ],
+        "answer":  "A",
+        "explanation":  "A = 3 × 1.5 = 4.5 m². Wetted perimeter P = 3 + 2(1.5) = 6 m. R_h = A/P = 4.5/6 = 0.75 m."
+    },
+    {
+        "id":  "fluid-J-b2-001",
+        "section":  "12. Fluid Mechanics",
+        "subtopic":  "J. Turbomachinery",
+        "question":  "A pump delivers 0.05 m³/s against a total head of 30 m with efficiency of 75%. What is the required motor power? (ρ=1000 kg/m³, g=9.81 m/s²)",
+        "options":  [
+                        "A. 9.81 kW",
+                        "B. 14.7 kW",
+                        "C. 19.6 kW",
+                        "D. 26.2 kW"
+                    ],
+        "answer":  "C",
+        "explanation":  "Water power = ρgQH = 1000×9.81×0.05×30 = 14,715 W. Motor power = water power/efficiency = 14,715/0.75 = 19,620 W ≈ 19.6 kW."
+    },
+    {
+        "id":  "fluid-K-b2-001",
+        "section":  "12. Fluid Mechanics",
+        "subtopic":  "K. Ideal Gas Law",
+        "question":  "A gas at 300 K and 200 kPa occupies 0.5 m³. If heated to 600 K at constant pressure, what is the new volume?",
+        "options":  [
+                        "A. 0.25 m³",
+                        "B. 0.5 m³",
+                        "C. 1.0 m³",
+                        "D. 2.0 m³"
+                    ],
+        "answer":  "C",
+        "explanation":  "Constant pressure (Charles\u0027s Law): V1/T1 = V2/T2. V2 = V1 × T2/T1 = 0.5 × 600/300 = 1.0 m³."
+    }
 ]
