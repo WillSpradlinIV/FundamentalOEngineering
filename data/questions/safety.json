@@ -1,100 +1,520 @@
 [
     {
-        "id":  "safety-A-b2-001",
-        "section":  "6. Safety, Health, and Environment",
-        "subtopic":  "A. Industrial Hygiene",
-        "question":  "The IDLH (Immediately Dangerous to Life or Health) concentration of a substance is defined as:",
-        "options":  [
-                        "A. The maximum safe 8-hour exposure limit",
-                        "B. The concentration posing an immediate threat to life or causing irreversible health effects",
-                        "C. The concentration detectable by smell",
-                        "D. The concentration causing mild irritation"
-                    ],
-        "answer":  "B",
-        "explanation":  "IDLH is the maximum concentration from which a worker could escape within 30 minutes without escape-impairing symptoms or irreversible health effects. It requires supplied-air respiratory protection above this level."
+        "id": "safety-A-b2-001",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "A. Industrial Hygiene",
+        "question": "The IDLH (Immediately Dangerous to Life or Health) concentration of a substance is defined as:",
+        "options": [
+            "A. The maximum safe 8-hour exposure limit",
+            "B. The concentration posing an immediate threat to life or causing irreversible health effects",
+            "C. The concentration detectable by smell",
+            "D. The concentration causing mild irritation"
+        ],
+        "answer": "B",
+        "explanation": "IDLH is the maximum concentration from which a worker could escape within 30 minutes without escape-impairing symptoms or irreversible health effects. It requires supplied-air respiratory protection above this level."
     },
     {
-        "id":  "safety-A-b2-002",
-        "section":  "6. Safety, Health, and Environment",
-        "subtopic":  "A. Industrial Hygiene",
-        "question":  "Which type of radiation has the LEAST penetrating power but the HIGHEST ionizing power at close range?",
-        "options":  [
-                        "A. Gamma rays",
-                        "B. X-rays",
-                        "C. Beta particles",
-                        "D. Alpha particles"
-                    ],
-        "answer":  "D",
-        "explanation":  "Alpha particles have the least penetrating power (stopped by a sheet of paper or skin) but the highest ionizing power per unit path length. They are most dangerous when inhaled or ingested."
+        "id": "safety-A-b2-002",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "A. Industrial Hygiene",
+        "question": "Which type of radiation has the LEAST penetrating power but the HIGHEST ionizing power at close range?",
+        "options": [
+            "A. Gamma rays",
+            "B. X-rays",
+            "C. Beta particles",
+            "D. Alpha particles"
+        ],
+        "answer": "D",
+        "explanation": "Alpha particles have the least penetrating power (stopped by a sheet of paper or skin) but the highest ionizing power per unit path length. They are most dangerous when inhaled or ingested."
     },
     {
-        "id":  "safety-B-b2-001",
-        "section":  "6. Safety, Health, and Environment",
-        "subtopic":  "B. Basic Safety Equipment",
-        "question":  "A Class D fire extinguisher is specifically designed for:",
-        "options":  [
-                        "A. Electrical fires",
-                        "B. Flammable liquid fires",
-                        "C. Combustible metal fires (magnesium, titanium, sodium)",
-                        "D. Cooking oil fires"
-                    ],
-        "answer":  "C",
-        "explanation":  "Class D extinguishers use dry powder agents (e.g., copper powder) designed for combustible metal fires involving magnesium, titanium, sodium, potassium, and similar metals. Water and CO₂ can intensify these fires."
+        "id": "safety-A-b3-001",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "A. Industrial Hygiene",
+        "question": "A chemical has an 8-hour Time-Weighted Average (TWA) Permissible Exposure Limit (PEL) of 100 ppm. A worker is exposed to 120 ppm for 4 hours, 80 ppm for 2 hours, and 50 ppm for 2 hours. What is the worker's calculated TWA, and does it exceed the PEL?",
+        "options": [
+            "A. 92.5 ppm, No",
+            "B. 120 ppm, Yes",
+            "C. 83.3 ppm, No",
+            "D. 100 ppm, No"
+        ],
+        "answer": "A",
+        "explanation": "Use the TWA formula: (C1T1 + C2T2 + C3T3) / Total Time. Calculate: (120×4 + 80×2 + 50×2) / 8 = (480 + 160 + 100) / 8 = 740 / 8 = 92.5 ppm. Since 92.5 < 100, they do not exceed the PEL. Choosing 120 ppm assumes the peak exposure dictates the entire shift. Choosing 83.3 ppm is a straight unweighted average of the three concentrations (120+80+50)/3."
     },
     {
-        "id":  "safety-C-b2-001",
-        "section":  "6. Safety, Health, and Environment",
-        "subtopic":  "C. Gas Detection and Monitoring",
-        "question":  "What is the primary health hazard of oxygen-enriched atmospheres (O₂ \u003e 23.5%)?",
-        "options":  [
-                        "A. Direct toxicity to lung tissue",
-                        "B. Greatly increased fire and explosion risk as materials ignite more easily",
-                        "C. Displacement of nitrogen causing asphyxiation",
-                        "D. Formation of toxic ozone"
-                    ],
-        "answer":  "B",
-        "explanation":  "Oxygen-enriched atmospheres dramatically increase the flammability and burning rate of materials. Clothing and other normally non-flammable materials can ignite and burn vigorously in elevated oxygen."
+        "id": "safety-A-b3-002",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "A. Industrial Hygiene",
+        "question": "The biological half-life of a toxic substance in the human body is 15 days. If a worker ingests 40 mg of the substance, approximately how much remains in their system after 60 days?",
+        "options": [
+            "A. 2.5 mg",
+            "B. 5.0 mg",
+            "C. 10.0 mg",
+            "D. 1.25 mg"
+        ],
+        "answer": "A",
+        "explanation": "Determine the number of half-lives elapsed: 60 days / 15 days per half-life = 4 half-lives. Use the decay formula: Remaining = Initial × (0.5)^n = 40 × (0.5)^4 = 40 × 0.0625 = 2.5 mg. Choosing 5.0 mg means you calculated for 3 half-lives instead of 4. Choosing 10.0 mg means you calculated for 2 half-lives."
     },
     {
-        "id":  "safety-D-b2-001",
-        "section":  "6. Safety, Health, and Environment",
-        "subtopic":  "D. Electrical Safety",
-        "question":  "The minimum approach distance (MAD) in electrical safety work is determined by:",
-        "options":  [
-                        "A. The physical size of the worker",
-                        "B. The voltage level of the energized equipment",
-                        "C. The age of the electrical equipment",
-                        "D. The type of insulation used"
-                    ],
-        "answer":  "B",
-        "explanation":  "Minimum approach distances are voltage-dependent, specified in OSHA 29 CFR 1910.269 and NFPA 70E. Higher voltages require greater distances to prevent flashover and electrical arc injuries."
+        "id": "safety-A-b3-003",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "A. Industrial Hygiene",
+        "question": "A worker is exposed to a continuous noise level of 95 dBA for 4 hours. If the OSHA permissible exposure limit (PEL) allows 8 hours at 90 dBA with a 5 dB exchange rate, what is the worker's noise dose for the day?",
+        "options": [
+            "A. 100%",
+            "B. 50%",
+            "C. 200%",
+            "D. 25%"
+        ],
+        "answer": "A",
+        "explanation": "With a 5 dB exchange rate, for every 5 dB increase over 90 dBA, the allowable time is cut in half. At 95 dBA, the allowed time is 4 hours (half of 8). The worker was exposed for 4 hours. Dose = (Actual Time / Allowed Time) × 100 = (4 / 4) × 100 = 100%. Choosing 50% assumes the allowed time at 95 dBA is still 8 hours."
     },
     {
-        "id":  "safety-E-b2-001",
-        "section":  "6. Safety, Health, and Environment",
-        "subtopic":  "E. Confined Space Entry and Ventilation Rates",
-        "question":  "Who is required to be present outside a permit-required confined space during entry operations?",
-        "options":  [
-                        "A. A safety officer",
-                        "B. An attendant (hole watch) who monitors entrants and conditions",
-                        "C. A supervisor",
-                        "D. A second entrant"
-                    ],
-        "answer":  "B",
-        "explanation":  "OSHA requires a designated attendant (hole watch) stationed outside the permit space who monitors entrant status and conditions, maintains communication, and initiates rescue procedures if needed."
+        "id": "safety-A-b3-004",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "A. Industrial Hygiene",
+        "question": "Which of the following terms describes a substance or agent that is known to cause physical defects in a developing embryo or fetus?",
+        "options": [
+            "A. Teratogen",
+            "B. Carcinogen",
+            "C. Mutagen",
+            "D. Asphyxiant"
+        ],
+        "answer": "A",
+        "explanation": "A teratogen causes birth defects. A carcinogen causes cancer. A mutagen alters genetic material (DNA). An asphyxiant deprives the body of oxygen. Distinguishing these toxicological classifications is essential."
     },
     {
-        "id":  "safety-F-b2-001",
-        "section":  "6. Safety, Health, and Environment",
-        "subtopic":  "F. Hazard Communications",
-        "question":  "In the NFPA 704 diamond, a rating of 4 in the RED (flammability) quadrant indicates:",
-        "options":  [
-                        "A. Will not burn",
-                        "B. Must be preheated before ignition",
-                        "C. Ignites at normal temperatures",
-                        "D. Will rapidly or completely vaporize at atmospheric pressure and normal temperature and will burn readily"
-                    ],
-        "answer":  "D",
-        "explanation":  "NFPA 704 flammability ratings: 0=will not burn, 1=must be preheated, 2=ignites when moderately heated, 3=ignites at normal temperatures, 4=burns readily at ambient conditions (gases, very volatile liquids)."
+        "id": "safety-A-b3-005",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "A. Industrial Hygiene",
+        "question": "In biological safety, which Biosafety Level (BSL) is required for working with dangerous and exotic agents that pose a high individual risk of aerosol-transmitted laboratory infections for which there are no available vaccines or treatments?",
+        "options": [
+            "A. BSL-4",
+            "B. BSL-3",
+            "C. BSL-2",
+            "D. BSL-1"
+        ],
+        "answer": "A",
+        "explanation": "BSL-1 is for well-characterized agents not known to cause disease. BSL-2 is for moderate hazards. BSL-3 is for serious aerosol-transmitted diseases (like Tuberculosis). BSL-4 is the maximum containment for fatal, untreatable viruses (like Ebola)."
+    },
+    {
+        "id": "safety-B-b2-001",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "B. Basic Safety Equipment",
+        "question": "A Class D fire extinguisher is specifically designed for:",
+        "options": [
+            "A. Electrical fires",
+            "B. Flammable liquid fires",
+            "C. Combustible metal fires (magnesium, titanium, sodium)",
+            "D. Cooking oil fires"
+        ],
+        "answer": "C",
+        "explanation": "Class D extinguishers use dry powder agents (e.g., copper powder) designed for combustible metal fires involving magnesium, titanium, sodium, potassium, and similar metals. Water and CO₂ can intensify these fires."
+    },
+    {
+        "id": "safety-B-b3-001",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "B. Basic Safety Equipment",
+        "question": "A pressure vessel containing a highly corrosive fluid is protected by a pressure relief valve (PRV) and a rupture disk installed in series. What is the primary engineering advantage of placing the rupture disk upstream of the PRV?",
+        "options": [
+            "A. It prevents the corrosive process fluid from damaging or fouling the internal components of the PRV.",
+            "B. It doubles the total relieving capacity of the safety system.",
+            "C. It allows the PRV to operate at a much higher set pressure.",
+            "D. It eliminates the need to vent the exhaust to a flare or scrubber system."
+        ],
+        "answer": "A",
+        "explanation": "A rupture disk is a solid barrier until it bursts; a PRV has moving springs and seats. Corrosive fluids can cause a PRV to stick closed or leak. Placing a rupture disk beneath it isolates the PRV from the fluid until an overpressure event actually occurs."
+    },
+    {
+        "id": "safety-B-b3-002",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "B. Basic Safety Equipment",
+        "question": "A worker is using earplugs with a Noise Reduction Rating (NRR) of 29 dB. According to standard OSHA guidelines for estimating field attenuation, how much will these earplugs reduce the worker's exposure to environmental noise?",
+        "options": [
+            "A. 11 dB",
+            "B. 29 dB",
+            "C. 14.5 dB",
+            "D. 18 dB"
+        ],
+        "answer": "A",
+        "explanation": "Apply the OSHA standard formula for field attenuation: Estimated Reduction = (NRR - 7) / 2 = (29 - 7) / 2 = 22 / 2 = 11 dB. Choosing 29 dB means you assumed the lab rating perfectly applies to real-world use. Choosing 14.5 dB means you forgot to subtract the 7 dB safety factor first."
+    },
+    {
+        "id": "safety-B-b3-003",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "B. Basic Safety Equipment",
+        "question": "For a laboratory fire involving energized electrical equipment (such as a server rack), which extinguishing agent is most appropriate because it leaves no corrosive residue?",
+        "options": [
+            "A. Carbon dioxide",
+            "B. Water spray",
+            "C. Aqueous Film Forming Foam",
+            "D. Wet chemical"
+        ],
+        "answer": "A",
+        "explanation": "Class C (electrical) fire. Water and Foam conduct electricity and are lethal hazards. Wet chemical is for Class K (kitchens). Carbon dioxide suffocates the fire and dissipates harmlessly without damaging the electronics."
+    },
+    {
+        "id": "safety-B-b3-004",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "B. Basic Safety Equipment",
+        "question": "When designing an emergency shutdown (ESD) valve for a highly pressurized natural gas pipeline entering a residential area, the pneumatic valve actuator should be configured to:",
+        "options": [
+            "A. Fail closed",
+            "B. Fail open",
+            "C. Fail in its last known position",
+            "D. Fail to manual override"
+        ],
+        "answer": "A",
+        "explanation": "If the control signal drops, you want to stop the flow of explosive fuel into the populated area. The spring mechanism must mechanically force the valve to the closed position to ensure a safe state."
+    },
+    {
+        "id": "safety-B-b3-005",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "B. Basic Safety Equipment",
+        "question": "What is the maximum arresting force a personal fall arrest system (PFAS) is allowed to exert on an employee when using a standard full body harness?",
+        "options": [
+            "A. 1800 lbs",
+            "B. 900 lbs",
+            "C. 5000 lbs",
+            "D. 1000 lbs"
+        ],
+        "answer": "A",
+        "explanation": "A body belt limits arresting force to 900 lbs (though largely obsolete for fall arrest). A full body harness limits the force to 1,800 lbs. 5,000 lbs is the required tensile strength of the anchor point, not the force on the human."
+    },
+    {
+        "id": "safety-C-b2-001",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "C. Gas Detection and Monitoring",
+        "question": "What is the primary health hazard of oxygen-enriched atmospheres (O\u2082 > 23.5%)?",
+        "options": [
+            "A. Direct toxicity to lung tissue",
+            "B. Greatly increased fire and explosion risk as materials ignite more easily",
+            "C. Displacement of nitrogen causing asphyxiation",
+            "D. Formation of toxic ozone"
+        ],
+        "answer": "B",
+        "explanation": "Oxygen-enriched atmospheres dramatically increase the flammability and burning rate of materials. Clothing and other normally non-flammable materials can ignite and burn vigorously in elevated oxygen."
+    },
+    {
+        "id": "safety-C-b3-001",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "C. Gas Detection and Monitoring",
+        "question": "Which of the following hazardous gases has a molecular weight greater than air, causing it to accumulate in trenches, pits, and low-lying areas?",
+        "options": [
+            "A. Hydrogen sulfide (H\u2082S)",
+            "B. Methane (CH\u2084)",
+            "C. Carbon monoxide (CO)",
+            "D. Ammonia (NH\u2083)"
+        ],
+        "answer": "A",
+        "explanation": "Calculate molecular weights compared to air (approx MW 29). CH\u2084 = 16 (lighter). CO = 28 (similar/slightly lighter). NH\u2083 = 17 (lighter). H\u2082S = 34.1 (heavier). Therefore, H\u2082S sinks and displaces oxygen at the bottom of confined spaces."
+    },
+    {
+        "id": "safety-C-b3-002",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "C. Gas Detection and Monitoring",
+        "question": "A combustible gas meter in an enclosed room reads 50% LEL for methane. If the Lower Explosive Limit of methane is 5% by volume in air, what is the actual volumetric concentration of methane in the room?",
+        "options": [
+            "A. 2.5%",
+            "B. 50%",
+            "C. 5%",
+            "D. 0.5%"
+        ],
+        "answer": "A",
+        "explanation": "The meter reads a percentage of the explosive threshold, not a percentage of the total air volume. LEL = 5% of the room's air. The meter is halfway to the explosive limit: 0.50 × 5% = 2.5%. Choosing 50% confuses LEL percentage with atmospheric percentage."
+    },
+    {
+        "id": "safety-C-b3-003",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "C. Gas Detection and Monitoring",
+        "question": "Carbon monoxide (CO) is exceptionally dangerous to human health primarily because it:",
+        "options": [
+            "A. Binds to hemoglobin with a much higher affinity than oxygen.",
+            "B. Corrodes the alveolar lining in the lungs upon contact.",
+            "C. Displaces oxygen rapidly due to its high density.",
+            "D. Paralyzes the diaphragm muscle preventing inhalation."
+        ],
+        "answer": "A",
+        "explanation": "CO has roughly 200 to 300 times the affinity for hemoglobin as oxygen. It essentially locks up the red blood cells so they cannot transport oxygen to the brain and organs, causing chemical asphyxiation."
+    },
+    {
+        "id": "safety-C-b3-004",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "C. Gas Detection and Monitoring",
+        "question": "According to OSHA regulations, at what oxygen concentration by volume is an environment legally considered an immediately oxygen-deficient hazard?",
+        "options": [
+            "A. 19.5%",
+            "B. 21.0%",
+            "C. 16.0%",
+            "D. 23.5%"
+        ],
+        "answer": "A",
+        "explanation": "Normal atmospheric oxygen is 20.9%. The regulatory cutoff for a deficient atmosphere is 19.5%, which requires supplied air respirators to enter. 16.0% is the physiological point where disorientation begins, but the law builds in a safety margin."
+    },
+    {
+        "id": "safety-C-b3-005",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "C. Gas Detection and Monitoring",
+        "question": "Radon gas is a radioactive decay product that poses a long-term lung cancer risk. It primarily enters buildings through:",
+        "options": [
+            "A. Cracks in the foundation from surrounding soil and rock.",
+            "B. Contaminated municipal water supplies.",
+            "C. Off-gassing from synthetic building materials.",
+            "D. HVAC intakes placed too close to exhaust vents."
+        ],
+        "answer": "A",
+        "explanation": "Radon is a natural byproduct of uranium decaying in the earth's crust. It seeps up as a gas through the soil and enters basements and crawlspaces through foundation fissures. It is not man-made or material-based."
+    },
+    {
+        "id": "safety-D-b2-001",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "D. Electrical Safety",
+        "question": "The minimum approach distance (MAD) in electrical safety work is determined by:",
+        "options": [
+            "A. The physical size of the worker",
+            "B. The voltage level of the energized equipment",
+            "C. The age of the electrical equipment",
+            "D. The type of insulation used"
+        ],
+        "answer": "B",
+        "explanation": "Minimum approach distances are voltage-dependent, specified in OSHA 29 CFR 1910.269 and NFPA 70E. Higher voltages require greater distances to prevent flashover and electrical arc injuries."
+    },
+    {
+        "id": "safety-D-b3-001",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "D. Electrical Safety",
+        "question": "A Ground Fault Circuit Interrupter (GFCI) protects personnel from electric shock by detecting a current difference between which two conductors?",
+        "options": [
+            "A. Hot and neutral",
+            "B. Hot and ground",
+            "C. Neutral and ground",
+            "D. Phase A and Phase B"
+        ],
+        "answer": "A",
+        "explanation": "A GFCI measures the current going out on the hot wire and the current returning on the neutral wire. If the values differ by as little as 4-6 mA, it assumes the missing current is leaking to ground (potentially through a person) and breaks the circuit."
+    },
+    {
+        "id": "safety-D-b3-002",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "D. Electrical Safety",
+        "question": "During Lockout/Tagout (LOTO) procedures, what is the final, absolute most critical step before commencing physical work on isolated electrical equipment?",
+        "options": [
+            "A. Verify a zero energy state using a calibrated testing device.",
+            "B. Apply personal padlocks to the main disconnect switch.",
+            "C. Notify all affected employees of the shutdown duration.",
+            "D. Release all stored mechanical energy from springs."
+        ],
+        "answer": "A",
+        "explanation": "Locks and tags only prevent someone from turning it back on. The final step is always testing the lines to ensure the isolation actually worked and no residual or stored energy remains. Trusting a lock without verifying is a leading cause of electrical fatalities."
+    },
+    {
+        "id": "safety-D-b3-003",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "D. Electrical Safety",
+        "question": "In electrical safety standards (like NFPA 70E), the 'arc flash boundary' is defined as the distance at which the incident heat energy equals:",
+        "options": [
+            "A. 1.2 cal/cm\u00b2",
+            "B. 40 cal/cm\u00b2",
+            "C. 8.0 cal/cm\u00b2",
+            "D. 0.5 cal/cm\u00b2"
+        ],
+        "answer": "A",
+        "explanation": "The arc flash boundary is calculated to the distance where an unprotected worker would receive a second-degree burn, which occurs at an incident energy of 1.2 calories per square centimeter."
+    },
+    {
+        "id": "safety-D-b3-004",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "D. Electrical Safety",
+        "question": "The primary purpose of electrical bonding (as opposed to grounding) is to:",
+        "options": [
+            "A. Equalize the electrical potential between different conductive parts.",
+            "B. Provide a direct path to earth ground for lightning strikes.",
+            "C. Trip the main circuit breaker during an overcurrent event.",
+            "D. Reduce electromagnetic interference in sensitive data cables."
+        ],
+        "answer": "A",
+        "explanation": "Bonding connects metal parts together with wire so there is no voltage difference between them, preventing sparks if a worker touches both simultaneously. Grounding then takes that bonded system and connects it to the physical earth."
+    },
+    {
+        "id": "safety-D-b3-005",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "D. Electrical Safety",
+        "question": "What range of alternating current (AC) passing across the human chest is most likely to cause fatal ventricular fibrillation?",
+        "options": [
+            "A. 50 to 100 mA",
+            "B. 1 to 5 mA",
+            "C. 10 to 20 A",
+            "D. 500 to 1000 mA"
+        ],
+        "answer": "A",
+        "explanation": "1-5 mA is a tingle. 10-20 mA is the let-go threshold where muscles spasm. 50-100 mA is enough to throw the heart out of rhythm (fibrillation), leading to death without immediate defibrillation."
+    },
+    {
+        "id": "safety-E-b2-001",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "E. Confined Space Entry and Ventilation Rates",
+        "question": "Who is required to be present outside a permit-required confined space during entry operations?",
+        "options": [
+            "A. A safety officer",
+            "B. An attendant (hole watch) who monitors entrants and conditions",
+            "C. A supervisor",
+            "D. A second entrant"
+        ],
+        "answer": "B",
+        "explanation": "OSHA requires a designated attendant (hole watch) stationed outside the permit space who monitors entrant status and conditions, maintains communication, and initiates rescue procedures if needed."
+    },
+    {
+        "id": "safety-E-b3-001",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "E. Confined Space Entry and Ventilation Rates",
+        "question": "A confined space has a volume of 3,000 cubic feet. A ventilation blower supplies 600 cubic feet per minute (CFM) of fresh air. How many Air Changes per Hour (ACH) are achieved?",
+        "options": [
+            "A. 12 ACH",
+            "B. 5 ACH",
+            "C. 20 ACH",
+            "D. 72 ACH"
+        ],
+        "answer": "A",
+        "explanation": "Find the total air supplied in one hour: 600 CFM × 60 minutes/hour = 36,000 CF/hour. Divide by the volume of the space: 36,000 CF / 3,000 CF = 12 ACH. Choosing 5 ACH happens if you divide the volume by the CFM without converting minutes to hours."
+    },
+    {
+        "id": "safety-E-b3-002",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "E. Confined Space Entry and Ventilation Rates",
+        "question": "Which of the following conditions is NOT one of the three foundational criteria that defines a space as a standard 'confined space'?",
+        "options": [
+            "A. It contains a recognized serious safety or health hazard.",
+            "B. It is large enough for an employee to bodily enter and perform work.",
+            "C. It has limited or restricted means for entry or exit.",
+            "D. It is not designed for continuous employee occupancy."
+        ],
+        "answer": "A",
+        "explanation": "The physical dimensions and occupancy design define a basic confined space. Adding a serious hazard (like toxic gas or engulfment risk) is what elevates it to a 'permit-required' space, which is a distinct classification."
+    },
+    {
+        "id": "safety-E-b3-003",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "E. Confined Space Entry and Ventilation Rates",
+        "question": "When intentionally purging a confined space with an inert gas like nitrogen to prevent a combustible explosion, which secondary hazard is explicitly created?",
+        "options": [
+            "A. Oxygen deficiency",
+            "B. Increased flammability limits",
+            "C. A highly corrosive atmosphere",
+            "D. Static electricity buildup"
+        ],
+        "answer": "A",
+        "explanation": "Nitrogen displaces oxygen to prevent combustion. By pushing out the oxygen, you create a 100% fatal, immediately dangerous to life or health (IDLH) atmosphere for humans, requiring supplied air to enter."
+    },
+    {
+        "id": "safety-E-b3-004",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "E. Confined Space Entry and Ventilation Rates",
+        "question": "During a permit-required confined space entry, the attendant (hole watch) observes the entrants suddenly collapse inside the tank. What is the attendant's absolute first immediate action?",
+        "options": [
+            "A. Summon emergency rescue services.",
+            "B. Enter the space with a respirator to rapidly retrieve them.",
+            "C. Increase the mechanical ventilation rate to maximum.",
+            "D. Shut off all electrical power to the confined space."
+        ],
+        "answer": "A",
+        "explanation": "The cardinal rule of confined space entry is that the attendant NEVER enters the space during an emergency. Over 60% of confined space fatalities are would-be rescuers. Their job is to call for non-entry rescue or professional emergency teams immediately."
+    },
+    {
+        "id": "safety-E-b3-005",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "E. Confined Space Entry and Ventilation Rates",
+        "question": "A vault measuring 20 ft by 20 ft by 10 ft requires 6 air changes per hour for safe entry. What minimum blower capacity in cubic feet per minute (CFM) is required?",
+        "options": [
+            "A. 400 CFM",
+            "B. 24,000 CFM",
+            "C. 40 CFM",
+            "D. 600 CFM"
+        ],
+        "answer": "A",
+        "explanation": "Calculate volume: 20 × 20 × 10 = 4,000 cubic feet. Required air per hour: 4,000 × 6 ACH = 24,000 CF/hour. Convert to CFM: 24,000 / 60 minutes = 400 CFM. Choosing 24,000 CFM means you forgot to divide by 60 to get minutes."
+    },
+    {
+        "id": "safety-F-b2-001",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "F. Hazard Communications",
+        "question": "In the NFPA 704 diamond, a rating of 4 in the RED (flammability) quadrant indicates:",
+        "options": [
+            "A. Will not burn",
+            "B. Must be preheated before ignition",
+            "C. Ignites at normal temperatures",
+            "D. Will rapidly or completely vaporize at atmospheric pressure and normal temperature and will burn readily"
+        ],
+        "answer": "D",
+        "explanation": "NFPA 704 flammability ratings: 0=will not burn, 1=must be preheated, 2=ignites when moderately heated, 3=ignites at normal temperatures, 4=burns readily at ambient conditions (gases, very volatile liquids)."
+    },
+    {
+        "id": "safety-F-b3-001",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "F. Hazard Communications",
+        "question": "On the standard NFPA 704 'fire diamond', the yellow quadrant provides information regarding which type of hazard?",
+        "options": [
+            "A. Instability/Reactivity",
+            "B. Health Hazard",
+            "C. Flammability",
+            "D. Special Hazards"
+        ],
+        "answer": "A",
+        "explanation": "Blue = Health (left). Red = Flammability (top). Yellow = Instability/Reactivity (right). White = Special hazards (bottom, e.g., oxidizers or water-reactive materials)."
+    },
+    {
+        "id": "safety-F-b3-002",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "F. Hazard Communications",
+        "question": "Under the Globally Harmonized System (GHS) Hazard Communication Standard, a manufacturer's Safety Data Sheet (SDS) is rigidly required to contain how many standardized sections?",
+        "options": [
+            "A. 16",
+            "B. 8",
+            "C. 12",
+            "D. 24"
+        ],
+        "answer": "A",
+        "explanation": "The older MSDS system varied wildly by manufacturer. The modern GHS SDS is strictly standardized into 16 specific sections, in a specific order, so emergency responders always know where to look."
+    },
+    {
+        "id": "safety-F-b3-003",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "F. Hazard Communications",
+        "question": "Which signal word is used on a GHS hazard label to indicate the more severe categories of hazards?",
+        "options": [
+            "A. Danger",
+            "B. Warning",
+            "C. Caution",
+            "D. Notice"
+        ],
+        "answer": "A",
+        "explanation": "There are only two recognized signal words in GHS. 'Danger' is for severe hazards, and 'Warning' is for less severe hazards. 'Caution' is an outdated term in this regulatory context."
+    },
+    {
+        "id": "safety-F-b3-004",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "F. Hazard Communications",
+        "question": "The GHS standard pictogram featuring a black exclamation mark inside a red diamond is used to represent which of the following hazards?",
+        "options": [
+            "A. Irritant (skin and eye)",
+            "B. Explosive",
+            "C. Corrosive to metals",
+            "D. Acute toxicity (fatal)"
+        ],
+        "answer": "A",
+        "explanation": "The exclamation mark is for general health hazards like skin irritants, sensitizers, or narcotic effects. Acute fatal toxicity uses the skull and crossbones. Corrosives use liquid dripping onto hands and metal."
+    },
+    {
+        "id": "safety-F-b3-005",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "F. Hazard Communications",
+        "question": "If an employee transfers a hazardous solvent from a labeled 55-gallon primary drum into a secondary portable container for use, when is a full GHS hazard label NOT required on the secondary container?",
+        "options": [
+            "A. When the container is under the direct control of the employee who transferred it and used only during their immediate shift.",
+            "B. When the secondary container holds less than 1 gallon of liquid.",
+            "C. When the chemical is diluted with more than 50% water.",
+            "D. When the container is stored in a locked, yellow flammable cabinet."
+        ],
+        "answer": "A",
+        "explanation": "Labels are not required if the person who poured it maintains control of it and empties/disposes of it before they clock out. In all other scenarios (leaving it for the next shift, sharing it), it must be labeled."
     }
 ]
