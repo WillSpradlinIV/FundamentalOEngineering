@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { Quiz } from "@/lib/types";
 import QuestionCard from "@/components/QuestionCard";
+import Calculator from "@/components/Calculator";
 
 export default function QuizPage() {
   const router = useRouter();
@@ -20,6 +21,7 @@ export default function QuizPage() {
   const [error, setError] = useState("");
   const [timeLeft, setTimeLeft] = useState<number | null>(null);
   const [showHandbook, setShowHandbook] = useState(true);
+  const [showCalculator, setShowCalculator] = useState(false);
 
   useEffect(() => {
     // Load quiz from session storage
@@ -161,12 +163,27 @@ export default function QuizPage() {
 
   return (
     <div className="max-w-4xl mx-auto space-y-6">
+      {/* Calculator */}
+      {showCalculator && <Calculator onClose={() => setShowCalculator(false)} />}
+
       {/* Header */}
       <div className="bg-white rounded-lg shadow p-6">
         <div className="flex justify-between items-center mb-4">
-          <h2 className="text-2xl font-bold text-gray-900">
-            Question {currentQuestion + 1} of {quiz.questions.length}
-          </h2>
+          <div className="flex items-center gap-3">
+            <h2 className="text-2xl font-bold text-gray-900">
+              Question {currentQuestion + 1} of {quiz.questions.length}
+            </h2>
+            <button
+              onClick={() => setShowCalculator((prev) => !prev)}
+              className={`px-3 py-1 text-sm rounded-lg border transition ${
+                showCalculator
+                  ? "bg-indigo-600 text-white border-indigo-600"
+                  : "bg-white text-indigo-600 border-indigo-300 hover:bg-indigo-50"
+              }`}
+            >
+              🧮 Calculator
+            </button>
+          </div>
           {timeLeft !== null && (
             <div
               className={`text-lg font-semibold ${

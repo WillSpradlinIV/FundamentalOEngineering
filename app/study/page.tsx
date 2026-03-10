@@ -6,6 +6,7 @@ import Link from "next/link";
 import { BankQuestion, loadQuestionsForSections } from "@/lib/question-bank";
 import { markQuestion } from "@/lib/progress-tracker";
 import { buildQuestionQueue } from "@/lib/question-queue";
+import Calculator from "@/components/Calculator";
 
 function StudyPageContent() {
   const router = useRouter();
@@ -17,6 +18,7 @@ function StudyPageContent() {
   const [userAnswer, setUserAnswer] = useState<string>("");
   const [questionStartTime, setQuestionStartTime] = useState<number>(Date.now());
   const [showHandbook, setShowHandbook] = useState(false);
+  const [showCalculator, setShowCalculator] = useState(false);
 
   const sectionsParam = searchParams.get("sections") || "";
   const sections = useMemo(() => sectionsParam ? sectionsParam.split(",") : [], [sectionsParam]);
@@ -105,18 +107,33 @@ function StudyPageContent() {
 
   return (
     <div className="max-w-4xl mx-auto space-y-6 p-6">
+      {/* Calculator */}
+      {showCalculator && <Calculator onClose={() => setShowCalculator(false)} />}
+
       {/* Header */}
       <div className="bg-white rounded-lg shadow p-6">
         <div className="flex justify-between items-center mb-4">
           <h2 className="text-2xl font-bold text-gray-900">
             Study Session: Question {currentIndex + 1} of {questions.length}
           </h2>
-          <Link
-            href="/select-section"
-            className="text-sm text-indigo-600 hover:text-indigo-800 underline"
-          >
-            Exit Session
-          </Link>
+          <div className="flex items-center gap-3">
+            <button
+              onClick={() => setShowCalculator((prev) => !prev)}
+              className={`px-3 py-1 text-sm rounded-lg border transition ${
+                showCalculator
+                  ? "bg-indigo-600 text-white border-indigo-600"
+                  : "bg-white text-indigo-600 border-indigo-300 hover:bg-indigo-50"
+              }`}
+            >
+              🧮 Calculator
+            </button>
+            <Link
+              href="/select-section"
+              className="text-sm text-indigo-600 hover:text-indigo-800 underline"
+            >
+              Exit Session
+            </Link>
+          </div>
         </div>
 
         {/* Progress Bar */}
