@@ -1,100 +1,299 @@
 [
     {
-        "id":  "stat-A-b2-001",
-        "section":  "8. Statics",
-        "subtopic":  "A. Vector Analysis",
-        "question":  "A force F = 3i + 4j N acts at a point. What is its magnitude?",
-        "options":  [
-                        "A. 3.5 N",
-                        "B. 5 N",
-                        "C. 7 N",
-                        "D. 12 N"
-                    ],
-        "answer":  "B",
-        "explanation":  "|F| = √(3² + 4²) = √(9+16) = √25 = 5 N."
+        "id": "stat-B-b2-001",
+        "section": "8. Statics",
+        "subtopic": "B. Force Systems",
+        "question": "A 200 N force acts at 45° above the horizontal. What are its x and y components?",
+        "options": ["A. Fx=141.4 N, Fy=141.4 N", "B. Fx=100 N, Fy=173.2 N", "C. Fx=173.2 N, Fy=100 N", "D. Fx=200 N, Fy=0 N"],
+        "answer": "A",
+        "explanation": "Fx = 200·cos(45°) = 200 × 0.7071 = 141.4 N. Fy = 200·sin(45°) = 200 × 0.7071 = 141.4 N."
     },
     {
-        "id":  "stat-A-b2-002",
-        "section":  "8. Statics",
-        "subtopic":  "A. Vector Analysis",
-        "question":  "The unit vector in the direction of F = 6i + 8j is:",
-        "options":  [
-                        "A. 0.6i + 0.8j",
-                        "B. 3i + 4j",
-                        "C. 0.5i + 0.5j",
-                        "D. 6i + 8j"
-                    ],
-        "answer":  "A",
-        "explanation":  "|F| = √(36+64) = 10. Unit vector = F/|F| = (6i+8j)/10 = 0.6i + 0.8j."
+        "id": "stat-G-b2-001",
+        "section": "8. Statics",
+        "subtopic": "G. Static Friction",
+        "question": "A 500 N crate sits on a surface with μ_s = 0.35. What is the maximum horizontal force that can be applied before the crate slides?",
+        "options": ["A. 140 N", "B. 175 N", "C. 200 N", "D. 250 N"],
+        "answer": "B",
+        "explanation": "F_s(max) = μ_s × N = 0.35 × 500 = 175 N."
     },
     {
-        "id":  "stat-B-b2-001",
-        "section":  "8. Statics",
-        "subtopic":  "B. Force Systems",
-        "question":  "A 200 N force acts at 45° above the horizontal. What are its x and y components?",
-        "options":  [
-                        "A. Fx=141.4 N, Fy=141.4 N",
-                        "B. Fx=100 N, Fy=173.2 N",
-                        "C. Fx=173.2 N, Fy=100 N",
-                        "D. Fx=200 N, Fy=0 N"
-                    ],
-        "answer":  "A",
-        "explanation":  "Fx = 200·cos(45°) = 200 × 0.7071 = 141.4 N. Fy = 200·sin(45°) = 200 × 0.7071 = 141.4 N."
+        "id": "stat-I-b2-001",
+        "section": "8. Statics",
+        "subtopic": "I. Weight and Mass Computations",
+        "question": "An object has a mass of 5 slugs. What is its weight in lbf on Earth? (g = 32.2 ft/s²)",
+        "options": ["A. 5 lbf", "B. 32.2 lbf", "C. 161 lbf", "D. 322 lbf"],
+        "answer": "C",
+        "explanation": "W = m × g = 5 slugs × 32.2 ft/s² = 161 lbf."
     },
     {
-        "id":  "stat-D-b2-001",
-        "section":  "8. Statics",
-        "subtopic":  "D. Equilibrium of Rigid Bodies",
-        "question":  "A beam of length 10 m is simply supported at both ends and carries a 400 N load at 4 m from the left support. What is the right support reaction?",
-        "options":  [
-                        "A. 160 N",
-                        "B. 200 N",
-                        "C. 240 N",
-                        "D. 400 N"
-                    ],
-        "answer":  "A",
-        "explanation":  "Taking moments about left support: R_R × 10 = 400 × 4 = 1600. R_R = 160 N. Check: R_L = 400 - 160 = 240 N."
+        "id": "stat-A-b3-001",
+        "section": "8. Statics",
+        "subtopic": "A. Resultants of force systems",
+        "question": "A force vector is given as F = (40i - 30j + 120k) N. What is the magnitude of the force?",
+        "options": ["A. 130 N", "B. 150 N", "C. 100 N", "D. 125 N"],
+        "answer": "A",
+        "explanation": "The magnitude of a 3D vector is √(40² + (-30)² + 120²) = √(1600 + 900 + 14400) = √16900 = 130 N."
     },
     {
-        "id":  "stat-F-b2-001",
-        "section":  "8. Statics",
-        "subtopic":  "F. Area Properties",
-        "question":  "A rectangle has b=4 cm and h=6 cm. What is the centroidal moment of inertia about the x-axis (parallel to b)?",
-        "options":  [
-                        "A. 48 cm⁴",
-                        "B. 72 cm⁴",
-                        "C. 96 cm⁴",
-                        "D. 144 cm⁴"
-                    ],
-        "answer":  "B",
-        "explanation":  "Ix = bh³/12 = 4 × 6³/12 = 4 × 216/12 = 864/12 = 72 cm⁴."
+        "id": "stat-A-b3-002",
+        "section": "8. Statics",
+        "subtopic": "A. Resultants of force systems",
+        "question": "A 50 N force is applied to the end of a 2 m long wrench at an angle of 30 degrees to the handle. What is the moment generated about the bolt?",
+        "options": ["A. 50 N·m", "B. 100 N·m", "C. 86.6 N·m", "D. 25 N·m"],
+        "answer": "A",
+        "explanation": "The moment is the perpendicular force component multiplied by the distance. Perpendicular component = F sin(θ) = 50 × sin(30°) = 25 N. Moment = 25 × 2 = 50 N·m."
     },
     {
-        "id":  "stat-G-b2-001",
-        "section":  "8. Statics",
-        "subtopic":  "G. Static Friction",
-        "question":  "A 500 N crate sits on a surface with μ_s = 0.35. What is the maximum horizontal force that can be applied before the crate slides?",
-        "options":  [
-                        "A. 140 N",
-                        "B. 175 N",
-                        "C. 200 N",
-                        "D. 250 N"
-                    ],
-        "answer":  "B",
-        "explanation":  "F_s(max) = μ_s × N = 0.35 × 500 = 175 N."
+        "id": "stat-A-b3-003",
+        "section": "8. Statics",
+        "subtopic": "A. Resultants of force systems",
+        "question": "A distributed load on a beam forms a right triangle with a peak intensity of 600 N/m at the right end and tapers to 0 N/m over a span of 4 m. What is the magnitude of the equivalent resultant force?",
+        "options": ["A. 1200 N", "B. 2400 N", "C. 600 N", "D. 1800 N"],
+        "answer": "A",
+        "explanation": "The resultant force of a distributed load equals the area under the load curve. Area of triangle = 0.5 × base × height = 0.5 × 4 × 600 = 1200 N."
     },
     {
-        "id":  "stat-I-b2-001",
-        "section":  "8. Statics",
-        "subtopic":  "I. Weight and Mass Computations",
-        "question":  "An object has a mass of 5 slugs. What is its weight in lbf on Earth? (g = 32.2 ft/s²)",
-        "options":  [
-                        "A. 5 lbf",
-                        "B. 32.2 lbf",
-                        "C. 161 lbf",
-                        "D. 322 lbf"
-                    ],
-        "answer":  "C",
-        "explanation":  "W = m × g = 5 slugs × 32.2 ft/s² = 161 lbf."
+        "id": "stat-A-b3-004",
+        "section": "8. Statics",
+        "subtopic": "A. Resultants of force systems",
+        "question": "Two parallel forces of 100 N act in opposite directions separated by a distance of 0.5 m. What is the magnitude of the resulting couple moment?",
+        "options": ["A. 50 N·m", "B. 100 N·m", "C. 0 N·m", "D. 200 N·m"],
+        "answer": "A",
+        "explanation": "A couple is created by two equal, opposite, non-collinear forces. The moment of a couple = force × perpendicular distance = 100 × 0.5 = 50 N·m. It is a free vector and the same everywhere on the body."
+    },
+    {
+        "id": "stat-A-b3-005",
+        "section": "8. Statics",
+        "subtopic": "A. Resultants of force systems",
+        "question": "A force F acts at point A(2, 0, 0) m and is directed towards point B(0, 4, 0) m. Which of the following represents the unit vector of the line of action?",
+        "options": ["A. -0.447i + 0.894j", "B. -2i + 4j", "C. 0.447i - 0.894j", "D. 2i - 4j"],
+        "answer": "A",
+        "explanation": "Position vector r_AB = B - A = (-2)i + (4)j. Magnitude = √(4 + 16) = √20 ≈ 4.472. Unit vector = (-2/4.472)i + (4/4.472)j = -0.447i + 0.894j."
+    },
+    {
+        "id": "stat-B-b3-001",
+        "section": "8. Statics",
+        "subtopic": "B. Concurrent force systems",
+        "question": "Three forces act concurrently on a particle at the origin. Force A is 10 N along the positive x-axis. Force B is 15 N along the positive y-axis. What magnitude must Force C have to keep the particle in equilibrium?",
+        "options": ["A. 18.0 N", "B. 25.0 N", "C. 5.0 N", "D. 15.8 N"],
+        "answer": "A",
+        "explanation": "For equilibrium, ΣFx = 0 and ΣFy = 0. Force C must have Cx = -10 N and Cy = -15 N. Magnitude = √(100 + 225) = √325 ≈ 18.03 N."
+    },
+    {
+        "id": "stat-B-b3-002",
+        "section": "8. Statics",
+        "subtopic": "B. Concurrent force systems",
+        "question": "A 100 kg traffic light is suspended by two identical cables making an angle of 45 degrees with the horizontal. What is the tension in one of the cables? (g = 9.81 m/s²)",
+        "options": ["A. 694 N", "B. 490.5 N", "C. 981 N", "D. 1387 N"],
+        "answer": "A",
+        "explanation": "Weight = 100 × 9.81 = 981 N. Vertical equilibrium: 2T sin(45°) = 981. T = 981 / (2 × 0.7071) = 981 / 1.414 ≈ 694 N."
+    },
+    {
+        "id": "stat-B-b3-003",
+        "section": "8. Statics",
+        "subtopic": "B. Concurrent force systems",
+        "question": "A particle is acted upon by two forces: F₁ of 300 N pulling at 0 degrees and F₂ of 400 N pulling at 90 degrees. What is the angle of the resultant force measured from the positive x-axis?",
+        "options": ["A. 53.1 degrees", "B. 36.9 degrees", "C. 45.0 degrees", "D. 60.0 degrees"],
+        "answer": "A",
+        "explanation": "Fx = 300, Fy = 400. θ = arctan(Fy/Fx) = arctan(400/300) = arctan(1.333) = 53.1 degrees."
+    },
+    {
+        "id": "stat-B-b3-004",
+        "section": "8. Statics",
+        "subtopic": "B. Concurrent force systems",
+        "question": "A mass is suspended from a linear spring. The spring stretches 0.2 m under a load of 500 N. What is the spring constant (k)?",
+        "options": ["A. 2500 N/m", "B. 100 N/m", "C. 1000 N/m", "D. 250 N/m"],
+        "answer": "A",
+        "explanation": "Hooke's Law: F = ks. Rearrange: k = F/s = 500/0.2 = 2500 N/m."
+    },
+    {
+        "id": "stat-B-b3-005",
+        "section": "8. Statics",
+        "subtopic": "B. Concurrent force systems",
+        "question": "In a 3D concurrent force system, a vector has direction cosines of cos(α) = 0.5 and cos(β) = 0.5. Assuming the force is directed into the positive z-octant, what is cos(γ)?",
+        "options": ["A. 0.707", "B. 0.500", "C. 0.866", "D. 1.000"],
+        "answer": "A",
+        "explanation": "cos²(α) + cos²(β) + cos²(γ) = 1. 0.25 + 0.25 + cos²(γ) = 1. cos²(γ) = 0.5. cos(γ) = √0.5 = 0.707."
+    },
+    {
+        "id": "stat-C-b3-001",
+        "section": "8. Statics",
+        "subtopic": "C. Equilibrium of rigid bodies",
+        "question": "A simply supported beam spans 10 meters with a pin at the left end (A) and a roller at the right end (B). A concentrated point load of 1000 N is applied 2 meters from the left end. What is the vertical reaction at the roller (B)?",
+        "options": ["A. 200 N", "B. 800 N", "C. 500 N", "D. 1000 N"],
+        "answer": "A",
+        "explanation": "Sum moments about the pin (A): -(1000 × 2) + (R_B × 10) = 0. R_B = 2000/10 = 200 N."
+    },
+    {
+        "id": "stat-C-b3-002",
+        "section": "8. Statics",
+        "subtopic": "C. Equilibrium of rigid bodies",
+        "question": "In a 2D rigid body equilibrium problem, a standard built-in cantilever support can provide a maximum of how many independent reaction components?",
+        "options": ["A. Three", "B. Two", "C. One", "D. Four"],
+        "answer": "A",
+        "explanation": "A fixed/cantilever support in 2D restricts horizontal translation (Fx), vertical translation (Fy), and rotation (M). Therefore it provides three independent reaction components."
+    },
+    {
+        "id": "stat-C-b3-003",
+        "section": "8. Statics",
+        "subtopic": "C. Equilibrium of rigid bodies",
+        "question": "A rigid bar is subjected to an applied moment of 500 N·m clockwise. The bar is supported by a pin at point A and a roller at point B, which are 5 meters apart. What are the magnitudes of the vertical reaction forces at A and B?",
+        "options": ["A. 100 N down at A, 100 N up at B", "B. 250 N up at A, 250 N up at B", "C. 500 N down at A, 500 N up at B", "D. 0 N at A, 0 N at B"],
+        "answer": "A",
+        "explanation": "Sum moments about A: -500 + (R_B × 5) = 0, so R_B = 100 N (up). Sum forces in y: R_A + R_B = 0, so R_A = -100 N (down). The reactions form a counter-couple of 500 N·m."
+    },
+    {
+        "id": "stat-C-b3-004",
+        "section": "8. Statics",
+        "subtopic": "C. Equilibrium of rigid bodies",
+        "question": "A two-force member in equilibrium has forces applied only at two points. What must be true about the resultant forces at these two points?",
+        "options": ["A. They must be equal in magnitude, opposite in direction, and share the same line of action.", "B. They must be purely tensile and parallel to the x-axis.", "C. They must create a net moment about the center of mass.", "D. They must be perpendicular to the longitudinal axis of the member."],
+        "answer": "A",
+        "explanation": "For ΣF = 0, the forces must be equal and opposite. For ΣM = 0, they cannot have a perpendicular distance between their lines of action, meaning they must be collinear."
+    },
+    {
+        "id": "stat-C-b3-005",
+        "section": "8. Statics",
+        "subtopic": "C. Equilibrium of rigid bodies",
+        "question": "A crate weighing 500 N rests on a horizontal floor. The coefficient of static friction is 0.4. A worker pushes horizontally on the crate at a height of 1.5 m above the floor. The crate is 1 m wide. Will the crate slip or tip first as the pushing force increases?",
+        "options": ["A. It will tip first.", "B. It will slip first.", "C. It will slip and tip simultaneously.", "D. It cannot be determined."],
+        "answer": "A",
+        "explanation": "Slipping: max friction = μN = 0.4 × 500 = 200 N. Tipping: sum moments about front bottom corner. Restoring moment = 500 × 0.5 = 250 N·m. Tipping when P × 1.5 = 250, so P = 166.7 N. Since 166.7 N < 200 N, it tips first."
+    },
+    {
+        "id": "stat-D-b3-001",
+        "section": "8. Statics",
+        "subtopic": "D. Frames and trusses",
+        "question": "When using the method of joints to analyze a truss, what is the maximum number of unknown bar forces that can be solved for at any single 2D joint?",
+        "options": ["A. Two", "B. Three", "C. One", "D. Four"],
+        "answer": "A",
+        "explanation": "The method of joints treats each joint as a concurrent force system. All forces pass through the joint so ΣM = 0 is trivial. Only two independent equations: ΣFx = 0 and ΣFy = 0, so only two unknowns can be solved."
+    },
+    {
+        "id": "stat-D-b3-002",
+        "section": "8. Statics",
+        "subtopic": "D. Frames and trusses",
+        "question": "In a truss, a joint connects three members. Two of the members are collinear and there are no external loads on this joint. What can be stated about the third, non-collinear member?",
+        "options": ["A. It is a zero-force member.", "B. It is in tension.", "C. It is in compression.", "D. Its force equals the average of the other two members."],
+        "answer": "A",
+        "explanation": "Orient an axis along the two collinear members. The third member has a perpendicular component. ΣFy = F₃ sin(θ) = 0. Since θ ≠ 0, F₃ must be zero."
+    },
+    {
+        "id": "stat-D-b3-003",
+        "section": "8. Statics",
+        "subtopic": "D. Frames and trusses",
+        "question": "Which analytical method is most efficient for finding internal forces in a few specific members near the middle of a large truss?",
+        "options": ["A. Method of sections", "B. Method of joints", "C. Castigliano's theorem", "D. Method of consistent deformations"],
+        "answer": "A",
+        "explanation": "Method of joints requires starting at an edge and working through the structure. Method of sections allows cutting through the truss where needed, exposing internal forces as external forces on a rigid body for quick solution via ΣM = 0."
+    },
+    {
+        "id": "stat-D-b3-004",
+        "section": "8. Statics",
+        "subtopic": "D. Frames and trusses",
+        "question": "A planar truss has m members and j joints. What is the fundamental equation for internal static determinacy?",
+        "options": ["A. m + 3 = 2j", "B. m = 2j - 3", "C. m = 3j - 2", "D. m + j = 3"],
+        "answer": "A",
+        "explanation": "A 2D truss has 2j equilibrium equations (2 per joint). The unknowns are m member forces plus 3 external reactions. For determinacy: m + 3 = 2j (equivalently m = 2j - 3)."
+    },
+    {
+        "id": "stat-D-b3-005",
+        "section": "8. Statics",
+        "subtopic": "D. Frames and trusses",
+        "question": "Unlike a truss, a 'frame' structure is specifically defined by the presence of at least one member that is:",
+        "options": ["A. A multi-force member (subjected to more than two forces).", "B. A zero-force member.", "C. Fixed continuously to a solid wall.", "D. Curved rather than completely straight."],
+        "answer": "A",
+        "explanation": "A truss consists of two-force members (forces applied only at ends). A frame contains at least one member with forces at three or more points (or applied moments), inducing bending and shear."
+    },
+    {
+        "id": "stat-E-b3-001",
+        "section": "8. Statics",
+        "subtopic": "E. Centroids and moments of inertia",
+        "question": "Where is the centroid (ȳ) of a right triangle of height h located relative to its base?",
+        "options": ["A. h/3", "B. h/2", "C. 2h/3", "D. h/4"],
+        "answer": "A",
+        "explanation": "For a triangle, the centroid is located one-third of the distance from the base to the apex. Thus ȳ = h/3 from the base."
+    },
+    {
+        "id": "stat-E-b3-002",
+        "section": "8. Statics",
+        "subtopic": "E. Centroids and moments of inertia",
+        "question": "A rectangular cross-section has base b and height h. What is the area moment of inertia (Ix) about its centroidal x-axis?",
+        "options": ["A. bh³/12", "B. hb³/12", "C. bh³/3", "D. b²h²/6"],
+        "answer": "A",
+        "explanation": "The centroidal moment of inertia for a rectangle is Ixc = bh³/12. Choosing bh³/3 would be the moment of inertia about the base edge, not the centroid."
+    },
+    {
+        "id": "stat-E-b3-003",
+        "section": "8. Statics",
+        "subtopic": "E. Centroids and moments of inertia",
+        "question": "If the moment of inertia of a shape about its centroidal axis is Ixc, its area is A, and the distance to a parallel axis is d, what is the parallel axis theorem formula?",
+        "options": ["A. I = Ixc + Ad²", "B. I = Ixc - Ad²", "C. I = Ixc + 0.5Ad²", "D. I = Ixc + A²d"],
+        "answer": "A",
+        "explanation": "The parallel axis theorem states I = Ixc + Ad². The moment of inertia about any axis equals the centroidal value plus the area times the square of the distance between axes."
+    },
+    {
+        "id": "stat-E-b3-004",
+        "section": "8. Statics",
+        "subtopic": "E. Centroids and moments of inertia",
+        "question": "What is the radius of gyration (k) of a geometric area mathematically defined as?",
+        "options": ["A. k = √(I/A)", "B. k = I/A²", "C. k = √(A/I)", "D. k = (I/A)²"],
+        "answer": "A",
+        "explanation": "The radius of gyration is the distance at which the entire area could be concentrated to produce the same moment of inertia. Since I = Ak², rearranging gives k = √(I/A)."
+    },
+    {
+        "id": "stat-E-b3-005",
+        "section": "8. Statics",
+        "subtopic": "E. Centroids and moments of inertia",
+        "question": "The polar moment of inertia (J) of a solid circular cross-section of radius r is required for torsional shear stress. What is the correct formula for J?",
+        "options": ["A. πr⁴/2", "B. πr⁴/4", "C. πr³/3", "D. 2πr²"],
+        "answer": "A",
+        "explanation": "By the perpendicular axis theorem, J = Ix + Iy. For a circle, Ix = Iy = πr⁴/4. Therefore J = πr⁴/4 + πr⁴/4 = πr⁴/2."
+    },
+    {
+        "id": "stat-F-b3-001",
+        "section": "8. Statics",
+        "subtopic": "F. Friction",
+        "question": "A block of mass m rests on a plane inclined at angle θ. The coefficient of static friction is μs. What is the maximum angle θ before the block begins to slide?",
+        "options": ["A. θ = arctan(μs)", "B. θ = arcsin(μs)", "C. θ = arccos(μs)", "D. θ = μs/g"],
+        "answer": "A",
+        "explanation": "At impending slip: mg sin(θ) = μs mg cos(θ). Dividing: tan(θ) = μs, so θ = arctan(μs). This is the angle of repose."
+    },
+    {
+        "id": "stat-F-b3-002",
+        "section": "8. Statics",
+        "subtopic": "F. Friction",
+        "question": "A flat belt passes over a fixed cylindrical drum. The angle of contact is β (radians) and the coefficient of static friction is μs. What equation describes the tension ratio at impending slip?",
+        "options": ["A. T₂/T₁ = e^(μs·β)", "B. T₂/T₁ = μs·β", "C. T₂ - T₁ = μs·N", "D. T₂/T₁ = sin(μs·β)"],
+        "answer": "A",
+        "explanation": "The belt friction formula relates the tight side to the slack side exponentially: T₂ = T₁ e^(μs·β). Note that β must be in radians."
+    },
+    {
+        "id": "stat-F-b3-003",
+        "section": "8. Statics",
+        "subtopic": "F. Friction",
+        "question": "A 100 kg block is pushed with a horizontal force of 200 N. The coefficient of static friction is 0.3 and kinetic friction is 0.2. What is the actual friction force acting on the block?",
+        "options": ["A. 200 N", "B. 294.3 N", "C. 196.2 N", "D. 0 N"],
+        "answer": "A",
+        "explanation": "N = mg = 981 N. Max static friction = μs N = 0.3 × 981 = 294.3 N. Since applied force (200 N) < max static friction (294.3 N), the block doesn't move. Friction = applied force = 200 N (equilibrium)."
+    },
+    {
+        "id": "stat-F-b3-004",
+        "section": "8. Statics",
+        "subtopic": "F. Friction",
+        "question": "A horizontal force P is applied to a wedge to lift a block. Friction acts on both surfaces. The wedge moves inward. What is the direction of friction forces acting ON the wedge?",
+        "options": ["A. They point opposite to the direction of force P.", "B. They point in the same direction as force P.", "C. They act perfectly vertical.", "D. They act perpendicular to the wedge surfaces."],
+        "answer": "A",
+        "explanation": "Friction opposes relative motion. Since P pushes the wedge inward, the wedge slides inward relative to both surfaces. Both friction forces therefore push outward against the wedge, opposite to P."
+    },
+    {
+        "id": "stat-F-b3-005",
+        "section": "8. Statics",
+        "subtopic": "F. Friction",
+        "question": "In Coulomb (dry) friction theory, the maximum static friction force is directly proportional to the normal force and:",
+        "options": ["A. Independent of the apparent area of contact.", "B. Directly proportional to the area of contact.", "C. Inversely proportional to the sliding velocity.", "D. Exponentially related to surface temperature."],
+        "answer": "A",
+        "explanation": "Coulomb friction: F = μN depends only on the coefficient and normal force. A fundamental postulate is that the macroscopic contact area does not affect the friction force."
     }
 ]

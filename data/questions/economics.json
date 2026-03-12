@@ -4,7 +4,12 @@
         "section": "7. Engineering Economics",
         "subtopic": "A. Time Value of Money",
         "question": "What is the present worth of $8,000 received 4 years from now at 10% interest?",
-        "options": ["A. $4,641", "B. $5,464", "C. $6,400", "D. $7,200"],
+        "options": [
+            "A. $4,641",
+            "B. $5,464",
+            "C. $6,400",
+            "D. $7,200"
+        ],
         "answer": "B",
         "explanation": "PV = FV/(1+i)^n = 8000/(1.10)^4 = 8000/1.4641 = $5,464."
     },
@@ -13,7 +18,12 @@
         "section": "7. Engineering Economics",
         "subtopic": "A. Time Value of Money",
         "question": "What annual payment is required to repay a $20,000 loan over 5 years at 8% interest? (A/P, 8%, 5) = 0.2505",
-        "options": ["A. $3,600", "B. $4,000", "C. $5,010", "D. $5,500"],
+        "options": [
+            "A. $3,600",
+            "B. $4,000",
+            "C. $5,010",
+            "D. $5,500"
+        ],
         "answer": "C",
         "explanation": "A = P × (A/P, 8%, 5) = 20,000 × 0.2505 = $5,010 per year."
     },
@@ -22,7 +32,12 @@
         "section": "7. Engineering Economics",
         "subtopic": "A. Time Value of Money",
         "question": "An investment doubles in 6 years. Using the Rule of 72, what is the approximate interest rate?",
-        "options": ["A. 6%", "B. 8%", "C. 12%", "D. 14%"],
+        "options": [
+            "A. 6%",
+            "B. 8%",
+            "C. 12%",
+            "D. 14%"
+        ],
         "answer": "C",
         "explanation": "Rule of 72: rate ≈ 72 / years = 72 / 6 = 12%."
     },
@@ -31,7 +46,12 @@
         "section": "7. Engineering Economics",
         "subtopic": "A. Time Value of Money",
         "question": "An engineer deposits 5,000 USD into a savings account that pays an annual interest rate of 6% compounded annually. How much money will be in the account at the end of 5 years?",
-        "options": ["A. 6,691 USD", "B. 6,500 USD", "C. 5,300 USD", "D. 7,010 USD"],
+        "options": [
+            "A. 6,691 USD",
+            "B. 6,500 USD",
+            "C. 5,300 USD",
+            "D. 7,010 USD"
+        ],
         "answer": "A",
         "explanation": "Use single payment compound amount formula: F = P(1+i)^n = 5000(1.06)^5 = 5000(1.3382) = 6,691 USD. Choosing 6,500 USD means you calculated simple interest instead of compound interest."
     },
@@ -40,7 +60,12 @@
         "section": "7. Engineering Economics",
         "subtopic": "A. Time Value of Money",
         "question": "A company takes out a loan of 50,000 USD to purchase new software. The loan will be repaid in equal annual installments over 7 years at an interest rate of 8% per year. What is the approximate annual payment amount?",
-        "options": ["A. 9,604 USD", "B. 7,142 USD", "C. 10,230 USD", "D. 8,800 USD"],
+        "options": [
+            "A. 9,604 USD",
+            "B. 7,142 USD",
+            "C. 10,230 USD",
+            "D. 8,800 USD"
+        ],
         "answer": "A",
         "explanation": "Use the capital recovery factor (A/P, i, n): A = P[i(1+i)^n / ((1+i)^n - 1)]. Using FE handbook tables for 8% at n=7, (A/P) = 0.19207. A = 50,000 × 0.19207 = 9,604 USD. Choosing 7,142 USD means you simply divided the principal by 7, ignoring interest."
     },
@@ -49,7 +74,12 @@
         "section": "7. Engineering Economics",
         "subtopic": "A. Time Value of Money",
         "question": "A credit card charges a nominal interest rate of 18% per year, compounded monthly. What is the effective annual interest rate?",
-        "options": ["A. 19.56%", "B. 18.00%", "C. 21.60%", "D. 18.81%"],
+        "options": [
+            "A. 19.56%",
+            "B. 18.00%",
+            "C. 21.60%",
+            "D. 18.81%"
+        ],
         "answer": "A",
         "explanation": "Effective interest rate formula: i_e = (1 + r/m)^m - 1 = (1 + 0.18/12)^12 - 1 = (1.015)^12 - 1 = 1.1956 - 1 = 0.1956 or 19.56%."
     },
@@ -58,7 +88,12 @@
         "section": "7. Engineering Economics",
         "subtopic": "A. Time Value of Money",
         "question": "What is the capitalized cost of a public park maintenance program that requires 20,000 USD at the end of every year forever, assuming an interest rate of 5%?",
-        "options": ["A. 400,000 USD", "B. 1,000,000 USD", "C. 100,000 USD", "D. 20,000 USD"],
+        "options": [
+            "A. 400,000 USD",
+            "B. 1,000,000 USD",
+            "C. 100,000 USD",
+            "D. 20,000 USD"
+        ],
         "answer": "A",
         "explanation": "Capitalized cost is the present worth of a project with infinite life. The formula simplifies to P = A/i = 20,000/0.05 = 400,000 USD. This means 400,000 USD earning 5% generates exactly 20,000 USD every year indefinitely."
     },
@@ -67,7 +102,12 @@
         "section": "7. Engineering Economics",
         "subtopic": "A. Time Value of Money",
         "question": "A municipality is planning to build a bridge. The maintenance cost is expected to be 10,000 USD in year 1, and it will increase by 2,000 USD each year thereafter. Which specific FE Handbook factor is required to find the present worth of just the increasing portion of these costs?",
-        "options": ["A. Present worth factor of a uniform gradient series (P/G)", "B. Capital recovery factor (A/P)", "C. Uniform series present worth factor (P/A)", "D. Single payment present worth factor (P/F)"],
+        "options": [
+            "A. Present worth factor of a uniform gradient series (P/G)",
+            "B. Capital recovery factor (A/P)",
+            "C. Uniform series present worth factor (P/A)",
+            "D. Single payment present worth factor (P/F)"
+        ],
         "answer": "A",
         "explanation": "The cash flow starts at a base amount and increases by a constant arithmetic amount (2,000 USD) each period. This arithmetic increase is called a uniform gradient (G). To bring just the increasing amounts back to year zero, you use the (P/G, i, n) factor."
     },
@@ -76,25 +116,26 @@
         "section": "7. Engineering Economics",
         "subtopic": "B. Cost",
         "question": "Two years ago, a manufacturing plant spent 150,000 USD researching a new product line. Management is now deciding whether to invest an additional 500,000 USD to actually build the production line or cancel the project. In an economic analysis of this decision, how should the 150,000 USD be classified?",
-        "options": ["A. Sunk cost", "B. Opportunity cost", "C. Incremental cost", "D. Fixed cost"],
+        "options": [
+            "A. Sunk cost",
+            "B. Opportunity cost",
+            "C. Incremental cost",
+            "D. Fixed cost"
+        ],
         "answer": "A",
         "explanation": "A sunk cost is money that has already been spent in the past and cannot be recovered regardless of future actions. Sunk costs must be ignored in current economic decision-making because they do not change the incremental cash flows of the alternatives moving forward."
-    },
-    {
-        "id": "econ-B-b3-002",
-        "section": "7. Engineering Economics",
-        "subtopic": "B. Cost",
-        "question": "A factory produces widgets. The fixed costs (rent, insurance, salaries) are 120,000 USD per month. The variable cost to produce one widget is 15 USD. If each widget sells for 40 USD, what is the breakeven volume in units per month?",
-        "options": ["A. 4,800 units", "B. 3,000 units", "C. 8,000 units", "D. 2,181 units"],
-        "answer": "A",
-        "explanation": "Breakeven = Fixed Costs / (Selling Price - Variable Cost) = 120,000 / (40 - 15) = 120,000 / 25 = 4,800 units. Choosing 3,000 means dividing fixed costs by the selling price rather than the contribution margin."
     },
     {
         "id": "econ-B-b3-003",
         "section": "7. Engineering Economics",
         "subtopic": "B. Cost",
         "question": "Which of the following best describes an 'opportunity cost' in engineering economics?",
-        "options": ["A. The potential benefit that is lost or sacrificed when choosing one alternative over another.", "B. The cost of upgrading an existing machine to meet new safety regulations.", "C. A cost that varies directly with the level of production output.", "D. The difference in total cost between two mutually exclusive alternatives."],
+        "options": [
+            "A. The potential benefit that is lost or sacrificed when choosing one alternative over another.",
+            "B. The cost of upgrading an existing machine to meet new safety regulations.",
+            "C. A cost that varies directly with the level of production output.",
+            "D. The difference in total cost between two mutually exclusive alternatives."
+        ],
         "answer": "A",
         "explanation": "If you use a warehouse to store your own goods, the opportunity cost is the rent you could have collected if you leased it to someone else. It is the value of the foregone alternative. The difference in cost between two alternatives is called the 'incremental cost'."
     },
@@ -103,7 +144,12 @@
         "section": "7. Engineering Economics",
         "subtopic": "B. Cost",
         "question": "A contractor relies on an equipment cost index to estimate the price of a pump today compared to its price a decade ago. If the index was 250 ten years ago when the pump cost 10,000 USD, and the index is 350 today, what is the estimated current cost of the pump?",
-        "options": ["A. 14,000 USD", "B. 12,500 USD", "C. 25,000 USD", "D. 35,000 USD"],
+        "options": [
+            "A. 14,000 USD",
+            "B. 12,500 USD",
+            "C. 25,000 USD",
+            "D. 35,000 USD"
+        ],
         "answer": "A",
         "explanation": "Cost Today = Cost Past × (Index Today / Index Past) = 10,000 × (350/250) = 10,000 × 1.4 = 14,000 USD. This is a standard method for rough order of magnitude (ROM) estimating."
     },
@@ -112,7 +158,12 @@
         "section": "7. Engineering Economics",
         "subtopic": "B. Cost",
         "question": "In production environments, as cumulative production volume increases, the time and cost to produce one unit often decreases due to workers gaining experience and processes becoming more efficient. This phenomenon is mathematically modeled using:",
-        "options": ["A. The learning curve", "B. The MACRS tables", "C. Benefit-cost ratios", "D. Capital recovery factors"],
+        "options": [
+            "A. The learning curve",
+            "B. The MACRS tables",
+            "C. Benefit-cost ratios",
+            "D. Capital recovery factors"
+        ],
         "answer": "A",
         "explanation": "The learning curve (or experience curve) states that every time cumulative production doubles, the time per unit drops by a constant percentage (e.g., an 80% learning curve). The other options are unrelated economic tools."
     },
@@ -121,7 +172,12 @@
         "section": "7. Engineering Economics",
         "subtopic": "C. Economic Analyses",
         "question": "A public works project has an initial cost of 2,000,000 USD. The present worth of the expected public benefits is 3,500,000 USD, and the present worth of the expected disbenefits (negative impacts) is 500,000 USD. What is the Benefit-Cost (B/C) ratio for this project?",
-        "options": ["A. 1.50", "B. 1.75", "C. 1.25", "D. 2.00"],
+        "options": [
+            "A. 1.50",
+            "B. 1.75",
+            "C. 1.25",
+            "D. 2.00"
+        ],
         "answer": "A",
         "explanation": "B/C = (Benefits - Disbenefits) / Costs = (3,500,000 - 500,000) / 2,000,000 = 3,000,000 / 2,000,000 = 1.50. A project is generally acceptable if the B/C ratio ≥ 1.0."
     },
@@ -130,7 +186,12 @@
         "section": "7. Engineering Economics",
         "subtopic": "C. Economic Analyses",
         "question": "When evaluating two mutually exclusive equipment options with unequal useful lives (e.g., Machine A lasts 3 years, Machine B lasts 5 years), what is the most mathematically sound approach to compare their Present Worth?",
-        "options": ["A. Evaluate both over their least common multiple of years.", "B. Compare their Present Worth directly using their original lifespans.", "C. Divide the Present Worth of each by its respective lifespan.", "D. Assume a salvage value of zero for both machines."],
+        "options": [
+            "A. Evaluate both over their least common multiple of years.",
+            "B. Compare their Present Worth directly using their original lifespans.",
+            "C. Divide the Present Worth of each by its respective lifespan.",
+            "D. Assume a salvage value of zero for both machines."
+        ],
         "answer": "A",
         "explanation": "Present Worth analysis requires a common time frame. The standard approach is to use the least common multiple (LCM) of lives (here, 15 years), assuming machines are replaced with identical models at each cycle end. Alternatively, Annual Worth (AW) analysis inherently accounts for unequal lives."
     },
@@ -139,7 +200,12 @@
         "section": "7. Engineering Economics",
         "subtopic": "C. Economic Analyses",
         "question": "An investment of 100,000 USD yields uniform annual cash flows of 25,000 USD. What is the simple payback period for this investment?",
-        "options": ["A. 4 years", "B. 5 years", "C. 3 years", "D. It cannot be determined without an interest rate."],
+        "options": [
+            "A. 4 years",
+            "B. 5 years",
+            "C. 3 years",
+            "D. It cannot be determined without an interest rate."
+        ],
         "answer": "A",
         "explanation": "Simple payback period = Initial Investment / Annual Cash Flow = 100,000 / 25,000 = 4 years. This method completely ignores the time value of money. Discounted payback period would require an interest rate."
     },
@@ -148,7 +214,12 @@
         "section": "7. Engineering Economics",
         "subtopic": "C. Economic Analyses",
         "question": "Internal Rate of Return (IRR) is defined as the interest rate (i*) that makes the equation for the Present Worth of a project equal to:",
-        "options": ["A. Zero", "B. The initial investment", "C. The Minimum Attractive Rate of Return (MARR)", "D. The salvage value"],
+        "options": [
+            "A. Zero",
+            "B. The initial investment",
+            "C. The Minimum Attractive Rate of Return (MARR)",
+            "D. The salvage value"
+        ],
         "answer": "A",
         "explanation": "To find the IRR, set the Present Worth of all benefits (inflows) equal to the Present Worth of all costs (outflows). Mathematically: PW_benefits - PW_costs = 0. You solve for the unknown interest rate i that satisfies this equation."
     },
@@ -157,7 +228,12 @@
         "section": "7. Engineering Economics",
         "subtopic": "C. Economic Analyses",
         "question": "A machine has an initial cost of 60,000 USD, an annual operating cost of 5,000 USD, a life of 10 years, and a salvage value of 10,000 USD at the end of its life. To calculate the Equivalent Uniform Annual Cost (EUAC) correctly using standard FE tables, which combination of factors should be used?",
-        "options": ["A. Initial cost times (A/P), plus annual cost, minus salvage value times (A/F).", "B. Initial cost times (P/A), plus annual cost, minus salvage value times (P/F).", "C. Initial cost times (A/P), minus annual cost, plus salvage value times (A/F).", "D. Initial cost divided by 10, plus annual cost, minus salvage value divided by 10."],
+        "options": [
+            "A. Initial cost times (A/P), plus annual cost, minus salvage value times (A/F).",
+            "B. Initial cost times (P/A), plus annual cost, minus salvage value times (P/F).",
+            "C. Initial cost times (A/P), minus annual cost, plus salvage value times (A/F).",
+            "D. Initial cost divided by 10, plus annual cost, minus salvage value divided by 10."
+        ],
         "answer": "A",
         "explanation": "Initial cost is P → use (A/P) to annualize. Operating cost is already annual → add directly. Salvage value is a future benefit F → use (A/F) to annualize and subtract since it reduces total cost. Option D represents straight-line accounting, not economic cost."
     },
@@ -166,7 +242,12 @@
         "section": "7. Engineering Economics",
         "subtopic": "D. Uncertainty",
         "question": "Three scenarios exist for a project: optimistic ($200K, 20%), most likely ($100K, 60%), pessimistic (-$20K, 20%). What is the expected value?",
-        "options": ["A. $93,000", "B. $96,000", "C. $100,000", "D. $108,000"],
+        "options": [
+            "A. $93,000",
+            "B. $96,000",
+            "C. $100,000",
+            "D. $108,000"
+        ],
         "answer": "B",
         "explanation": "EV = 0.20(200,000) + 0.60(100,000) + 0.20(-20,000) = 40,000 + 60,000 - 4,000 = $96,000."
     },
@@ -175,7 +256,12 @@
         "section": "7. Engineering Economics",
         "subtopic": "D. Uncertainty",
         "question": "A contractor is bidding on a project. There is a 30% probability of earning a 50,000 USD profit and a 70% probability of incurring a 10,000 USD loss due to weather delays. What is the Expected Value (EV) of this bid?",
-        "options": ["A. 8,000 USD", "B. 15,000 USD", "C. 20,000 USD", "D. -7,000 USD"],
+        "options": [
+            "A. 8,000 USD",
+            "B. 15,000 USD",
+            "C. 20,000 USD",
+            "D. -7,000 USD"
+        ],
         "answer": "A",
         "explanation": "EV = Σ(Probability × Outcome) = (0.30 × 50,000) + (0.70 × -10,000) = 15,000 - 7,000 = 8,000 USD."
     },
@@ -184,7 +270,12 @@
         "section": "7. Engineering Economics",
         "subtopic": "D. Uncertainty",
         "question": "In engineering risk analysis, a 'Sensitivity Analysis' is best described as a technique used to:",
-        "options": ["A. Determine how changes in one specific variable (like interest rate or project life) affect the final economic decision.", "B. Calculate the exact probability of an equipment failure.", "C. Ensure the project complies with environmental regulations.", "D. Convert future cash flows into present worth values."],
+        "options": [
+            "A. Determine how changes in one specific variable (like interest rate or project life) affect the final economic decision.",
+            "B. Calculate the exact probability of an equipment failure.",
+            "C. Ensure the project complies with environmental regulations.",
+            "D. Convert future cash flows into present worth values."
+        ],
         "answer": "A",
         "explanation": "Sensitivity analysis involves varying one parameter at a time (e.g., useful life from 5 to 10 years) to see how sensitive the Present Worth or Rate of Return is to that assumption. If a small change alters the decision, the decision is 'sensitive' to that variable."
     },
@@ -193,7 +284,12 @@
         "section": "7. Engineering Economics",
         "subtopic": "D. Uncertainty",
         "question": "Two independent pumps operate in parallel. Pump A has a reliability (probability of success) of 0.90. Pump B has a reliability of 0.80. What is the probability that the system fails completely (i.e., BOTH pumps fail)?",
-        "options": ["A. 0.02", "B. 0.72", "C. 0.28", "D. 0.10"],
+        "options": [
+            "A. 0.02",
+            "B. 0.72",
+            "C. 0.28",
+            "D. 0.10"
+        ],
         "answer": "A",
         "explanation": "Failure A = 1 - 0.90 = 0.10. Failure B = 1 - 0.80 = 0.20. Since they are independent and both must fail for total failure: 0.10 × 0.20 = 0.02 (2% chance of total failure)."
     },
@@ -202,7 +298,12 @@
         "section": "7. Engineering Economics",
         "subtopic": "D. Uncertainty",
         "question": "A geological survey costs 20,000 USD. If oil is found (20% probability), the site yields 500,000 USD. If no oil is found (80% probability), the site yields 0 USD. Should the company pay for the survey based strictly on Expected Value (EV)?",
-        "options": ["A. Yes, because the EV is 100,000 USD, which is greater than the 20,000 USD cost.", "B. No, because the EV is 80,000 USD, which is less than the potential payout.", "C. Yes, because the EV is 80,000 USD net profit.", "D. No, because the probability of failure is too high at 80%."],
+        "options": [
+            "A. Yes, because the EV is 100,000 USD, which is greater than the 20,000 USD cost.",
+            "B. No, because the EV is 80,000 USD, which is less than the potential payout.",
+            "C. Yes, because the EV is 80,000 USD net profit.",
+            "D. No, because the probability of failure is too high at 80%."
+        ],
         "answer": "A",
         "explanation": "EV = (0.20 × 500,000) + (0.80 × 0) = 100,000 USD. Since the expected return (100,000) far exceeds the cost (20,000), it is mathematically a sound investment."
     },
@@ -211,7 +312,12 @@
         "section": "7. Engineering Economics",
         "subtopic": "D. Uncertainty",
         "question": "Which visual tool is commonly used in engineering economics to map out sequential decisions and their probabilistic outcomes over time?",
-        "options": ["A. Decision tree", "B. Cash flow diagram", "C. Gantt chart", "D. Pareto chart"],
+        "options": [
+            "A. Decision tree",
+            "B. Cash flow diagram",
+            "C. Gantt chart",
+            "D. Pareto chart"
+        ],
         "answer": "A",
         "explanation": "A cash flow diagram shows money over time. A Gantt chart shows project schedules. A Pareto chart shows frequency of defects. A Decision Tree maps out decision nodes (squares) and chance nodes (circles with probabilities) to evaluate multi-stage risks."
     },
@@ -220,7 +326,12 @@
         "section": "7. Engineering Economics",
         "subtopic": "E. Depreciation and Taxes",
         "question": "Sum-of-Years-Digits (SYD) depreciation for year 1 of an asset costing $50,000 with salvage $5,000 and 5-year life is:",
-        "options": ["A. $9,000", "B. $12,000", "C. $15,000", "D. $18,000"],
+        "options": [
+            "A. $9,000",
+            "B. $12,000",
+            "C. $15,000",
+            "D. $18,000"
+        ],
         "answer": "C",
         "explanation": "SYD = n(n+1)/2 = 5(6)/2 = 15. Year 1 depreciation = (5/15) × (50,000-5,000) = (1/3) × 45,000 = $15,000."
     },
@@ -229,7 +340,12 @@
         "section": "7. Engineering Economics",
         "subtopic": "E. Depreciation and Taxes",
         "question": "When comparing mutually exclusive alternatives using the Annual Worth (AW) method, you select the alternative with:",
-        "options": ["A. The lowest annual cost", "B. The highest annual worth (most positive AW or least negative AW)", "C. The shortest payback period", "D. The highest initial investment"],
+        "options": [
+            "A. The lowest annual cost",
+            "B. The highest annual worth (most positive AW or least negative AW)",
+            "C. The shortest payback period",
+            "D. The highest initial investment"
+        ],
         "answer": "B",
         "explanation": "The AW method selects the alternative with the highest annual worth (maximizes value). For cost-only comparisons, select the least negative AW (minimum annual cost)."
     },
@@ -238,7 +354,12 @@
         "section": "7. Engineering Economics",
         "subtopic": "E. Depreciation and Taxes",
         "question": "An industrial robot is purchased for 80,000 USD. It has an estimated useful life of 8 years and an expected salvage value of 8,000 USD at the end of its life. What is the annual depreciation charge using the straight-line method?",
-        "options": ["A. 9,000 USD", "B. 10,000 USD", "C. 8,000 USD", "D. 11,000 USD"],
+        "options": [
+            "A. 9,000 USD",
+            "B. 10,000 USD",
+            "C. 8,000 USD",
+            "D. 11,000 USD"
+        ],
         "answer": "A",
         "explanation": "Straight-line depreciation: D = (Initial Cost - Salvage Value) / Useful Life = (80,000 - 8,000) / 8 = 72,000 / 8 = 9,000 USD per year. Choosing 10,000 USD means you forgot to subtract the salvage value."
     },
@@ -247,7 +368,12 @@
         "section": "7. Engineering Economics",
         "subtopic": "E. Depreciation and Taxes",
         "question": "Using the data from the previous question (80,000 USD initial cost, 9,000 USD annual straight-line depreciation), what is the Book Value (BV) of the robot at the end of year 3?",
-        "options": ["A. 53,000 USD", "B. 27,000 USD", "C. 80,000 USD", "D. 56,000 USD"],
+        "options": [
+            "A. 53,000 USD",
+            "B. 27,000 USD",
+            "C. 80,000 USD",
+            "D. 56,000 USD"
+        ],
         "answer": "A",
         "explanation": "Book Value = Initial Cost - (t × D) = 80,000 - (3 × 9,000) = 80,000 - 27,000 = 53,000 USD. Choosing 27,000 USD gives the accumulated depreciation, not the remaining Book Value."
     },
@@ -256,7 +382,12 @@
         "section": "7. Engineering Economics",
         "subtopic": "E. Depreciation and Taxes",
         "question": "In the United States, the Modified Accelerated Cost Recovery System (MACRS) is commonly used for tax depreciation. Which of the following is a key characteristic of MACRS compared to straight-line depreciation?",
-        "options": ["A. MACRS ignores salvage value entirely when calculating the depreciation base.", "B. MACRS results in equal depreciation deductions every year of the asset's life.", "C. MACRS always assumes an asset has a 10-year recovery period.", "D. MACRS is calculated strictly using the actual physical life of the equipment, rather than a statutory class life."],
+        "options": [
+            "A. MACRS ignores salvage value entirely when calculating the depreciation base.",
+            "B. MACRS results in equal depreciation deductions every year of the asset's life.",
+            "C. MACRS always assumes an asset has a 10-year recovery period.",
+            "D. MACRS is calculated strictly using the actual physical life of the equipment, rather than a statutory class life."
+        ],
         "answer": "A",
         "explanation": "Under MACRS, the property is depreciated down to zero, regardless of expected actual salvage value. The IRS assigns class lives (3-year, 5-year, 7-year, etc.) and deductions are front-loaded (higher in early years), not equal."
     },
@@ -265,7 +396,12 @@
         "section": "7. Engineering Economics",
         "subtopic": "E. Depreciation and Taxes",
         "question": "A piece of heavy machinery has a MACRS 5-year recovery period. Using the standard half-year convention MACRS tables, how many actual years will it take to fully depreciate the asset on the tax books?",
-        "options": ["A. 6 years", "B. 5 years", "C. 4.5 years", "D. 10 years"],
+        "options": [
+            "A. 6 years",
+            "B. 5 years",
+            "C. 4.5 years",
+            "D. 10 years"
+        ],
         "answer": "A",
         "explanation": "The IRS assumes equipment is placed in service mid-year (half-year convention). A '5-year' asset gets a half year in Year 1, full depreciation in Years 2-5, and the final half year in Year 6. You must look at 6 rows of rates in the table."
     },
@@ -274,8 +410,153 @@
         "section": "7. Engineering Economics",
         "subtopic": "E. Depreciation and Taxes",
         "question": "Why is depreciation expense added back to Net Income when calculating After-Tax Cash Flow (ATCF)?",
-        "options": ["A. Because depreciation is a non-cash expense that reduces taxable income but does not actually consume cash.", "B. Because depreciation represents the physical cash set aside in a reserve account to buy new equipment.", "C. To correct an accounting error made during the calculation of gross revenue.", "D. Because the government issues a direct cash refund for the depreciated amount."],
+        "options": [
+            "A. Because depreciation is a non-cash expense that reduces taxable income but does not actually consume cash.",
+            "B. Because depreciation represents the physical cash set aside in a reserve account to buy new equipment.",
+            "C. To correct an accounting error made during the calculation of gross revenue.",
+            "D. Because the government issues a direct cash refund for the depreciated amount."
+        ],
         "answer": "A",
         "explanation": "You write a check for equipment in Year 0. In Year 1, you claim a depreciation 'expense' to lower your taxes, but you don't write another check. To find actual cash flow, calculate taxes, subtract them from revenue, then add the non-cash depreciation back because that money is still in your bank account."
+    },
+    {
+        "id": "econ-A-b4-001",
+        "section": "7. Engineering Economics",
+        "subtopic": "A. Time Value of Money",
+        "question": "A company invests $50,000 today in a project that will return $12,000 per year for 6 years. If the interest rate is 8% compounded quarterly, what is the Net Present Value (NPV) of this project?",
+        "options": [
+            "A. $5,475",
+            "B. $6,320",
+            "C. $7,110",
+            "D. $4,850"
+        ],
+        "answer": "A",
+        "explanation": "Find effective annual rate: i_a = (1 + 0.08/4)⁴ - 1 = (1.02)⁴ - 1 = 0.0824 (8.24%). Use P/A factor: P = 12000 × [(1.0824⁶ - 1)/(0.0824 × 1.0824⁶)] ≈ 12000 × 4.6229 = 55,475. NPV = 55,475 - 50,000 = $5,475."
+    },
+    {
+        "id": "econ-A-b4-002",
+        "section": "7. Engineering Economics",
+        "subtopic": "A. Time Value of Money",
+        "question": "An engineer wants to have $1,000,000 in a retirement account in 30 years. If the account earns 6% annual interest, how much must be deposited at the end of each month?",
+        "options": [
+            "A. $995.50",
+            "B. $1,020.10",
+            "C. $843.85",
+            "D. $1,210.40"
+        ],
+        "answer": "A",
+        "explanation": "Monthly compounding: i = 0.06/12 = 0.005, n = 360 months. A/F factor: A = F[i/((1+i)^n - 1)] = 1,000,000[0.005/((1.005)³⁶⁰ - 1)]. (1.005)³⁶⁰ ≈ 6.0225. A = 1,000,000[0.005/5.0225] ≈ $995.50."
+    },
+    {
+        "id": "econ-A-b4-003",
+        "section": "7. Engineering Economics",
+        "subtopic": "A. Time Value of Money",
+        "question": "What is the present worth of a geometric gradient series that starts with a payment of $1,000 at the end of Year 1 and increases by 10% each year for 10 years, given an interest rate of 10%?",
+        "options": [
+            "A. $9,091",
+            "B. $10,000",
+            "C. $8,264",
+            "D. $11,000"
+        ],
+        "answer": "A",
+        "explanation": "Special case where g = i (growth rate equals interest rate). Formula: P = A₁ × [n/(1+i)] = 1000 × [10/(1.10)] = 1000 × 9.0909 = $9,091."
+    },
+    {
+        "id": "econ-A-b4-004",
+        "section": "7. Engineering Economics",
+        "subtopic": "A. Time Value of Money",
+        "question": "A piece of equipment costs $20,000 and has a salvage value of $4,000 after 5 years. Using the MACRS depreciation method (5-year recovery period), what is the depreciation charge in Year 2?",
+        "options": [
+            "A. $6,400",
+            "B. $4,000",
+            "C. $4,800",
+            "D. $3,200"
+        ],
+        "answer": "A",
+        "explanation": "MACRS does not subtract salvage value from the basis. Basis = $20,000. MACRS 5-year percentages: Year 1 = 20%, Year 2 = 32%. Depreciation = $20,000 × 0.32 = $6,400."
+    },
+    {
+        "id": "econ-A-b4-005",
+        "section": "7. Engineering Economics",
+        "subtopic": "A. Time Value of Money",
+        "question": "You are comparing two pumps. Pump A: Initial cost $5k, Annual Op cost $1k, Life 3 yrs. Pump B: Initial cost $9k, Annual Op cost $0.5k, Life 6 yrs. If i=10%, which method is required to compare them fairly?",
+        "options": [
+            "A. Annual Worth Comparison",
+            "B. Direct NPV Comparison",
+            "C. Internal Rate of Return",
+            "D. Payback Period"
+        ],
+        "answer": "A",
+        "explanation": "Because lifespans differ (3 vs 6 years), direct NPV over 3 years is invalid. Use Equivalent Annual Worth (EAW) or find the LCM of lives (6 years) and repeat. EAW is the most efficient method."
+    },
+    {
+        "id": "econ-B-b4-001",
+        "section": "7. Engineering Economics",
+        "subtopic": "B. Cost",
+        "question": "A factory has fixed costs of $100,000 per month and a variable cost of $50 per unit. If each unit sells for $150, what is the break-even point in units per month?",
+        "options": [
+            "A. 1,000 units",
+            "B. 2,000 units",
+            "C. 750 units",
+            "D. 1,500 units"
+        ],
+        "answer": "A",
+        "explanation": "Revenue = Total Cost: 150x = 100,000 + 50x. Solving: 100x = 100,000, x = 1,000 units."
+    },
+    {
+        "id": "econ-B-b4-002",
+        "section": "7. Engineering Economics",
+        "subtopic": "B. Cost",
+        "question": "Which of the following is considered an 'indirect cost' in a construction project?",
+        "options": [
+            "A. Project Manager's salary",
+            "B. Concrete and steel materials",
+            "C. Subcontractor labor",
+            "D. Heavy equipment fuel"
+        ],
+        "answer": "A",
+        "explanation": "Direct costs are tied to specific work items (materials, labor). Indirect costs (overhead) support the project as a whole but aren't tied to a specific task."
+    },
+    {
+        "id": "econ-B-b4-003",
+        "section": "7. Engineering Economics",
+        "subtopic": "B. Cost",
+        "question": "An asset is purchased for $10,000. It is sold 3 years later for $12,000. The applicable capital gains tax rate is 15%. What is the tax liability on the sale?",
+        "options": [
+            "A. $300",
+            "B. $1,800",
+            "C. $1,500",
+            "D. $450"
+        ],
+        "answer": "A",
+        "explanation": "Capital gain = $12,000 - $10,000 = $2,000. Tax = $2,000 × 0.15 = $300."
+    },
+    {
+        "id": "econ-B-b4-004",
+        "section": "7. Engineering Economics",
+        "subtopic": "B. Cost",
+        "question": "If a company has a marginal tax rate of 25%, what is the effective 'after-tax' cost of an interest payment of $1,000?",
+        "options": [
+            "A. $750",
+            "B. $1,000",
+            "C. $250",
+            "D. $1,250"
+        ],
+        "answer": "A",
+        "explanation": "Interest is tax-deductible. After-tax cost = Pre-tax cost × (1 - Tax Rate) = $1,000 × (1 - 0.25) = $750."
+    },
+    {
+        "id": "econ-B-b4-005",
+        "section": "7. Engineering Economics",
+        "subtopic": "B. Cost",
+        "question": "A 'Sunk Cost' in engineering economics is defined as:",
+        "options": [
+            "A. An expenditure made in the past that cannot be recovered.",
+            "B. The cost of the next best alternative given up.",
+            "C. The annual cost of insurance and property taxes.",
+            "D. The amount of money lost when an asset's value drops below zero."
+        ],
+        "answer": "A",
+        "explanation": "Sunk costs are irrelevant to future economic decisions because they have already occurred and cannot be altered by current choices."
     }
 ]

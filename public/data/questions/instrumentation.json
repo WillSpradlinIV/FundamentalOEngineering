@@ -1,72 +1,198 @@
 [
     {
-        "id":  "inst-A-b2-001",
-        "section":  "4. Instrumentation and Controls",
-        "subtopic":  "A. Sensors",
-        "question":  "A thermistor differs from an RTD in that a thermistor:",
-        "options":  [
-                        "A. Uses the Seebeck effect to generate voltage",
-                        "B. Is made of semiconductor material with a large, nonlinear resistance change with temperature",
-                        "C. Uses a platinum element for high accuracy",
-                        "D. Measures pressure rather than temperature"
-                    ],
-        "answer":  "B",
-        "explanation":  "Thermistors are semiconductor devices with a large resistance change per degree (high sensitivity) but nonlinear response and limited range. RTDs use metal (platinum) and are more linear and accurate."
+        "id": "inst-A-b2-001",
+        "section": "4. Instrumentation and Controls",
+        "subtopic": "A. Sensors",
+        "question": "A thermistor differs from an RTD in that a thermistor:",
+        "options": [
+            "A. Uses the Seebeck effect to generate voltage",
+            "B. Is made of semiconductor material with a large, nonlinear resistance change with temperature",
+            "C. Uses a platinum element for high accuracy",
+            "D. Measures pressure rather than temperature"
+        ],
+        "answer": "B",
+        "explanation": "Thermistors are semiconductor devices with a large resistance change per degree (high sensitivity) but nonlinear response and limited range. RTDs use metal (platinum) and are more linear and accurate."
     },
     {
-        "id":  "inst-A-b2-002",
-        "section":  "4. Instrumentation and Controls",
-        "subtopic":  "A. Sensors",
-        "question":  "A differential pressure (DP) transmitter measures flow by sensing the pressure difference across a(n):",
-        "options":  [
-                        "A. Thermocouple junction",
-                        "B. Orifice plate or flow element",
-                        "C. pH electrode",
-                        "D. Strain gauge bridge"
-                    ],
-        "answer":  "B",
-        "explanation":  "DP flow meters (orifice plates, venturis, flow nozzles) create a pressure drop proportional to the square of flow velocity. The DP transmitter measures this differential and flow is calculated using Bernoulli\u0027s equation."
+        "id": "inst-A-b2-002",
+        "section": "4. Instrumentation and Controls",
+        "subtopic": "A. Sensors",
+        "question": "A differential pressure (DP) transmitter measures flow by sensing the pressure difference across a(n):",
+        "options": [
+            "A. Thermocouple junction",
+            "B. Orifice plate or flow element",
+            "C. pH electrode",
+            "D. Strain gauge bridge"
+        ],
+        "answer": "B",
+        "explanation": "DP flow meters (orifice plates, venturis, flow nozzles) create a pressure drop proportional to the square of flow velocity. The DP transmitter measures this differential and flow is calculated using Bernoulli's equation."
     },
     {
-        "id":  "inst-B-b2-001",
-        "section":  "4. Instrumentation and Controls",
-        "subtopic":  "B. Data Acquisition",
-        "question":  "The resolution of an ADC is defined as the smallest change in input voltage that produces a change in the digital output. For a 10-bit ADC with a 5 V range, the resolution is approximately:",
-        "options":  [
-                        "A. 0.5 mV",
-                        "B. 4.9 mV",
-                        "C. 50 mV",
-                        "D. 10 mV"
-                    ],
-        "answer":  "B",
-        "explanation":  "Resolution = Full-scale range / 2^n = 5 V / 2^10 = 5 / 1024 ≈ 0.00488 V ≈ 4.9 mV."
+        "id": "inst-C-b2-001",
+        "section": "4. Instrumentation and Controls",
+        "subtopic": "C. Logic Diagrams",
+        "question": "In a PID controller, the 'D' (derivative) term is used to:",
+        "options": [
+            "A. Eliminate steady-state offset",
+            "B. Provide a control action proportional to the current error",
+            "C. Anticipate future error by responding to the rate of change of error",
+            "D. Filter high-frequency disturbances"
+        ],
+        "answer": "C",
+        "explanation": "The derivative term responds to the rate of change of error (de/dt), providing a predictive control action that reduces overshoot and improves transient response."
     },
     {
-        "id":  "inst-C-b2-001",
-        "section":  "4. Instrumentation and Controls",
-        "subtopic":  "C. Logic Diagrams",
-        "question":  "In a PID controller, the \u0027D\u0027 (derivative) term is used to:",
-        "options":  [
-                        "A. Eliminate steady-state offset",
-                        "B. Provide a control action proportional to the current error",
-                        "C. Anticipate future error by responding to the rate of change of error",
-                        "D. Filter high-frequency disturbances"
-                    ],
-        "answer":  "C",
-        "explanation":  "The derivative term responds to the rate of change of error (de/dt), providing a predictive control action that reduces overshoot and improves transient response."
+        "id": "inst-C-b2-002",
+        "section": "4. Instrumentation and Controls",
+        "subtopic": "C. Logic Diagrams",
+        "question": "A NOT gate (inverter) outputs:",
+        "options": [
+            "A. HIGH when both inputs are HIGH",
+            "B. HIGH when at least one input is HIGH",
+            "C. The complement (opposite) of its single input",
+            "D. HIGH only when exactly one input is HIGH"
+        ],
+        "answer": "C",
+        "explanation": "A NOT gate inverts its input: output = 1 when input = 0, and output = 0 when input = 1. An XOR gate outputs HIGH when exactly one input is HIGH."
     },
     {
-        "id":  "inst-C-b2-002",
-        "section":  "4. Instrumentation and Controls",
-        "subtopic":  "C. Logic Diagrams",
-        "question":  "A NOT gate (inverter) outputs:",
-        "options":  [
-                        "A. HIGH when both inputs are HIGH",
-                        "B. HIGH when at least one input is HIGH",
-                        "C. The complement (opposite) of its single input",
-                        "D. HIGH only when exactly one input is HIGH"
-                    ],
-        "answer":  "C",
-        "explanation":  "A NOT gate inverts its input: output = 1 when input = 0, and output = 0 when input = 1. An XOR gate outputs HIGH when exactly one input is HIGH."
+        "id": "inst-A-b3-001",
+        "section": "4. Instrumentation and Controls",
+        "subtopic": "A. Sensors",
+        "question": "A Type K thermocouple is used to measure a temperature of 500°C. If the reference junction is at 25°C, what is the approximate output voltage (EMF) expected?",
+        "options": [
+            "A. 19.61 mV",
+            "B. 20.64 mV",
+            "C. 18.57 mV",
+            "D. 21.22 mV"
+        ],
+        "answer": "A",
+        "explanation": "Look up the mV table for Type K. At 500°C, V₅₀₀ ≈ 20.64 mV. Account for the reference junction: V₂₅ ≈ 1.00 mV. Measured voltage = V₅₀₀ - V₂₅ = 20.64 - 1.00 = 19.64 mV ≈ 19.61 mV."
+    },
+    {
+        "id": "inst-A-b3-002",
+        "section": "4. Instrumentation and Controls",
+        "subtopic": "A. Sensors",
+        "question": "A strain gauge with a Gauge Factor (GF) of 2.0 and an initial resistance of 120 Ω is bonded to a steel member. If the member experiences a longitudinal strain of 0.001 (1000 με), what is the change in resistance (ΔR)?",
+        "options": [
+            "A. 0.24 Ω",
+            "B. 0.12 Ω",
+            "C. 2.40 Ω",
+            "D. 0.024 Ω"
+        ],
+        "answer": "A",
+        "explanation": "Use GF = (ΔR/R)/ε. Rearrange: ΔR = GF × R × ε = 2.0 × 120 × 0.001 = 0.24 Ω."
+    },
+    {
+        "id": "inst-A-b3-003",
+        "section": "4. Instrumentation and Controls",
+        "subtopic": "A. Sensors",
+        "question": "An 8-bit Analog-to-Digital Converter (ADC) has an input range of 0 to 10V. What is the resolution (step size) of this converter?",
+        "options": [
+            "A. 39.1 mV",
+            "B. 78.2 mV",
+            "C. 19.5 mV",
+            "D. 1.25 V"
+        ],
+        "answer": "A",
+        "explanation": "Resolution = V_range / (2^n - 1) = 10 / (2⁸ - 1) = 10 / 255 = 0.0392 V ≈ 39.1 mV."
+    },
+    {
+        "id": "inst-A-b3-004",
+        "section": "4. Instrumentation and Controls",
+        "subtopic": "A. Sensors",
+        "question": "Which sensor type operates on the principle of changing reluctance in a magnetic circuit to measure linear displacement?",
+        "options": [
+            "A. LVDT",
+            "B. Thermistor",
+            "C. Piezoelectric crystal",
+            "D. Photovoltaic cell"
+        ],
+        "answer": "A",
+        "explanation": "A Linear Variable Differential Transformer (LVDT) uses a movable core to alter the magnetic coupling between a primary and two secondary coils to measure linear displacement."
+    },
+    {
+        "id": "inst-A-b3-005",
+        "section": "4. Instrumentation and Controls",
+        "subtopic": "A. Sensors",
+        "question": "A Pt100 RTD has a resistance of 100 Ω at 0°C and a temperature coefficient (α) of 0.00385 /°C. What is its resistance at 100°C?",
+        "options": [
+            "A. 138.5 Ω",
+            "B. 100.38 Ω",
+            "C. 103.85 Ω",
+            "D. 150.0 Ω"
+        ],
+        "answer": "A",
+        "explanation": "Use the RTD linear approximation: R_T = R₀(1 + αΔT) = 100(1 + 0.00385 × 100) = 100(1.385) = 138.5 Ω."
+    },
+    {
+        "id": "inst-B-b3-001",
+        "section": "4. Instrumentation and Controls",
+        "subtopic": "B. Control Systems",
+        "question": "Given the characteristic equation of a system: s³ + 2s² + 4s + K = 0. Using the Routh-Hurwitz criterion, what is the maximum value of K for which the system remains stable?",
+        "options": [
+            "A. K < 8",
+            "B. K < 4",
+            "C. K < 2",
+            "D. K < 10"
+        ],
+        "answer": "A",
+        "explanation": "Set up the Routh array. Row s³: 1, 4. Row s²: 2, K. Row s¹: ((2×4)-(1×K))/2 = (8-K)/2. For stability, all first column elements must be positive: (8-K)/2 > 0, so K < 8."
+    },
+    {
+        "id": "inst-B-b3-002",
+        "section": "4. Instrumentation and Controls",
+        "subtopic": "B. Control Systems",
+        "question": "A unity feedback system has an open-loop transfer function G(s) = 10/(s(s+5)). What is the steady-state error for a unit ramp input?",
+        "options": [
+            "A. 0.5",
+            "B. 0.2",
+            "C. 0",
+            "D. Infinity"
+        ],
+        "answer": "A",
+        "explanation": "Type 1 system (one 's' in denominator). For a ramp, e_ss = 1/Kv. Kv = lim(s→0) sG(s) = lim(s→0) s[10/(s(s+5))] = 10/5 = 2. e_ss = 1/2 = 0.5."
+    },
+    {
+        "id": "inst-B-b3-003",
+        "section": "4. Instrumentation and Controls",
+        "subtopic": "B. Control Systems",
+        "question": "What is the final value of the time function f(t) if its Laplace transform is F(s) = (2s + 5)/(s(s² + 4s + 3))?",
+        "options": [
+            "A. 1.67",
+            "B. 5.0",
+            "C. 0",
+            "D. 2.5"
+        ],
+        "answer": "A",
+        "explanation": "Final Value Theorem: lim(t→∞) f(t) = lim(s→0) sF(s) = (2(0)+5)/((0)²+4(0)+3) = 5/3 ≈ 1.67."
+    },
+    {
+        "id": "inst-B-b3-004",
+        "section": "4. Instrumentation and Controls",
+        "subtopic": "B. Control Systems",
+        "question": "A second-order system has a natural frequency (ωn) of 10 rad/s and a damping ratio (ζ) of 0.5. What is the expected percent overshoot (%OS) for a step input?",
+        "options": [
+            "A. 16.3%",
+            "B. 30.0%",
+            "C. 50.0%",
+            "D. 9.5%"
+        ],
+        "answer": "A",
+        "explanation": "%OS = 100 × e^(-ζπ/√(1-ζ²)). With ζ = 0.5: %OS = 100 × e^(-0.5π/0.866) = 100 × e^(-1.814) ≈ 16.3%."
+    },
+    {
+        "id": "inst-B-b3-005",
+        "section": "4. Instrumentation and Controls",
+        "subtopic": "B. Control Systems",
+        "question": "In a Bode plot of a first-order lag system G(s) = 1/(τs + 1), what is the phase shift at the corner frequency (ω = 1/τ)?",
+        "options": [
+            "A. -45 degrees",
+            "B. -90 degrees",
+            "C. 0 degrees",
+            "D. -180 degrees"
+        ],
+        "answer": "A",
+        "explanation": "Phase angle φ = -tan⁻¹(ωτ). At the corner frequency ω = 1/τ: φ = -tan⁻¹(1) = -45°."
     }
 ]

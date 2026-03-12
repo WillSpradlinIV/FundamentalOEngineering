@@ -1,114 +1,200 @@
 [
     {
-        "id":  "dyn-A-b2-001",
-        "section":  "9. Dynamics",
-        "subtopic":  "A. Particle and Rigid-Body Kinematics",
-        "question":  "A car traveling at 30 m/s decelerates uniformly to rest in 10 seconds. What is the deceleration?",
-        "options":  [
-                        "A. 1 m/s²",
-                        "B. 3 m/s²",
-                        "C. 5 m/s²",
-                        "D. 10 m/s²"
-                    ],
-        "answer":  "B",
-        "explanation":  "a = (v_f - v_0)/t = (0 - 30)/10 = -3 m/s². The deceleration magnitude is 3 m/s²."
+        "id": "dyn-A-b2-001",
+        "section": "9. Dynamics",
+        "subtopic": "A. Particle and Rigid-Body Kinematics",
+        "question": "A car traveling at 30 m/s decelerates uniformly to rest in 10 seconds. What is the deceleration?",
+        "options": ["A. 1 m/s²", "B. 3 m/s²", "C. 5 m/s²", "D. 10 m/s²"],
+        "answer": "B",
+        "explanation": "a = (v_f - v_0)/t = (0 - 30)/10 = -3 m/s². The deceleration magnitude is 3 m/s²."
     },
     {
-        "id":  "dyn-A-b2-002",
-        "section":  "9. Dynamics",
-        "subtopic":  "A. Particle and Rigid-Body Kinematics",
-        "question":  "A car traveling at 30 m/s decelerates at 3 m/s² to rest. How far does it travel while stopping?",
-        "options":  [
-                        "A. 100 m",
-                        "B. 150 m",
-                        "C. 200 m",
-                        "D. 300 m"
-                    ],
-        "answer":  "B",
-        "explanation":  "Using v² = v₀² + 2as: 0 = 900 + 2(-3)s → s = 900/6 = 150 m."
+        "id": "dyn-A-b2-002",
+        "section": "9. Dynamics",
+        "subtopic": "A. Particle and Rigid-Body Kinematics",
+        "question": "A car traveling at 30 m/s decelerates at 3 m/s² to rest. How far does it travel while stopping?",
+        "options": ["A. 100 m", "B. 150 m", "C. 200 m", "D. 300 m"],
+        "answer": "B",
+        "explanation": "Using v² = v₀² + 2as: 0 = 900 + 2(-3)s → s = 900/6 = 150 m."
     },
     {
-        "id":  "dyn-A-b2-003",
-        "section":  "9. Dynamics",
-        "subtopic":  "A. Particle and Rigid-Body Kinematics",
-        "question":  "A wheel spins at 600 rpm. What is its angular velocity in rad/s?",
-        "options":  [
-                        "A. 10π rad/s",
-                        "B. 20π rad/s",
-                        "C. 30π rad/s",
-                        "D. 60π rad/s"
-                    ],
-        "answer":  "B",
-        "explanation":  "ω = 600 rpm × (2π rad/rev) × (1 min/60 s) = 600 × 2π/60 = 20π ≈ 62.8 rad/s."
+        "id": "dyn-A-b2-003",
+        "section": "9. Dynamics",
+        "subtopic": "A. Particle and Rigid-Body Kinematics",
+        "question": "A wheel spins at 600 rpm. What is its angular velocity in rad/s?",
+        "options": ["A. 10π rad/s", "B. 20π rad/s", "C. 30π rad/s", "D. 60π rad/s"],
+        "answer": "B",
+        "explanation": "ω = 600 rpm × (2π rad/rev) × (1 min/60 s) = 600 × 2π/60 = 20π ≈ 62.8 rad/s."
     },
     {
-        "id":  "dyn-B-b2-001",
-        "section":  "9. Dynamics",
-        "subtopic":  "B. Linear Motion",
-        "question":  "A 5 kg block on a surface with μ_k = 0.2 is pushed by a horizontal force of 30 N. What is its acceleration? (g = 9.81 m/s²)",
-        "options":  [
-                        "A. 2.04 m/s²",
-                        "B. 4.04 m/s²",
-                        "C. 6.00 m/s²",
-                        "D. 8.04 m/s²"
-                    ],
-        "answer":  "B",
-        "explanation":  "Friction force = μ_k × mg = 0.2 × 5 × 9.81 = 9.81 N. Net force = 30 - 9.81 = 20.19 N. a = F/m = 20.19/5 = 4.04 m/s²."
+        "id": "dyn-B-b2-001",
+        "section": "9. Dynamics",
+        "subtopic": "B. Linear Motion",
+        "question": "A 5 kg block on a surface with μ_k = 0.2 is pushed by a horizontal force of 30 N. What is its acceleration? (g = 9.81 m/s²)",
+        "options": ["A. 2.04 m/s²", "B. 4.04 m/s²", "C. 6.00 m/s²", "D. 8.04 m/s²"],
+        "answer": "B",
+        "explanation": "Friction force = μ_k × mg = 0.2 × 5 × 9.81 = 9.81 N. Net force = 30 - 9.81 = 20.19 N. a = F/m = 20.19/5 = 4.04 m/s²."
     },
     {
-        "id":  "dyn-D-b2-001",
-        "section":  "9. Dynamics",
-        "subtopic":  "D. Mass Moment of Inertia",
-        "question":  "A solid sphere of mass 3 kg and radius 0.2 m has a mass moment of inertia about its center of:",
-        "options":  [
-                        "A. 0.024 kg·m²",
-                        "B. 0.048 kg·m²",
-                        "C. 0.060 kg·m²",
-                        "D. 0.120 kg·m²"
-                    ],
-        "answer":  "B",
-        "explanation":  "For a solid sphere: I = (2/5)mR² = (2/5)(3)(0.2)² = 0.4 × 3 × 0.04 = 0.048 kg·m²."
+        "id": "dyn-D-b2-001",
+        "section": "9. Dynamics",
+        "subtopic": "D. Mass Moment of Inertia",
+        "question": "A solid sphere of mass 3 kg and radius 0.2 m has a mass moment of inertia about its center of:",
+        "options": ["A. 0.024 kg·m²", "B. 0.048 kg·m²", "C. 0.060 kg·m²", "D. 0.120 kg·m²"],
+        "answer": "B",
+        "explanation": "For a solid sphere: I = (2/5)mR² = (2/5)(3)(0.2)² = 0.4 × 3 × 0.04 = 0.048 kg·m²."
     },
     {
-        "id":  "dyn-E-b2-001",
-        "section":  "9. Dynamics",
-        "subtopic":  "E. Impulse and Momentum",
-        "question":  "A force of 500 N acts on a 10 kg object for 0.04 seconds. What is the change in velocity?",
-        "options":  [
-                        "A. 0.5 m/s",
-                        "B. 1.0 m/s",
-                        "C. 2.0 m/s",
-                        "D. 5.0 m/s"
-                    ],
-        "answer":  "C",
-        "explanation":  "Impulse = F × t = 500 × 0.04 = 20 N·s = m × Δv. Δv = 20/10 = 2.0 m/s."
+        "id": "dyn-F-b2-001",
+        "section": "9. Dynamics",
+        "subtopic": "F. Work, Energy, and Power",
+        "question": "A 2 kg ball is dropped from rest at a height of 10 m. What is its speed just before hitting the ground? (g = 9.81 m/s²)",
+        "options": ["A. 9.81 m/s", "B. 12.53 m/s", "C. 14.01 m/s", "D. 19.62 m/s"],
+        "answer": "C",
+        "explanation": "Conservation of energy: mgh = ½mv². v = √(2gh) = √(2 × 9.81 × 10) = √196.2 = 14.01 m/s."
     },
     {
-        "id":  "dyn-F-b2-001",
-        "section":  "9. Dynamics",
-        "subtopic":  "F. Work, Energy, and Power",
-        "question":  "A 2 kg ball is dropped from rest at a height of 10 m. What is its speed just before hitting the ground? (g = 9.81 m/s²)",
-        "options":  [
-                        "A. 9.81 m/s",
-                        "B. 12.53 m/s",
-                        "C. 14.01 m/s",
-                        "D. 19.62 m/s"
-                    ],
-        "answer":  "C",
-        "explanation":  "Conservation of energy: mgh = ½mv². v = √(2gh) = √(2 × 9.81 × 10) = √196.2 = 14.01 m/s."
+        "id": "dyn-H-b2-001",
+        "section": "9. Dynamics",
+        "subtopic": "H. Vibrations",
+        "question": "A spring-mass system has a mass of 2 kg and natural frequency of 5 rad/s. What is the spring constant?",
+        "options": ["A. 10 N/m", "B. 25 N/m", "C. 50 N/m", "D. 100 N/m"],
+        "answer": "C",
+        "explanation": "ωn = √(k/m) → k = ωn² × m = 5² × 2 = 25 × 2 = 50 N/m."
     },
     {
-        "id":  "dyn-H-b2-001",
-        "section":  "9. Dynamics",
-        "subtopic":  "H. Vibrations",
-        "question":  "A spring-mass system has a mass of 2 kg and natural frequency of 5 rad/s. What is the spring constant?",
-        "options":  [
-                        "A. 10 N/m",
-                        "B. 25 N/m",
-                        "C. 50 N/m",
-                        "D. 100 N/m"
-                    ],
-        "answer":  "C",
-        "explanation":  "ωn = √(k/m) → k = ωn² × m = 5² × 2 = 25 × 2 = 50 N/m."
+        "id": "dyn-A-b3-001",
+        "section": "9. Dynamics",
+        "subtopic": "A. Kinematics of particles",
+        "question": "The position of a particle is given by s(t) = 2t³ - 9t² + 12t + 5 meters. At what time does the particle momentarily stop?",
+        "options": ["A. t = 1 s and t = 2 s", "B. t = 1.5 s only", "C. t = 3 s only", "D. t = 0 s and t = 3 s"],
+        "answer": "A",
+        "explanation": "A particle stops when velocity = 0. v(t) = ds/dt = 6t² - 18t + 12 = 6(t² - 3t + 2) = 6(t - 1)(t - 2) = 0. The particle stops at t = 1 s and t = 2 s."
+    },
+    {
+        "id": "dyn-A-b3-002",
+        "section": "9. Dynamics",
+        "subtopic": "A. Kinematics of particles",
+        "question": "A projectile is fired horizontally from a 45 m tall building at 20 m/s. Neglecting air resistance, how far from the base does it land? (g = 9.81 m/s²)",
+        "options": ["A. 60.6 m", "B. 45.0 m", "C. 90.0 m", "D. 30.3 m"],
+        "answer": "A",
+        "explanation": "Time of flight from vertical: 0 = 45 - 0.5(9.81)t². t² = 90/9.81 ≈ 9.17, t ≈ 3.03 s. Horizontal distance = v·t = 20 × 3.03 = 60.6 m."
+    },
+    {
+        "id": "dyn-A-b3-003",
+        "section": "9. Dynamics",
+        "subtopic": "A. Kinematics of particles",
+        "question": "A car travels around a circular track of radius 50 m at a constant speed of 15 m/s. What is the magnitude of the car's acceleration?",
+        "options": ["A. 0 m/s²", "B. 4.5 m/s²", "C. 9.81 m/s²", "D. 0.3 m/s²"],
+        "answer": "B",
+        "explanation": "Even at constant speed, there is centripetal (normal) acceleration due to changing direction. aₙ = v²/ρ = 15²/50 = 225/50 = 4.5 m/s²."
+    },
+    {
+        "id": "dyn-A-b3-004",
+        "section": "9. Dynamics",
+        "subtopic": "A. Kinematics of particles",
+        "question": "A particle moves in a circular path of radius R. Its angular position is θ(t) = t³ - 2t. What is the magnitude of the tangential acceleration at t = 2 seconds?",
+        "options": ["A. 12R", "B. 10R", "C. 6R", "D. 14R"],
+        "answer": "A",
+        "explanation": "Tangential acceleration aₜ = Rα. ω(t) = dθ/dt = 3t² - 2. α(t) = dω/dt = 6t. At t = 2: α = 12 rad/s². Therefore aₜ = 12R."
+    },
+    {
+        "id": "dyn-B-b3-001",
+        "section": "9. Dynamics",
+        "subtopic": "B. Kinetic friction",
+        "question": "A 10 kg block slides down a 30° incline. If μk = 0.2, what is the acceleration? (g = 9.81 m/s²)",
+        "options": ["A. 3.2 m/s²", "B. 4.9 m/s²", "C. 1.7 m/s²", "D. 6.6 m/s²"],
+        "answer": "A",
+        "explanation": "a = g(sin30° - μk cos30°) = 9.81(0.5 - 0.2 × 0.866) = 9.81(0.5 - 0.1732) = 9.81 × 0.3268 ≈ 3.2 m/s². Mass cancels out."
+    },
+    {
+        "id": "dyn-C-b3-001",
+        "section": "9. Dynamics",
+        "subtopic": "C. Kinematics of rigid bodies",
+        "question": "A wheel of radius 0.4 m rolls without slipping. If the center moves at 8 m/s, what is the angular velocity?",
+        "options": ["A. 20 rad/s", "B. 3.2 rad/s", "C. 10 rad/s", "D. 0 rad/s"],
+        "answer": "A",
+        "explanation": "For rolling without slipping: v = rω. ω = v/r = 8/0.4 = 20 rad/s."
+    },
+    {
+        "id": "dyn-C-b3-002",
+        "section": "9. Dynamics",
+        "subtopic": "C. Kinematics of rigid bodies",
+        "question": "A gear starts from rest with angular acceleration 3 rad/s². How many complete revolutions does it make in 5 seconds?",
+        "options": ["A. 5.97 revolutions", "B. 37.5 revolutions", "C. 11.9 revolutions", "D. 15.0 revolutions"],
+        "answer": "A",
+        "explanation": "θ = 0.5αt² = 0.5(3)(25) = 37.5 radians. Convert to revolutions: 37.5/(2π) ≈ 5.97 revolutions."
+    },
+    {
+        "id": "dyn-D-b3-001",
+        "section": "9. Dynamics",
+        "subtopic": "D. Kinetics of particles",
+        "question": "A 1500 kg elevator accelerates upward at 2.0 m/s². What is the cable tension? (g = 9.81 m/s²)",
+        "options": ["A. 17,715 N", "B. 14,715 N", "C. 3,000 N", "D. 11,715 N"],
+        "answer": "A",
+        "explanation": "Newton's Second Law: T - mg = ma. T = m(g + a) = 1500(9.81 + 2.0) = 1500 × 11.81 = 17,715 N."
+    },
+    {
+        "id": "dyn-D-b3-002",
+        "section": "9. Dynamics",
+        "subtopic": "D. Kinetics of particles",
+        "question": "A 5 kg block at rest has a 20 N horizontal force applied for 4 seconds (no friction). What is the final velocity using impulse-momentum?",
+        "options": ["A. 16 m/s", "B. 80 m/s", "C. 4 m/s", "D. 25 m/s"],
+        "answer": "A",
+        "explanation": "Impulse-momentum: mv₁ + Σ∫F dt = mv₂. Initial momentum = 0. Impulse = 20 × 4 = 80 N·s. 80 = 5v₂. v₂ = 16 m/s."
+    },
+    {
+        "id": "dyn-D-b3-003",
+        "section": "9. Dynamics",
+        "subtopic": "D. Kinetics of particles",
+        "question": "A 2 kg mass drops from 5 m onto an uncompressed spring (k = 400 N/m). What is the maximum compression? (g = 9.81 m/s²)",
+        "options": ["A. 0.75 m", "B. 0.50 m", "C. 0.98 m", "D. 1.20 m"],
+        "answer": "A",
+        "explanation": "Energy conservation: mg(5 + x) = 0.5kx². 2(9.81)(5 + x) = 200x². 200x² - 19.62x - 98.1 = 0. Quadratic formula gives positive root x ≈ 0.75 m."
+    },
+    {
+        "id": "dyn-D-b3-004",
+        "section": "9. Dynamics",
+        "subtopic": "D. Kinetics of particles",
+        "question": "Two spheres collide perfectly elastically. What is the coefficient of restitution?",
+        "options": ["A. 1.0", "B. 0.0", "C. 0.5", "D. 0.8"],
+        "answer": "A",
+        "explanation": "By definition, a perfectly elastic collision has e = 1.0 (no kinetic energy loss). A perfectly plastic collision has e = 0.0 (bodies stick together)."
+    },
+    {
+        "id": "dyn-D-b3-005",
+        "section": "9. Dynamics",
+        "subtopic": "D. Kinetics of particles",
+        "question": "Which principle is most efficient for problems involving velocity changes over a displacement (not time)?",
+        "options": ["A. Principle of Work and Energy", "B. Principle of Impulse and Momentum", "C. Conservation of Momentum", "D. Method of Relative Velocity"],
+        "answer": "A",
+        "explanation": "Impulse-Momentum relates forces, velocities, and time (F Δt = m Δv). Work-Energy relates forces, velocities, and displacement (∫F ds = ΔKE). When time is not given, Work-Energy is most direct."
+    },
+    {
+        "id": "dyn-E-b3-001",
+        "section": "9. Dynamics",
+        "subtopic": "E. Kinetics of rigid bodies",
+        "question": "A solid cylinder of mass m and radius r rolls down an incline. What is its mass moment of inertia about the center of mass?",
+        "options": ["A. 0.5mr²", "B. mr²", "C. 0.4mr²", "D. (2/5)mr²"],
+        "answer": "A",
+        "explanation": "A solid cylinder (or disk) about its central axis: I = 0.5mr². A thin hoop is mr², and a solid sphere is 0.4mr²."
+    },
+    {
+        "id": "dyn-E-b3-002",
+        "section": "9. Dynamics",
+        "subtopic": "E. Kinetics of rigid bodies",
+        "question": "A 50 N·m torque is applied to a flywheel with I = 10 kg·m². Starting from rest, what is its kinetic energy after 4 seconds?",
+        "options": ["A. 2000 J", "B. 1000 J", "C. 400 J", "D. 5000 J"],
+        "answer": "A",
+        "explanation": "α = M/I = 50/10 = 5 rad/s². ω = αt = 5 × 4 = 20 rad/s. KE = 0.5Iω² = 0.5(10)(400) = 2000 J."
+    },
+    {
+        "id": "dyn-E-b3-003",
+        "section": "9. Dynamics",
+        "subtopic": "E. Kinetics of rigid bodies",
+        "question": "A slender rod of length L and mass m is pinned at one end and released from horizontal. What is the initial angular acceleration?",
+        "options": ["A. 3g/(2L)", "B. g/L", "C. 12g/L", "D. 2g/(3L)"],
+        "answer": "A",
+        "explanation": "ΣM_pin = I_pin · α. Moment from weight at center of mass: mg(L/2). I_pin for rod about end = mL²/3. α = mg(L/2) / (mL²/3) = 3g/(2L)."
     }
 ]

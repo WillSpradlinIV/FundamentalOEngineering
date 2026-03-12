@@ -168,24 +168,10 @@
         "explanation": "If the control signal drops, you want to stop the flow of explosive fuel into the populated area. The spring mechanism must mechanically force the valve to the closed position to ensure a safe state."
     },
     {
-        "id": "safety-B-b3-005",
-        "section": "6. Safety, Health, and Environment",
-        "subtopic": "B. Basic Safety Equipment",
-        "question": "What is the maximum arresting force a personal fall arrest system (PFAS) is allowed to exert on an employee when using a standard full body harness?",
-        "options": [
-            "A. 1800 lbs",
-            "B. 900 lbs",
-            "C. 5000 lbs",
-            "D. 1000 lbs"
-        ],
-        "answer": "A",
-        "explanation": "A body belt limits arresting force to 900 lbs (though largely obsolete for fall arrest). A full body harness limits the force to 1,800 lbs. 5,000 lbs is the required tensile strength of the anchor point, not the force on the human."
-    },
-    {
         "id": "safety-C-b2-001",
         "section": "6. Safety, Health, and Environment",
         "subtopic": "C. Gas Detection and Monitoring",
-        "question": "What is the primary health hazard of oxygen-enriched atmospheres (O\u2082 > 23.5%)?",
+        "question": "What is the primary health hazard of oxygen-enriched atmospheres (O₂ > 23.5%)?",
         "options": [
             "A. Direct toxicity to lung tissue",
             "B. Greatly increased fire and explosion risk as materials ignite more easily",
@@ -201,13 +187,13 @@
         "subtopic": "C. Gas Detection and Monitoring",
         "question": "Which of the following hazardous gases has a molecular weight greater than air, causing it to accumulate in trenches, pits, and low-lying areas?",
         "options": [
-            "A. Hydrogen sulfide (H\u2082S)",
-            "B. Methane (CH\u2084)",
+            "A. Hydrogen sulfide (H₂S)",
+            "B. Methane (CH₄)",
             "C. Carbon monoxide (CO)",
-            "D. Ammonia (NH\u2083)"
+            "D. Ammonia (NH₃)"
         ],
         "answer": "A",
-        "explanation": "Calculate molecular weights compared to air (approx MW 29). CH\u2084 = 16 (lighter). CO = 28 (similar/slightly lighter). NH\u2083 = 17 (lighter). H\u2082S = 34.1 (heavier). Therefore, H\u2082S sinks and displaces oxygen at the bottom of confined spaces."
+        "explanation": "Calculate molecular weights compared to air (approx MW 29). CH₄ = 16 (lighter). CO = 28 (similar/slightly lighter). NH₃ = 17 (lighter). H₂S = 34.1 (heavier). Therefore, H₂S sinks and displaces oxygen at the bottom of confined spaces."
     },
     {
         "id": "safety-C-b3-002",
@@ -313,10 +299,10 @@
         "subtopic": "D. Electrical Safety",
         "question": "In electrical safety standards (like NFPA 70E), the 'arc flash boundary' is defined as the distance at which the incident heat energy equals:",
         "options": [
-            "A. 1.2 cal/cm\u00b2",
-            "B. 40 cal/cm\u00b2",
-            "C. 8.0 cal/cm\u00b2",
-            "D. 0.5 cal/cm\u00b2"
+            "A. 1.2 cal/cm²",
+            "B. 40 cal/cm²",
+            "C. 8.0 cal/cm²",
+            "D. 0.5 cal/cm²"
         ],
         "answer": "A",
         "explanation": "The arc flash boundary is calculated to the distance where an unprotected worker would receive a second-degree burn, which occurs at an incident energy of 1.2 calories per square centimeter."
@@ -376,20 +362,6 @@
         ],
         "answer": "A",
         "explanation": "Find the total air supplied in one hour: 600 CFM × 60 minutes/hour = 36,000 CF/hour. Divide by the volume of the space: 36,000 CF / 3,000 CF = 12 ACH. Choosing 5 ACH happens if you divide the volume by the CFM without converting minutes to hours."
-    },
-    {
-        "id": "safety-E-b3-002",
-        "section": "6. Safety, Health, and Environment",
-        "subtopic": "E. Confined Space Entry and Ventilation Rates",
-        "question": "Which of the following conditions is NOT one of the three foundational criteria that defines a space as a standard 'confined space'?",
-        "options": [
-            "A. It contains a recognized serious safety or health hazard.",
-            "B. It is large enough for an employee to bodily enter and perform work.",
-            "C. It has limited or restricted means for entry or exit.",
-            "D. It is not designed for continuous employee occupancy."
-        ],
-        "answer": "A",
-        "explanation": "The physical dimensions and occupancy design define a basic confined space. Adding a serious hazard (like toxic gas or engulfment risk) is what elevates it to a 'permit-required' space, which is a distinct classification."
     },
     {
         "id": "safety-E-b3-003",
@@ -462,20 +434,6 @@
         "explanation": "Blue = Health (left). Red = Flammability (top). Yellow = Instability/Reactivity (right). White = Special hazards (bottom, e.g., oxidizers or water-reactive materials)."
     },
     {
-        "id": "safety-F-b3-002",
-        "section": "6. Safety, Health, and Environment",
-        "subtopic": "F. Hazard Communications",
-        "question": "Under the Globally Harmonized System (GHS) Hazard Communication Standard, a manufacturer's Safety Data Sheet (SDS) is rigidly required to contain how many standardized sections?",
-        "options": [
-            "A. 16",
-            "B. 8",
-            "C. 12",
-            "D. 24"
-        ],
-        "answer": "A",
-        "explanation": "The older MSDS system varied wildly by manufacturer. The modern GHS SDS is strictly standardized into 16 specific sections, in a specific order, so emergency responders always know where to look."
-    },
-    {
         "id": "safety-F-b3-003",
         "section": "6. Safety, Health, and Environment",
         "subtopic": "F. Hazard Communications",
@@ -516,5 +474,425 @@
         ],
         "answer": "A",
         "explanation": "Labels are not required if the person who poured it maintains control of it and empties/disposes of it before they clock out. In all other scenarios (leaving it for the next shift, sharing it), it must be labeled."
+    },
+    {
+        "id": "safety-A-b4-001",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "A. Industrial Hygiene",
+        "question": "A chemical process leaks a mixture of three vapors into a workspace: Benzene (TLV-TWA 0.5 ppm), Toluene (TLV-TWA 20 ppm), and Xylene (TLV-TWA 100 ppm). Air sampling reveals concentrations of 0.2 ppm Benzene, 12 ppm Toluene, and 30 ppm Xylene. Assuming the effects are additive, what is the 'Equivalent Exposure' (Em) for the mixture?",
+        "options": [
+            "A. 1.30",
+            "B. 0.85",
+            "C. 1.00",
+            "D. 1.55"
+        ],
+        "answer": "A",
+        "explanation": "Use the additive effects formula: Em = Σ(Ci/TLVi). Em = (0.2/0.5) + (12/20) + (30/100) = 0.4 + 0.6 + 0.3 = 1.3. Since Em > 1, the threshold limit for the mixture is exceeded."
+    },
+    {
+        "id": "safety-A-b4-002",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "A. Industrial Hygiene",
+        "question": "A toxicological study determines the LD50 of a substance to be 15 mg/kg for a specific population. If a person weighs 80 kg, what is the theoretical dose that would result in a 50% probability of fatality?",
+        "options": [
+            "A. 1.2 g",
+            "B. 120 mg",
+            "C. 1.5 g",
+            "D. 0.8 g"
+        ],
+        "answer": "A",
+        "explanation": "Multiply LD50 by body mass: 15 mg/kg × 80 kg = 1200 mg = 1.2 g."
+    },
+    {
+        "id": "safety-A-b4-003",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "A. Industrial Hygiene",
+        "question": "A worker's 8-hour shift includes two 15-minute intervals where CO levels spike to 180 ppm. The rest of the shift (7.5 hours) is at 20 ppm. If the OSHA PEL is 50 ppm, what is the TWA?",
+        "options": [
+            "A. 30 ppm",
+            "B. 50 ppm",
+            "C. 20 ppm",
+            "D. 40 ppm"
+        ],
+        "answer": "A",
+        "explanation": "Convert 15 min to hours: 15/60 = 0.25 hr. Total spike time is 0.5 hr. TWA = [(180 × 0.5) + (20 × 7.5)] / 8 = (90 + 150) / 8 = 240 / 8 = 30 ppm."
+    },
+    {
+        "id": "safety-A-b4-004",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "A. Industrial Hygiene",
+        "question": "Which of the following describes the 'Potentiation' effect in toxicology?",
+        "options": [
+            "A. One substance that is not toxic alone increases the toxicity of another substance.",
+            "B. Two toxic substances together produce an effect equal to the sum of their individual effects.",
+            "C. Two toxic substances together produce an effect much greater than the sum of their individual effects.",
+            "D. A substance that counteracts the effect of a toxin."
+        ],
+        "answer": "A",
+        "explanation": "Additive (2+2=4), Synergistic (2+2=10), Potentiation (0+2=10), Antagonistic (4+4=2). Potentiation means a non-toxic substance amplifies another's toxicity."
+    },
+    {
+        "id": "safety-A-b4-005",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "A. Industrial Hygiene",
+        "question": "If a gas has a vapor density of 1.8 relative to air, where is it most likely to accumulate in a poorly ventilated room?",
+        "options": [
+            "A. Near the floor",
+            "B. Near the ceiling",
+            "C. Uniformly throughout",
+            "D. In the center of the room only"
+        ],
+        "answer": "A",
+        "explanation": "Air has a relative density of 1.0. Since 1.8 > 1.0, the gas is heavier than air and will sink to the floor."
+    },
+    {
+        "id": "safety-B-b4-001",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "B. Basic Safety Equipment",
+        "question": "A safety harness system must be designed to limit the maximum arresting force on an employee to what value when using a full-body harness?",
+        "options": [
+            "A. 1800 lbs",
+            "B. 900 lbs",
+            "C. 3000 lbs",
+            "D. 5000 lbs"
+        ],
+        "answer": "A",
+        "explanation": "The limit for a body belt (largely obsolete) was 900 lbs; for a full-body harness, it is 1800 lbs. 5000 lbs is the anchor point strength requirement."
+    },
+    {
+        "id": "safety-B-b4-002",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "B. Basic Safety Equipment",
+        "question": "According to the ANSI Z87.1 standard for eye protection, what must be true for safety glasses to be considered 'impact rated'?",
+        "options": [
+            "A. They must have a '+' mark on the lens or frame.",
+            "B. They must be made of glass at least 5mm thick.",
+            "C. They must be tinted for UV protection.",
+            "D. They must have detachable side shields."
+        ],
+        "answer": "A",
+        "explanation": "The Z87+ marking indicates high-velocity impact rating per ANSI Z87.1."
+    },
+    {
+        "id": "safety-B-b4-003",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "B. Basic Safety Equipment",
+        "question": "A 'Class G' (General) hard hat is tested to withstand how many volts of electrical contact?",
+        "options": [
+            "A. 2,200 volts",
+            "B. 20,000 volts",
+            "C. 440 volts",
+            "D. None (it is conductive)"
+        ],
+        "answer": "A",
+        "explanation": "Class G (General) = 2,200V. Class E (Electrical) = 20,000V. Class C (Conductive) = 0V."
+    },
+    {
+        "id": "safety-B-b4-004",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "B. Basic Safety Equipment",
+        "question": "When using a portable ladder to access a roof, how many feet must the side rails extend above the upper landing surface?",
+        "options": [
+            "A. 3 feet",
+            "B. 1 foot",
+            "C. 5 feet",
+            "D. It must be flush with the roof"
+        ],
+        "answer": "A",
+        "explanation": "OSHA 1926.1053 requires ladder side rails to extend at least 3 feet (0.9 m) above the upper landing surface."
+    },
+    {
+        "id": "safety-B-b4-005",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "B. Basic Safety Equipment",
+        "question": "A respirator has an Assigned Protection Factor (APF) of 10. If the ambient concentration of a lead dust is 0.5 mg/m³, what is the estimated concentration inside the mask?",
+        "options": [
+            "A. 0.05 mg/m³",
+            "B. 5.0 mg/m³",
+            "C. 0.4 mg/m³",
+            "D. 0.1 mg/m³"
+        ],
+        "answer": "A",
+        "explanation": "C_inside = C_outside / APF = 0.5 / 10 = 0.05 mg/m³."
+    },
+    {
+        "id": "safety-C-b4-001",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "C. Gas Detection and Monitoring",
+        "question": "A PID (Photoionization Detector) is used to detect VOCs. If the lamp energy is 10.6 eV, which chemical will it fail to detect?",
+        "options": [
+            "A. Methane (IE = 12.6 eV)",
+            "B. Benzene (IE = 9.25 eV)",
+            "C. Ethanol (IE = 10.48 eV)",
+            "D. Vinyl Chloride (IE = 10.0 eV)"
+        ],
+        "answer": "A",
+        "explanation": "A PID can only detect gases with an Ionization Energy (IE) lower than the lamp energy. Since 12.6 > 10.6, Methane will not be ionized and thus not detected."
+    },
+    {
+        "id": "safety-C-b4-002",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "C. Gas Detection and Monitoring",
+        "question": "When calibrating a combustible gas indicator (CGI) using pentane, but measuring a space containing methane, a 'response factor' must be used. If the RF for methane relative to pentane is 0.5, and the meter reads 20% LEL, what is the actual % LEL of methane?",
+        "options": [
+            "A. 10%",
+            "B. 40%",
+            "C. 20%",
+            "D. 5%"
+        ],
+        "answer": "A",
+        "explanation": "Actual = Meter Reading × Response Factor = 20 × 0.5 = 10% LEL."
+    },
+    {
+        "id": "safety-C-b4-003",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "C. Gas Detection and Monitoring",
+        "question": "An air sampling pump is calibrated at 2.0 L/min. It runs for 400 minutes. The lab finds 1.2 mg of a contaminant on the filter. What is the concentration in mg/m³?",
+        "options": [
+            "A. 1.5 mg/m³",
+            "B. 0.8 mg/m³",
+            "C. 2.4 mg/m³",
+            "D. 3.0 mg/m³"
+        ],
+        "answer": "A",
+        "explanation": "Total Volume = 2.0 L/min × 400 min = 800 L = 0.8 m³. Concentration = 1.2 mg / 0.8 m³ = 1.5 mg/m³."
+    },
+    {
+        "id": "safety-C-b4-004",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "C. Gas Detection and Monitoring",
+        "question": "In a colorimetric detector tube (Draeger tube), what indicates the concentration of the gas?",
+        "options": [
+            "A. Length of the color stain",
+            "B. Intensity of the color change",
+            "C. Time taken for color to appear",
+            "D. Change in air pressure"
+        ],
+        "answer": "A",
+        "explanation": "Detector tubes work on a stoichiometric reaction where the length of the chemically reacted (colored) reagent corresponds to the concentration."
+    },
+    {
+        "id": "safety-C-b4-005",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "C. Gas Detection and Monitoring",
+        "question": "What is the primary limitation of using an Electrochemical sensor for CO detection in an environment with high Hydrogen (H₂) levels?",
+        "options": [
+            "A. Cross-sensitivity (false positive)",
+            "B. Sensor poisoning",
+            "C. Battery depletion",
+            "D. Oxygen enrichment"
+        ],
+        "answer": "A",
+        "explanation": "Many CO electrochemical sensors react to H₂, causing the meter to show CO levels that aren't actually there (false positive due to cross-sensitivity)."
+    },
+    {
+        "id": "safety-D-b4-001",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "D. Electrical Safety",
+        "question": "What is the 8-hour noise TWA for a dose of 150% using the OSHA 5-dB exchange rate?",
+        "options": [
+            "A. 93.0 dBA",
+            "B. 95.0 dBA",
+            "C. 92.5 dBA",
+            "D. 97.5 dBA"
+        ],
+        "answer": "A",
+        "explanation": "Use TWA = 16.61 log10(D/100) + 90 = 16.61 log10(1.5) + 90 = 16.61(0.176) + 90 = 2.92 + 90 = 92.92 ≈ 93.0 dBA."
+    },
+    {
+        "id": "safety-D-b4-002",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "D. Electrical Safety",
+        "question": "Under OSHA's Process Safety Management (PSM), a process is covered if it involves a threshold quantity of a highly hazardous chemical of at least:",
+        "options": [
+            "A. 10,000 lbs",
+            "B. 1,000 lbs",
+            "C. 50,000 lbs",
+            "D. 100 lbs"
+        ],
+        "answer": "A",
+        "explanation": "The general threshold for flammable liquids/gases under PSM 1910.119 is 10,000 lbs."
+    },
+    {
+        "id": "safety-D-b4-003",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "D. Electrical Safety",
+        "question": "Which OSHA recordkeeping form is the 'Summary of Work-Related Injuries and Illnesses' that must be posted annually?",
+        "options": [
+            "A. Form 300A",
+            "B. Form 300",
+            "C. Form 301",
+            "D. Form 1040"
+        ],
+        "answer": "A",
+        "explanation": "Form 300 = Log, Form 301 = Incident Report, Form 300A = Annual Summary that must be posted."
+    },
+    {
+        "id": "safety-D-b4-004",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "D. Electrical Safety",
+        "question": "An employer must provide a 'Safety Data Sheet' (SDS) for chemicals. How many sections are mandated in the GHS-compliant SDS format?",
+        "options": [
+            "A. 16",
+            "B. 10",
+            "C. 12",
+            "D. 20"
+        ],
+        "answer": "A",
+        "explanation": "The Global Harmonized System (GHS) standardized SDS into 16 specific sections."
+    },
+    {
+        "id": "safety-D-b4-005",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "D. Electrical Safety",
+        "question": "A confined space is defined by OSHA as having three characteristics. Which is NOT one of them?",
+        "options": [
+            "A. Contains a hazardous atmosphere",
+            "B. Large enough to enter and work",
+            "C. Limited/restricted means of entry/exit",
+            "D. Not designed for continuous occupancy"
+        ],
+        "answer": "A",
+        "explanation": "A hazardous atmosphere makes it a 'Permit-Required' confined space, but it's not part of the basic three-criteria definition of a confined space itself."
+    },
+    {
+        "id": "safety-E-b4-001",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "E. Confined Space Entry and Ventilation Rates",
+        "question": "The 'cradle-to-grave' tracking of hazardous waste is a primary requirement of which act?",
+        "options": [
+            "A. RCRA",
+            "B. CERCLA",
+            "C. TSCA",
+            "D. CWA"
+        ],
+        "answer": "A",
+        "explanation": "Resource Conservation and Recovery Act (RCRA) focuses on active waste management and cradle-to-grave tracking."
+    },
+    {
+        "id": "safety-E-b4-002",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "E. Confined Space Entry and Ventilation Rates",
+        "question": "CERCLA (Superfund) is primarily concerned with:",
+        "options": [
+            "A. Remediation of abandoned hazardous waste sites",
+            "B. Regulating active air emissions from stacks",
+            "C. Protecting endangered species in wetlands",
+            "D. Monitoring drinking water quality"
+        ],
+        "answer": "A",
+        "explanation": "CERCLA focuses on past disposal and liability/cleanup of abandoned hazardous waste sites."
+    },
+    {
+        "id": "safety-E-b4-003",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "E. Confined Space Entry and Ventilation Rates",
+        "question": "Under the Clean Air Act, 'NAAQS' stands for:",
+        "options": [
+            "A. National Ambient Air Quality Standards",
+            "B. National Air Audit Quality System",
+            "C. New Air Assessment Quota Standard",
+            "D. Non-Atomic Air Quality Survey"
+        ],
+        "answer": "A",
+        "explanation": "NAAQS limits the 6 'criteria' pollutants (CO, Pb, NO₂, Ozone, PM, SO₂)."
+    },
+    {
+        "id": "safety-E-b4-004",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "E. Confined Space Entry and Ventilation Rates",
+        "question": "Which of the following is a 'Criteria Pollutant' under the Clean Air Act?",
+        "options": [
+            "A. Ground-level Ozone",
+            "B. Carbon Dioxide",
+            "C. Methane",
+            "D. Radon"
+        ],
+        "answer": "A",
+        "explanation": "The six criteria pollutants are: CO, Pb, NO₂, Ozone, PM, SO₂. CO₂, methane, and radon are not among them."
+    },
+    {
+        "id": "safety-E-b4-005",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "E. Confined Space Entry and Ventilation Rates",
+        "question": "What is the pH threshold below which a waste is considered hazardous due to 'Corrosivity' under RCRA?",
+        "options": [
+            "A. pH ≤ 2.0",
+            "B. pH ≤ 4.0",
+            "C. pH ≤ 1.0",
+            "D. pH ≤ 5.5"
+        ],
+        "answer": "A",
+        "explanation": "A waste is corrosive if pH ≤ 2.0 or pH ≥ 12.5."
+    },
+    {
+        "id": "safety-F-b4-001",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "F. Hazard Communications",
+        "question": "The ultimate BOD (L₀) of a sample is 200 mg/L. If the deoxygenation constant (k) is 0.2/day (base e), what is the BOD₅?",
+        "options": [
+            "A. 126.4 mg/L",
+            "B. 73.6 mg/L",
+            "C. 200.0 mg/L",
+            "D. 40.0 mg/L"
+        ],
+        "answer": "A",
+        "explanation": "BOD_t = L₀(1 - e^(-kt)). BOD₅ = 200(1 - e^(-0.2×5)) = 200(1 - e^(-1.0)) = 200(1 - 0.3678) = 200(0.6322) = 126.4 mg/L."
+    },
+    {
+        "id": "safety-F-b4-002",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "F. Hazard Communications",
+        "question": "In a noise addition problem, what is the total sound pressure level of two machines, one at 90 dB and one at 93 dB?",
+        "options": [
+            "A. 94.8 dB",
+            "B. 183 dB",
+            "C. 91.5 dB",
+            "D. 96.0 dB"
+        ],
+        "answer": "A",
+        "explanation": "L_total = 10 log10(10^9.0 + 10^9.3) = 10 log10(10⁹ + 1.995×10⁹) = 10 log10(2.995×10⁹) = 94.76 ≈ 94.8 dB."
+    },
+    {
+        "id": "safety-F-b4-003",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "F. Hazard Communications",
+        "question": "What is the 'Hydraulic Retention Time' (HRT) of a 1000 m³ tank with a flow rate of 50 m³/hr?",
+        "options": [
+            "A. 20 hours",
+            "B. 5 hours",
+            "C. 50 hours",
+            "D. 0.05 hours"
+        ],
+        "answer": "A",
+        "explanation": "HRT = V / Q = 1000 / 50 = 20 hours."
+    },
+    {
+        "id": "safety-F-b4-004",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "F. Hazard Communications",
+        "question": "A sound source has an intensity level of 100 dB at a distance of 10 m. What is the intensity level at 40 m in a free field?",
+        "options": [
+            "A. 88 dB",
+            "B. 25 dB",
+            "C. 94 dB",
+            "D. 70 dB"
+        ],
+        "answer": "A",
+        "explanation": "L₂ = L₁ - 20 log10(r₂/r₁) = 100 - 20 log10(40/10) = 100 - 20(0.602) = 100 - 12.04 = 87.96 ≈ 88 dB."
+    },
+    {
+        "id": "safety-F-b4-005",
+        "section": "6. Safety, Health, and Environment",
+        "subtopic": "F. Hazard Communications",
+        "question": "A wastewater has a BOD₅ of 150 mg/L and a total Nitrogen content of 30 mg/L. To ensure proper biological treatment, what is the generally accepted minimum BOD:N:P ratio?",
+        "options": [
+            "A. 100:5:1",
+            "B. 10:5:1",
+            "C. 100:20:10",
+            "D. 1:1:1"
+        ],
+        "answer": "A",
+        "explanation": "The standard rule of thumb for aerobic biological wastewater treatment nutrient requirements is a BOD:N:P ratio of 100:5:1."
     }
 ]
